@@ -8,9 +8,20 @@
 <body>
   <header class="header">
     <div class="header__left">
-      <nav class="navbar"><a class="navbar-brand" href="#">BLOM</a>
-        <form class="form-inline pull-xs-right"><a class="navbar__btn" href="#">
-            <input class="form-control navbar__search navbar__search--active" type="text" placeholder="Search"></a></form>
+      <nav class="navbar navbar-light bg-faded"><a class="navbar-brand" href="#">BLOM</a>
+        <div class="collapse" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="#">Home </a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="pull-xs-right navbar__right">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <form class="form-inline"><a class="navbar__btn" href="#">
+              <input class="form-control navbar__search navbar__search--active" type="text" placeholder="Search"></a></form>
+        </div>
+        <div class="soc-net__items soc-net"><a class="soc-net__item soc-net__item--fb" href="#"></a><a class="soc-net__item soc-net__item--tw" href="#"></a><a class="soc-net__item soc-net__item--ig" href="#"></a><a class="soc-net__item soc-net__item--dr" href="#"></a></div>
       </nav>
       <div class="header__article">
         <h1 class="header__article-title">New Horizon in a beautiful friday morning</h1><a class="header__article-category" href="#">Travel</a><span class="header__article-date">FEBRUARY 9, 2018</span>
@@ -31,7 +42,7 @@
   </div>
   <div class="container blog">
     <div class="row justify-content-between">
-      <div class="col-lg-8">
+      <div class="col-lg-8" id="articles">
         <div class="article">
           <h3 class="article__title">Morning in the mountains</h3>
           <div class="article__wrapper">
@@ -81,7 +92,7 @@
           <div class="article-page__numeration"><a class="article-page__item" href="#">1</a><a class="article-page__item article-page__item--active" href="#">7</a><a class="article-page__item" href="#">28</a></div><a class="article-page__item article-page__numeration--next" href="#">Next</a>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3" id="sidebar">
         <div class="profile-sidebar"><img class="profile-sidebar__image" src="img/avatar.jpg">
           <p class="profile-sidebar__info">Hello there! My name is Oleg Burtsev and this is my first blog on WordPress. Stay tune, it will be fun!</p><a class="profile-sidebar__more-detailed" href="#">Read more <span class="article__arrow"></span></a>
         </div>

@@ -1,8 +1,10 @@
 .header 
 	display: flex
 	margin: 0 auto
+	
 
 .header__left
+	position: relative
 	width: 59.6%
 	display: flex
 	
@@ -10,39 +12,80 @@
 	align-items: flex-end
 
 .navbar 
+	position: absolute
 	width: 730px
 	padding: 40px 0
+	.soc-net
+		display: none
 
+	
+.navbar--fixed
+	position: fixed
+	z-index: 100
+	width: 130px
+	height: 100%
+	left: 0
+	flex-direction: column
+	justify-content: flex-start
+	.navbar-brand
+		margin-bottom: 90px
+	.navbar__right
+		flex-direction: column
+		align-items: center
+	.navbar-toggler
+		margin-bottom: 35px
+	.navbar__btn
+		margin-left: 0
+	.soc-net__items
+		margin-top: auto
+		display: flex
+		flex-direction: column
+	.soc-net__item		
+		margin-bottom: 55px
+	
 .navbar-brand
 	font-size: 30px
 	color: #000
 	font-weight: 700
-	letter-spacing: 2px
 
 .navbar__btn
+	margin-left: 50px
 	position: relative
 	width: 20px
 	height: 22px
 	background: url(../img/icon-search.png) 50% 50% no-repeat
 	border: none
 
+.navbar-nav
+	flex-direction: row
+	justify-content: space-between
+	
+.nav-item
+	margin-right: 20px
+
+.navbar__right
+	display: flex	
+	margin-right: 13%
+
+
 .navbar__search
 	position: absolute
-	left: -220px
+	z-index: 100
+	right: 10px
 	top: -7px	
 
 .navbar__search--active.navbar__search
 	display: none
 
 .header__article
-	margin-top: 200px
+	margin-top: 330px
 	max-width: 730px
 
 .header__article-title 
 	margin-bottom: 25px
 	font-size: 42px
 	font-weight: 900
-	letter-spacing: 1px
+
 
 .header__article-category
 	margin-right: 15px
@@ -82,9 +125,6 @@
 	background: url("../img/header-right.jpg") 50% 50% no-repeat
 
 .header__panel
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
 	display: -o-flex
 	display: flex
 	margin-bottom: 50px

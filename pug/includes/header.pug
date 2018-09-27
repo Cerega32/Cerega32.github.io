@@ -1,10 +1,26 @@
 header.header
 	.header__left
-		nav.navbar
+		nav.navbar.navbar-light.bg-faded
 			a(href="#").navbar-brand BLOM
-			form.form-inline.pull-xs-right
-				a(href="#").navbar__btn
-					input.form-control.navbar__search.navbar__search--active(type="text" placeholder="Search")
+			#navbar.collapse
+				ul.navbar-nav
+					li.nav-item.active
+						a.nav-link(href='#') Home 
+					li.nav-item
+						a.nav-link(href='#') Link
+					li.nav-item
+						a.nav-link(href='#') Contacts
+			.pull-xs-right.navbar__right
+				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation")
+					span.navbar-toggler-icon
+				form.form-inline
+					a(href="#").navbar__btn
+						input.form-control.navbar__search.navbar__search--active(type="text" placeholder="Search")
+			.soc-net__items.soc-net
+				a(href="#").soc-net__item.soc-net__item--fb
+				a(href="#").soc-net__item.soc-net__item--tw
+				a(href="#").soc-net__item.soc-net__item--ig
+				a(href="#").soc-net__item.soc-net__item--dr
 		.header__article
 			h1.header__article-title New Horizon in a beautiful friday morning
 			a(href="#").header__article-category Travel
@@ -18,12 +34,3 @@ header.header
 		.header__wrapper
 			.header__article-reference Read article #[span.header__article-arrow]
 	.header__slide-number Prev
-			
-
-		
-		
-		
-
-		
-		
-			
