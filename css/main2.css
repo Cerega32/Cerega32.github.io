@@ -80,3 +80,15 @@
 		margin-top: -150px;
     }
   }
+
+@-webkit-keyframes go-top-bottom {
+   0% {
+    bottom: 10px
+    }	 
+	 50% {
+		bottom: 30px;
+	 }
+   100% {
+    bottom: 10px;
+    }
+  }
