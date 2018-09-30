@@ -2,8 +2,14 @@
 	.header__wrapper
 		h1.header__title МОРСКИЕ ПУТЕШЕСТВИЯ ПОД ПАРУСАМИ
 		p.header__text Отдых миллионеров по цене обычной путевки, с посещением "нетуристических" островов, бухт и городов. Для тех, кому надоел пляжный отдых.
-		a(href="#").header__detailed ПОДРОБНЕЕ
+		a(href="#").header__detailed.header__detailed--more ПОДРОБНЕЕ
 		a(href="#").header__detailed.header__detailed--router МАРШРУТ ТУРА
+	.header__form
+		h3.header__form-title Успеете оставить заявку по низкой цене
+		input(type="text" placeholder="Ваше имя").brochure__field
+		input(type="email" placeholder="Ваше email").brochure__field
+		input(type="tel" placeholder="Ваш телефон").brochure__field
+		button(type="submit").brochure__submit ОТПРАВИТЬ
 .journey
 	.journey__left
 		h2.journey__title Окунитесь в уникальное путешествие
@@ -53,10 +59,13 @@
 				p.travel__item-text Это будет Ваше одно из самых романтичных знакомств	
 .yacht
 	.yacht__sliders 
-		.yacht__slider 
-			img(src="img/yacht-slider-1.jpg")
-		.yacht__slider 
-			img(src="img/yacht-slider-1.jpg")
+		.yacht__slider(style="background: url('img/yacht-slider-1.jpg') 50% 50% no-repeat; background-size: cover")
+		.yacht__slider(style="background: url('img/yacht-slider-2.jpg') 50% 50% no-repeat; background-size: cover")
+		.yacht__slider(style="background: url('img/yacht-slider-3.jpg') 50% 50% no-repeat; background-size: cover")
+		.yacht__slider(style="background: url('img/yacht-slider-4.jpg') 50% 50% no-repeat; background-size: cover")
+		.yacht__slider(style="background: url('img/yacht-slider-5.jpg') 50% 50% no-repeat; background-size: cover")
+		.yacht__slider(style="background: url('img/yacht-slider-6.jpg') 50% 50% no-repeat; background-size: cover")
+		.yacht__slider(style="background: url('img/yacht-slider-7.jpg') 50% 50% no-repeat; background-size: cover")
 	.yacht__right
 		h2.yacht__title Что из себя представляют наши яхты?
 		.journey__wave
@@ -73,7 +82,7 @@
 	.journey__wave
 	.questions__problems
 		.questions__problem Это безопасно? Можем ли мы попасть в шторм?
-		.questions__solution.questions__solution--none 
+		.questions__solution 
 			p Круизный яхтинг (именно такой предлагаем мы) — по статистике, гораздо безопаснее автомобиля. Есть простые базовые правила, следуя которым можно быть уверенным в собственной безопасности.
 			p Вероятность попасть в шторм стремиться к нулю, так как мы изначально выбираем не штормовые районы и регулярно сверяемся с прогнозом погоды. Если даже это произойдет, то поблизости всегда есть защищенные марины и бухты, куда можно спрятаться.
 		.questions__problem А что с морской болезнью?
@@ -86,9 +95,9 @@
 			p Вероятность попасть в шторм стремиться к нулю, так как мы изначально выбираем не штормовые районы и регулярно сверяемся с прогнозом погоды. Если даже это произойдет, то поблизости всегда есть защищенные марины и бухты, куда можно спрятаться.
 .country
 	h2.country__title Следующая остановка
-	.counry__italia
-		img(src="img/icon-italia.png")
-		h2.country__title.country__italia-title Италия
+	.counry__spain
+		img(src="img/icon-spain.png")
+		h2.country__title.country__spain-title Испания
 	h2.country__title.country__date 20-27 Октября
 	.country__applications.applications
 		.applications__left
@@ -122,13 +131,18 @@
 		.impressions__slider
 			.impressions__wrapper
 				.impressions__slider-left 
-					h3.impressions__slider--title Побываете настоящим морским волком и постоите за штурвалом
-				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-1.jpg")]
+					h3.impressions__slider--title Вы научитесь вязать морские узлы и швартоваться к причалу
+				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-2.jpg")]
 		.impressions__slider
 			.impressions__wrapper
 				.impressions__slider-left 
-					h3.impressions__slider--title Побываете настоящим морским волком и постоите за штурвалом
-				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-1.jpg")]
+					h3.impressions__slider--title Искупаетесь в самых чистых бухтах без туристов
+				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-3.jpg")]
+		.impressions__slider
+			.impressions__wrapper
+				.impressions__slider-left 
+					h3.impressions__slider--title И встретите самые красивые закаты в вашей жизни
+				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-4.jpg")]
 .team
 	.team__block--alex
 	.team__block
@@ -161,5 +175,6 @@
 				input(type="email" placeholder="Ваше email").brochure__field
 				input(type="tel" placeholder="Ваш телефон").brochure__field
 				button(type="submit").brochure__submit ОТПРАВИТЬ
+.overlay
 			
 		

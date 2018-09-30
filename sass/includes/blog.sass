@@ -30,11 +30,61 @@
 	border: 1px solid #fff
 	border-radius: 30px
 	font-weight: 500
-	
+
+.header__detailed--more	
+	&:hover
+		background: #fff
+		color: #333
+
 .header__detailed--router
+	position: relative
 	background: #d9b845
 	border: 1px solid #d9b845
+	&:hover
+		background: #ebbf28
+		color: #333
+	&:after 
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: #fff
+		border-radius: 50px
+		opacity: 0
+		transition: 0s
+		z-index: 100
+	&:hover:after
+		width: 0
+		opacity: 1
+		animation: go-left-right 2s infinite
+		animation-timing-function: linear
 
+
+
+.header__form
+	position: fixed
+	top: 45%
+	left: 50%
+	margin-top: -287.5px
+	margin-left: -284.5px
+	display: none
+	flex-direction: column
+	justify-content: space-between
+	width: 585px
+	height: 595px
+	padding: 50px
+	background: #d9b845
+	z-index: 1001
+	.brochure__field
+		background: #d9b845
+
+.header__form-title
+	color: #fff
+	font-size: 36px
+	
 .journey
 	width: 1170px
 	margin: 0 auto
@@ -157,6 +207,9 @@
 	height: 600px
 	position: relative
 
+.yacht__slider
+	height: 600px
+
 .slick-arrow
 	box-sizing: border-box
 	width: 50px
@@ -169,18 +222,18 @@
 	right: 30px
 	border: 2px solid #ebebeb
 	&:hover
-		background: #fff url("../img/icon-arrow-next.png") 50% 50% no-repeat
+		background: #ebebeb url("../img/icon-arrow-next.png") 50% 50% no-repeat		
 	&:focus
-		background: #fff url("../img/icon-arrow-next.png") 50% 50% no-repeat
+		background: #c3c0c0 url("../img/icon-arrow-next.png") 50% 50% no-repeat
 
 .slick-prev
 	left: auto
 	right: 78px
 	background: #fff url("../img/icon-arrow-prev.png") 50% 50% no-repeat
 	&:hover
-		background: #fff url("../img/icon-arrow-prev.png") 50% 50% no-repeat
+		background: #ebebeb url("../img/icon-arrow-prev.png") 50% 50% no-repeat
 	&:focus
-		background: #fff url("../img/icon-arrow-prev.png") 50% 50% no-repeat
+		background: #c3c0c0 url("../img/icon-arrow-prev.png") 50% 50% no-repeat
 
 
 .slick-prev:before, .slick-next:before
@@ -295,12 +348,12 @@
 	color: #fff
 	font-weight: 700
 
-.counry__italia
+.counry__spain
 	display: flex
 	justify-content: center
 	align-items: center
 
-.country__italia-title
+.country__spain-title
 	font-size: 50px
 	margin: 0 0 0 30px
 	
@@ -344,13 +397,13 @@
 	justify-content: space-between
 
 .applications__count
-	margin: 45px 0 30px
+	margin: 40px 0 25px
 	font-size: 50px
 	font-weight: 700
 	color: #000
 
 .applications__price
-	margin-bottom: 40px
+	margin-bottom: 30px
 	font-size: 36px
 	font-weight: 700
 	color: #000
@@ -359,11 +412,11 @@
 	color: #4592d9
 	
 .applications__price--next
-	margin-bottom: 45px
+	margin-bottom: 35px
 	font-size: 18px
 
 .applications__text
-	margin-bottom: 25px
+	margin-bottom: 20px
 
 .applications__right-title
 	font-size: 36px
@@ -496,6 +549,8 @@
 	color: #888888
 	margin-left: 40px
 	position: relative
+	&:hover
+		color: #4592d9
 
 .team__social--vk
 	&:before
@@ -611,15 +666,31 @@
 	border: none
 	border-bottom: 2px solid rgba(255,255,255,.5)
 	background: #4592d9
-	color: rgba(255,255,255,.8)
+	color: #fff
 
 .brochure__submit
 	width: 100%
 	box-sizing: border-box
 	height: 50px
 	border: none
-	background: rgba(255,255,255,.8)
+	background: #fff
+	&:hover
+		background: #333
+		color: #fff
+
 
 .brochure__form-desc
 	writing-mode: tb-rl
 	transform: rotate(180deg)
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
