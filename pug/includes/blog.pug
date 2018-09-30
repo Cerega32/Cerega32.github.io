@@ -5,7 +5,8 @@
 		a(href="#").header__detailed.header__detailed--more ПОДРОБНЕЕ
 		a(href="#").header__detailed.header__detailed--router МАРШРУТ ТУРА
 	.header__form
-		h3.header__form-title Успеете оставить заявку по низкой цене
+		.header__form-close
+		h3.header__form-title Получите подробное описание путешествия
 		input(type="text" placeholder="Ваше имя").brochure__field
 		input(type="email" placeholder="Ваше email").brochure__field
 		input(type="tel" placeholder="Ваш телефон").brochure__field
@@ -20,6 +21,13 @@
 		img.journey__photo--top(src="img/journey-photo-1.jpg")
 		span.journey__photo-desc - ФОТО СДЕЛАНЫ В ХОРВАТИИ -
 .video
+	.video__block
+		.video__btn
+		h2.video__title Смотрите видео о том, как проходит тур
+	.video__modal
+		.video__modal-close
+		iframe.video__youtube(id="ytplayer" type="text/html" width="640" height="350" src="http://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&controls=0&showinfo=0&iv_load_policy=3&modestbranding=1&rel=0&enablejsapi=1"
+  frameborder="0")
 .travel
 	.travel__items
 		h2.travel__title Что будет в путешествии?
@@ -58,8 +66,7 @@
 				h3.travel__item-title И возможно, найдём любовь
 				p.travel__item-text Это будет Ваше одно из самых романтичных знакомств	
 .yacht
-	.yacht__sliders 
-		.yacht__slider(style="background: url('img/yacht-slider-1.jpg') 50% 50% no-repeat; background-size: cover")
+	.yacht__sliders
 		.yacht__slider(style="background: url('img/yacht-slider-2.jpg') 50% 50% no-repeat; background-size: cover")
 		.yacht__slider(style="background: url('img/yacht-slider-3.jpg') 50% 50% no-repeat; background-size: cover")
 		.yacht__slider(style="background: url('img/yacht-slider-4.jpg') 50% 50% no-repeat; background-size: cover")
@@ -87,12 +94,10 @@
 			p Вероятность попасть в шторм стремиться к нулю, так как мы изначально выбираем не штормовые районы и регулярно сверяемся с прогнозом погоды. Если даже это произойдет, то поблизости всегда есть защищенные марины и бухты, куда можно спрятаться.
 		.questions__problem А что с морской болезнью?
 		.questions__solution.questions__solution--none
-			p Круизный яхтинг (именно такой предлагаем мы) — по статистике, гораздо безопаснее автомобиля. Есть простые базовые правила, следуя которым можно быть уверенным в собственной безопасности.
-			p Вероятность попасть в шторм стремиться к нулю, так как мы изначально выбираем не штормовые районы и регулярно сверяемся с прогнозом погоды. Если даже это произойдет, то поблизости всегда есть защищенные марины и бухты, куда можно спрятаться.
+			p  Морская болезнь и простое укачивание это 2 разные вещи. Морская болезнь присуща 3-4% (в сознательном возрасте человек о ней знает), а укачивание или отсутствует, или исчезает на 1-2 день. Есть рекомендации, которые помогут адаптироваться очень легко.
 		.questions__problem Я не умею плавать
 		.questions__solution.questions__solution--none
-			p Круизный яхтинг (именно такой предлагаем мы) — по статистике, гораздо безопаснее автомобиля. Есть простые базовые правила, следуя которым можно быть уверенным в собственной безопасности.
-			p Вероятность попасть в шторм стремиться к нулю, так как мы изначально выбираем не штормовые районы и регулярно сверяемся с прогнозом погоды. Если даже это произойдет, то поблизости всегда есть защищенные марины и бухты, куда можно спрятаться.
+			p Вот это точно не повод отказываться от поездки. Нырять в воду человек будет исключительно по собственному желанию или же по нашему, если решит научиться.
 .country
 	h2.country__title Следующая остановка
 	.counry__spain
@@ -154,13 +159,21 @@
 			a(href="#").team__social.team__social--ig Инстаграм
 	.team__block.team__block--left
 		.team__wrapper
-			h2.team__title Утром Вас ждут курсы от Ольги Дереглазовой
+			h2.team__title Опытный штурман Михаил Столяров
 			.journey__wave
-			p.team__text По утрам вас ждут курсы по саморазвитию и личностному росту от профессионала в этой области. Попробуем новые методики, помедитируем и услышим свой внутренний голос. Моя группа в контакте и в инстаграме по ссылкам ниже.
+			p.team__text Побывал во множестве экспедиций, знает все тонкости яхтинга на Средиземном море. 20 лет опыта хождения под парусами. Что бы не случилось, знает как выйти из любой ситуации. Расскажет и научит всем тонкостям своей деятельности.
 			.team__socials
 				a(href="#").team__social.team__social--vk Вконтакте
 				a(href="#").team__social.team__social--ig Инстаграм
+	.team__block--michael
 	.team__block--olga
+	.team__block
+		h2.team__title Утром Вас ждут курсы от Ольги Дереглазовой
+		.journey__wave
+		p.team__text По утрам вас ждут курсы по саморазвитию и личностному росту от профессионала в этой области. Попробуем новые методики, помедитируем и услышим свой внутренний голос. Моя группа в контакте и в инстаграме по ссылкам ниже.
+		.team__socials
+			a(href="#").team__social.team__social--vk Вконтакте
+			a(href="#").team__social.team__social--ig Инстаграм
 .brochure
 	h2.brochure__title-adventure Вы готовы к приключениям?
 	.brochure__wrapper

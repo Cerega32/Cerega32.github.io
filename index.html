@@ -15,7 +15,8 @@
       <p class="header__text">Отдых миллионеров по цене обычной путевки, с посещением "нетуристических" островов, бухт и городов. Для тех, кому надоел пляжный отдых.</p><a class="header__detailed header__detailed--more" href="#">ПОДРОБНЕЕ</a><a class="header__detailed header__detailed--router" href="#">МАРШРУТ ТУРА</a>
     </div>
     <div class="header__form">
-      <h3 class="header__form-title">Успеете оставить заявку по низкой цене</h3>
+      <div class="header__form-close"></div>
+      <h3 class="header__form-title">Получите подробное описание путешествия</h3>
       <input class="brochure__field" type="text" placeholder="Ваше имя">
       <input class="brochure__field" type="email" placeholder="Ваше email">
       <input class="brochure__field" type="tel" placeholder="Ваш телефон">
@@ -30,7 +31,16 @@
     </div>
     <div class="journey__right"><img class="journey__photo--bottom" src="img/journey-photo-2.jpg"><img class="journey__photo--top" src="img/journey-photo-1.jpg"><span class="journey__photo-desc">- ФОТО СДЕЛАНЫ В ХОРВАТИИ -</span></div>
   </div>
-  <div class="video"></div>
+  <div class="video">
+    <div class="video__block">
+      <div class="video__btn"></div>
+      <h2 class="video__title">Смотрите видео о том, как проходит тур</h2>
+    </div>
+    <div class="video__modal">
+      <div class="video__modal-close"></div>
+      <iframe class="video__youtube" id="ytplayer" type="text/html" width="640" height="350" src="http://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&amp;controls=0&amp;showinfo=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1" frameborder="0"></iframe>
+    </div>
+  </div>
   <div class="travel">
     <div class="travel__items">
       <h2 class="travel__title">Что будет в путешествии?</h2>
@@ -79,8 +89,7 @@
     </div>
   </div>
   <div class="yacht">
-    <div class="yacht__sliders"> 
-      <div class="yacht__slider" style="background: url('img/yacht-slider-1.jpg') 50% 50% no-repeat; background-size: cover"></div>
+    <div class="yacht__sliders">
       <div class="yacht__slider" style="background: url('img/yacht-slider-2.jpg') 50% 50% no-repeat; background-size: cover"></div>
       <div class="yacht__slider" style="background: url('img/yacht-slider-3.jpg') 50% 50% no-repeat; background-size: cover"></div>
       <div class="yacht__slider" style="background: url('img/yacht-slider-4.jpg') 50% 50% no-repeat; background-size: cover"></div>
@@ -113,13 +122,11 @@
       </div>
       <div class="questions__problem">А что с морской болезнью?</div>
       <div class="questions__solution questions__solution--none">
-        <p>Круизный яхтинг (именно такой предлагаем мы) — по статистике, гораздо безопаснее автомобиля. Есть простые базовые правила, следуя которым можно быть уверенным в собственной безопасности.</p>
-        <p>Вероятность попасть в шторм стремиться к нулю, так как мы изначально выбираем не штормовые районы и регулярно сверяемся с прогнозом погоды. Если даже это произойдет, то поблизости всегда есть защищенные марины и бухты, куда можно спрятаться.</p>
+        <p> Морская болезнь и простое укачивание это 2 разные вещи. Морская болезнь присуща 3-4% (в сознательном возрасте человек о ней знает), а укачивание или отсутствует, или исчезает на 1-2 день. Есть рекомендации, которые помогут адаптироваться очень легко.</p>
       </div>
       <div class="questions__problem">Я не умею плавать</div>
       <div class="questions__solution questions__solution--none">
-        <p>Круизный яхтинг (именно такой предлагаем мы) — по статистике, гораздо безопаснее автомобиля. Есть простые базовые правила, следуя которым можно быть уверенным в собственной безопасности.</p>
-        <p>Вероятность попасть в шторм стремиться к нулю, так как мы изначально выбираем не штормовые районы и регулярно сверяемся с прогнозом погоды. Если даже это произойдет, то поблизости всегда есть защищенные марины и бухты, куда можно спрятаться.</p>
+        <p>Вот это точно не повод отказываться от поездки. Нырять в воду человек будет исключительно по собственному желанию или же по нашему, если решит научиться.</p>
       </div>
     </div>
   </div>
@@ -203,13 +210,20 @@
     </div>
     <div class="team__block team__block--left">
       <div class="team__wrapper">
-        <h2 class="team__title">Утром Вас ждут курсы от Ольги Дереглазовой</h2>
+        <h2 class="team__title">Опытный штурман Михаил Столяров</h2>
         <div class="journey__wave"></div>
-        <p class="team__text">По утрам вас ждут курсы по саморазвитию и личностному росту от профессионала в этой области. Попробуем новые методики, помедитируем и услышим свой внутренний голос. Моя группа в контакте и в инстаграме по ссылкам ниже.</p>
+        <p class="team__text">Побывал во множестве экспедиций, знает все тонкости яхтинга на Средиземном море. 20 лет опыта хождения под парусами. Что бы не случилось, знает как выйти из любой ситуации. Расскажет и научит всем тонкостям своей деятельности.</p>
         <div class="team__socials"><a class="team__social team__social--vk" href="#">Вконтакте</a><a class="team__social team__social--ig" href="#">Инстаграм</a></div>
       </div>
     </div>
+    <div class="team__block--michael"></div>
     <div class="team__block--olga"></div>
+    <div class="team__block">
+      <h2 class="team__title">Утром Вас ждут курсы от Ольги Дереглазовой</h2>
+      <div class="journey__wave"></div>
+      <p class="team__text">По утрам вас ждут курсы по саморазвитию и личностному росту от профессионала в этой области. Попробуем новые методики, помедитируем и услышим свой внутренний голос. Моя группа в контакте и в инстаграме по ссылкам ниже.</p>
+      <div class="team__socials"><a class="team__social team__social--vk" href="#">Вконтакте</a><a class="team__social team__social--ig" href="#">Инстаграм</a></div>
+    </div>
   </div>
   <div class="brochure">
     <h2 class="brochure__title-adventure">Вы готовы к приключениям?</h2>

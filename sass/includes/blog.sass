@@ -4,6 +4,17 @@
 	height: 970px
 	background: url("../img/bg-header.jpg") 50% 50% no-repeat
 	background-size: cover
+	position: relative
+	&:after
+		content: ""
+		display: block
+		width: 24px
+		height: 32px
+		position: absolute
+		bottom: 30px
+		left: 50%
+		margin-left: -12px
+		background: url("../img/icon-scroll.png") 50% 50% no-repeat
 
 .header__wrapper
 	width: 1170px
@@ -27,7 +38,7 @@
 	display: inline-block
 	padding: 20px 60px
 	color: #fff
-	border: 1px solid #fff
+	border: 2px solid #fff
 	border-radius: 30px
 	font-weight: 500
 
@@ -42,7 +53,6 @@
 	border: 1px solid #d9b845
 	&:hover
 		background: #ebbf28
-		color: #333
 	&:after 
 		content: ""
 		display: block
@@ -78,13 +88,26 @@
 	padding: 50px
 	background: #d9b845
 	z-index: 1001
+	opacity: 0
 	.brochure__field
 		background: #d9b845
+
+.header__form-close
+	position: absolute
+	top: 20px
+	right: 20px
+	width: 16px
+	height: 16px
+	z-index: 1002
+	background: url("../img/icon-cross.png") 50% 50% no-repeat
+	cursor: pointer
 
 .header__form-title
 	color: #fff
 	font-size: 36px
-	
+	font-weight: 700	
+
+
 .journey
 	width: 1170px
 	margin: 0 auto
@@ -157,6 +180,82 @@
 	right: 0
 	top: 0
 	writing-mode: tb-rl
+
+.video
+	height: 350px
+	margin-bottom: 150px
+	background: url("../img/bg-video.jpg") 50% 50% no-repeat
+	display: flex
+	justify-content: center
+	text-align: center
+
+.video__block
+	display: flex
+	align-items: center
+	position: relative
+
+.video__btn
+	position: relative
+	width: 100px
+	height: 100px
+	background: #4592d9 url("../img/icon-play.png") 55% 50% no-repeat
+	border-radius: 50%
+	z-index: 5
+	cursor: pointer
+	&:after, &:before
+		position: absolute
+		content: ""
+		display: block
+		border-radius: 50%
+		border: 1px solid #fff
+		top: 50%
+		left: 50%
+		z-index: 1
+	&:after
+		width: 130px
+		height: 130px
+		margin-left: -65px
+		margin-top: -65px
+	&:before
+		width: 230px
+		height: 230px
+		margin-left: -115px
+		margin-top: -115px
+
+.video__title
+	position: absolute
+	left: 130px
+	color: #fff
+	font-size: 36px
+	font-weight: 700
+	width: 460px
+	text-align: left
+
+.video__modal
+	position: fixed
+	top: 45%
+	left: 50%
+	margin-top: -200px
+	margin-left: -325px
+	display: none
+	flex-direction: column
+	justify-content: space-between
+	width: 640px
+	height: 350px
+	background: #333
+	opacity: 0
+	z-index: 1001
+
+.video__modal-close
+	position: absolute
+	top: 20px
+	right: 20px
+	width: 16px
+	height: 16px
+	z-index: 1002
+	background: #333 url("../img/icon-cross.png") 50% 50% no-repeat
+	cursor: pointer
+
 
 .travel
 	width: 1170px
@@ -352,6 +451,7 @@
 	display: flex
 	justify-content: center
 	align-items: center
+	margin-bottom: 15px
 
 .country__spain-title
 	font-size: 50px
@@ -495,8 +595,10 @@
 		height: 310px
 		box-sizing: border-box
 		border: 20px solid #4592d9
+		background: #fff
 		bottom: 0
 		right: 0
+		z-index: 2
 
 .team
 	display: flex
@@ -586,6 +688,13 @@
 	background: url("../img/team-olga.jpg") 50% 50% no-repeat
 	background-size: cover
 
+.team__block--michael
+	width: 50%
+	min-height: 600px
+	background: url("../img/team-michael.jpg") 50% 50% no-repeat
+	background-size: cover
+
+
 .brochure
 	width: 1170px
 	margin: 0 auto 100px
@@ -667,6 +776,10 @@
 	border-bottom: 2px solid rgba(255,255,255,.5)
 	background: #4592d9
 	color: #fff
+	&::-webkit-input-placeholder
+		color: #fff
+	&::-moz-placeholder
+		color: #fff
 
 .brochure__submit
 	width: 100%
