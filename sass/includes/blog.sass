@@ -53,6 +53,7 @@
 	border: 1px solid #d9b845
 	&:hover
 		background: #ebbf28
+		color: #fff
 	&:after 
 		content: ""
 		display: block
@@ -188,6 +189,7 @@
 	display: flex
 	justify-content: center
 	text-align: center
+	overflow: hidden
 
 .video__block
 	display: flex
@@ -202,12 +204,14 @@
 	border-radius: 50%
 	z-index: 5
 	cursor: pointer
+	&:hover
+		background: #286cab url("../img/icon-play.png") 55% 50% no-repeat
 	&:after, &:before
 		position: absolute
 		content: ""
 		display: block
 		border-radius: 50%
-		border: 1px solid #fff
+		border: 1px solid rgba(#fff, .4)
 		top: 50%
 		left: 50%
 		z-index: 1
@@ -221,6 +225,31 @@
 		height: 230px
 		margin-left: -115px
 		margin-top: -115px
+	&:hover:after
+		animation: circle-small 1.5s infinite
+		animation-timing-function: linear
+	&:hover:before
+		animation: circle-medium 1.5s infinite
+		animation-timing-function: linear
+
+.video__btn-circle
+	position: relative
+	&:after
+		position: absolute
+		content: ""
+		display: block
+		border-radius: 50%
+		border: 1px solid rgba(#fff, .4)
+		top: 50%
+		left: 50%
+		z-index: 1
+		width: 400px
+		height: 400px
+		margin-left: -200px
+		margin-top: -150px
+	&:hover:after
+		animation: circle-big 1.5s infinite
+		animation-timing-function: linear
 
 .video__title
 	position: absolute
@@ -253,7 +282,7 @@
 	width: 16px
 	height: 16px
 	z-index: 1002
-	background: #333 url("../img/icon-cross.png") 50% 50% no-repeat
+	background: url("../img/icon-cross.png") 50% 50% no-repeat
 	cursor: pointer
 
 
@@ -307,6 +336,7 @@
 	position: relative
 
 .yacht__slider
+	outline: none
 	height: 600px
 
 .slick-arrow
@@ -404,6 +434,7 @@
 	margin-top: 60px
 
 .questions__problem
+	padding-top: 15px
 	padding-bottom: 15px
 	margin-bottom: 20px
 	position: relative
@@ -440,7 +471,9 @@
 	padding: 100px
 	background: url(../img/bg-italia.jpg) 50% 50% no-repeat
 	background-size: cover
-
+	position: relative
+	box-shadow: 0 0 0 300px rgba(0, 0, 0, 0.2) inset
+	
 .country__title
 	text-align: center
 	font-size: 36px
@@ -451,7 +484,7 @@
 	display: flex
 	justify-content: center
 	align-items: center
-	margin-bottom: 15px
+	margin-bottom: 5px
 
 .country__spain-title
 	font-size: 50px
@@ -521,6 +554,7 @@
 .applications__right-title
 	font-size: 36px
 	color: #fff
+	font-weight: 700
 
 .impressions
 	width: 1170px
@@ -557,6 +591,9 @@
 		right: auto
 		left: 0
 		bottom: 15%
+	
+.impressions__slider
+	outline: none
 
 .impressions__slider-left
 	width: 410px
@@ -777,9 +814,9 @@
 	background: #4592d9
 	color: #fff
 	&::-webkit-input-placeholder
-		color: #fff
+		color: rgba(255,255,255,.8)
 	&::-moz-placeholder
-		color: #fff
+		color: rgba(255,255,255,.8)
 
 .brochure__submit
 	width: 100%
@@ -787,6 +824,7 @@
 	height: 50px
 	border: none
 	background: #fff
+	cursor: pointer
 	&:hover
 		background: #333
 		color: #fff
