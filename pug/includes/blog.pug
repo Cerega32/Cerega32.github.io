@@ -75,7 +75,7 @@
 		.yacht__slider(style="background: url('img/yacht-slider-6.jpg') 50% 50% no-repeat; background-size: cover")
 		.yacht__slider(style="background: url('img/yacht-slider-7.jpg') 50% 50% no-repeat; background-size: cover")
 	.yacht__right
-		h2.yacht__title Что из себя представляют наши яхты?
+		h2.yacht__title Что из себя представляют современные яхты?
 		.journey__wave
 		p.yacht__text Это настоящий дом посреди моря с площадкой для купания, в двух шагах от спальной каюты.
 		p.yacht__text. 
@@ -108,8 +108,14 @@
 	.country__applications.applications
 		.applications__left
 			p.applications__text До повышения цены осталось:
-			h3.applications__count 4 Дня 23:56:01
-			h3.applications__price Текущая цена: #[span.applications__price--actual 999&#8364;]
+			.applications__count
+				span.applications__count-days
+				span.applications__count-hours
+				span.applications__count-delimiter :
+				span.applications__count-minutes
+				span.applications__count-delimiter :
+				span.applications__count-seconds
+			h3.applications__price Цена сегодня: #[span.applications__price--actual 999&#8364;]
 			p.applications__price--next С 7 октября: 1259€
 			p.applications__price--next С 15 октября: 1599€
 			p.applications__text.
@@ -169,7 +175,7 @@
 	.team__block--michael
 	.team__block--olga
 	.team__block
-		h2.team__title Утром Вас ждут курсы от Ольги Дереглазовой
+		h2.team__title Утром Вас ждут тренинги от Ольги Дереглазовой
 		.journey__wave
 		p.team__text По утрам вас ждут курсы по саморазвитию и личностному росту от профессионала в этой области. Попробуем новые методики, помедитируем и услышим свой внутренний голос. Моя группа в контакте и в инстаграме по ссылкам ниже.
 		.team__socials

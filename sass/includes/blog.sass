@@ -19,7 +19,8 @@
 		animation-timing-function: linear
 
 .header__wrapper
-	width: 1170px
+	max-width: 1200px
+	padding: 0 15px
 	margin: 0 auto
 
 .header__title
@@ -69,11 +70,11 @@
 		opacity: 0
 		transition: 0s
 		z-index: 100
+		animation: go-left-right 2.5s infinite
+		animation-timing-function: linear
 	&:hover:after
 		width: 0
 		opacity: 1
-		animation: go-left-right 2s infinite
-		animation-timing-function: linear
 
 
 
@@ -112,7 +113,8 @@
 
 
 .journey
-	width: 1170px
+	max-width: 1200px
+	padding: 0 15px
 	margin: 0 auto
 	display: flex
 	justify-content: space-between
@@ -290,7 +292,8 @@
 
 
 .travel
-	width: 1170px
+	max-width: 1200px
+	padding: 0 15px
 	margin: 0 auto 150px
 	display: flex
 	justify-content: space-between
@@ -463,15 +466,24 @@
 		height: 2px
 		background: #ebebeb
 
-.questions__solution--none
-	display: none
+.questions__solution p
+	font-size: 16px
+	line-height: 24px
+	margin-bottom: 16px
+	transition: all .8s ease 0s
+
+.questions__solution--none p
+		transition: all .8s ease 0s
+		font-size: 0
+		line-height: 1px
+		margin: 0
 	
 
 .country
 	margin-bottom: 450px
 	box-sizing: border-box
 	height: 600px
-	padding: 100px
+	padding: 100px 15px
 	background: url(../img/bg-italia.jpg) 50% 50% no-repeat
 	background-size: cover
 	position: relative
@@ -560,7 +572,8 @@
 	font-weight: 700
 
 .impressions
-	width: 1170px
+	max-width: 1200px
+	padding: 0 15px
 	margin: 0 auto 150px
 
 .impressions__title
@@ -671,6 +684,10 @@
 		top: 0
 		left: 0
 
+.team__wrapper
+	z-index: 10
+	
+
 .team__block--left
 	display: flex
 	flex-direction: column
@@ -736,7 +753,8 @@
 
 
 .brochure
-	width: 1170px
+	max-width: 1200px
+	padding: 0 15px
 	margin: 0 auto 100px
  
 .brochure__title-adventure
@@ -762,7 +780,7 @@
 	align-items: center
 
 .brochure__left
-	width: 37%
+	width: 45%
 
 .brochure__title
 	position: relative
@@ -781,6 +799,7 @@
 		background: url("../img/icon-big-wave.png") 50% 50% no-repeat
 
 .brochure__text
+	width: 370px
 	margin-right: 60px
 
 .brochure__right
