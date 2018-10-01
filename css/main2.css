@@ -92,3 +92,28 @@
     bottom: 10px;
     }
   }
+
+@media (max-width: 1200px) {
+	.applications {
+		width: auto;
+	}
+
+	.country {
+		margin-bottom: 540px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media (max-width: 768px) {
+	.brochure__wrapper {
+		flex-direction: column;
+	}
+
+	.broshure__left, .broshure__right {
+		width: 100%;
+	}
+
+	.brochure {
+		width: 100px;
+	}
+}
