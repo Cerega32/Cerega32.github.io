@@ -3,20 +3,26 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media (max-width: 1200px)
+@media only screen and (max-width : 1200px)
 	.applications
 		width: auto
 	.country
 		margin-bottom: 540px
 
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.video__title
+		left: -100px
+		top: 20px
+
 /* Small Devices, Tablets */
-@media (max-width: 768px)
+@media only screen and (max-width : 768px)
 	.brochure__wrapper
-		flex-direction: column	
-	.broshure__left, .broshure__right
-		width: 100%
-	.brochure
-		width: 100px
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
 
 
 /* Extra Small Devices, Phones */

@@ -93,22 +93,15 @@
     }
   }
 
-@media (max-width: 1200px) {
-	.applications {
-		width: auto;
-	}
-
-	.country {
-		margin-bottom: 540px;
-	}
-}
 
 /* Small Devices, Tablets */
 @media (max-width: 768px) {
 	.brochure__wrapper {
 		flex-direction: column;
 	}
-
+	.brochure__title-adventure {
+		font-size: 15px;
+	}
 	.broshure__left, .broshure__right {
 		width: 100%;
 	}
