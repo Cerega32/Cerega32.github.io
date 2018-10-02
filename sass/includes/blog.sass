@@ -1,7 +1,7 @@
 .header
 	box-sizing: border-box
 	padding-top: 170px
-	height: 970px
+	height: 100vh
 	background: url("../img/bg-header.jpg") 50% 50% no-repeat
 	background-size: cover
 	position: relative
@@ -739,9 +739,11 @@
 	position: relative
 	&:after
 		content: "КОМАНДА"
+		display: block
 		position: absolute
 		top: -97px
 		font-weight: 700
+		z-index: -99
 		right: 0
 		color: #333333
 		opacity: 0.1

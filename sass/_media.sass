@@ -117,6 +117,7 @@
 	.impressions__wrapper
 		flex-direction: column
 	.impressions__title
+		display: none
 		margin-bottom: 50px
 	.impressions__slider-right
 		width: 100%
@@ -171,18 +172,31 @@
 		width: 100%
 		left: 0
 	.brochure__title-adventure
-		font-size: 40px
+		display: none
 	.team__block--alex:after
 		right: auto
 		left: 0
 		top: -58px
 		font-size: 60px
+	.country__applications 
+		display: none
+	.video__modal
+		left: 0
+		margin-left: 0
+		width: 100%
 	
 		
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
+	.impressions__slider-right
+		min-height: 300px
+		&:before, &:after
+			display: none
+	.header
+		padding-top: 70px
+	.header__title
+		margin-bottom: 40px
+	
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
