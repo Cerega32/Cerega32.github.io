@@ -190,6 +190,7 @@
 	height: 350px
 	margin-bottom: 150px
 	background: url("../img/bg-video.jpg") 50% 50% no-repeat
+	background-size: cover
 	display: flex
 	justify-content: center
 	text-align: center
@@ -239,11 +240,11 @@
 .video__btn-circle
 	position: relative
 	&:after
-		position: absolute
 		content: ""
+		position: absolute
 		display: block
 		border-radius: 50%
-		border: 1px solid rgba(#fff, .4)
+		border: 1px solid rgba(255,255,255,.4)
 		top: 50%
 		left: 50%
 		z-index: 1
@@ -262,7 +263,7 @@
 	color: #fff
 	font-size: 36px
 	font-weight: 700
-	max-width: 460px
+	width: 460px
 	text-align: left
 
 .video__modal
@@ -412,6 +413,7 @@
 	max-width: 350px
 
 .questions
+	padding: 15px
 	max-width: 570px
 	margin: 0 auto 150px
 	.journey__wave
@@ -734,6 +736,17 @@
 	min-height: 600px
 	background: url("../img/team-alex.jpg") 50% 50% no-repeat
 	background-size: cover
+	position: relative
+	&:after
+		content: "КОМАНДА"
+		position: absolute
+		top: -97px
+		font-weight: 700
+		right: 0
+		color: #333333
+		opacity: 0.1
+		font-size: 100px
+
 
 .team__block--olga
 	width: 50%
