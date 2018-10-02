@@ -17,8 +17,10 @@
 		.journey__wave
 		p.journey__text Добро пожаловать на борт. Вместе с Вами мы исследуем побережье Средиземного моря, искупаемся в открытой воде и пройдёмся по закоулкам городов на пути. Если вы ещё сомневайтесь, листайте вниз, мы всё расскажем.
 	.journey__right
-		img.journey__photo--bottom(src="img/journey-photo-2.jpg")
-		img.journey__photo--top(src="img/journey-photo-1.jpg")
+		.journey__photo--bottom
+			img(src="img/journey-photo-2.jpg")
+		.journey__photo--top
+			img(src="img/journey-photo-1.jpg")
 		span.journey__photo-desc - ФОТО СДЕЛАНЫ В ХОРВАТИИ -
 .video
 	.video__block
@@ -105,33 +107,33 @@
 		img(src="img/icon-spain.png")
 		h2.country__title.country__spain-title Испания
 	h2.country__title.country__date 20-27 Октября
-	.country__applications.applications
-		.applications__left
-			p.applications__text До повышения цены осталось:
-			.applications__count
-				span.applications__count-days
-				span.applications__count-hours
-				span.applications__count-delimiter :
-				span.applications__count-minutes
-				span.applications__count-delimiter :
-				span.applications__count-seconds
-			h3.applications__price Цена сегодня: #[span.applications__price--actual 999&#8364;]
-			p.applications__price--next С 7 октября: 1259€
-			p.applications__price--next С 15 октября: 1599€
-			p.applications__text.
-				В стоимость не входят:
-				#[br] - перелёт до места отправления и обратно
-				#[br] - шенгенская виза
-				#[br] - ужины в ресторанах и кафе
-				#[br] - личные расходы
-			p.applications__text Для подробной информации оставьте заявку в форме.
-		.applications__right
-			h3.applications__right-title Бронируйте по самой первой цене
-			form.applications__form
-				input(type="text" placeholder="Ваше имя").brochure__field
-				input(type="email" placeholder="Ваше email").brochure__field
-				input(type="tel" placeholder="Ваш телефон").brochure__field
-				button(type="submit").brochure__submit ОТПРАВИТЬ
+.country__applications.applications
+	.applications__left
+		p.applications__text До повышения цены осталось:
+		.applications__count
+			span.applications__count-days
+			span.applications__count-hours
+			span.applications__count-delimiter :
+			span.applications__count-minutes
+			span.applications__count-delimiter :
+			span.applications__count-seconds
+		h3.applications__price Цена сегодня: #[span.applications__price--actual 999&#8364;]
+		p.applications__price--next С 7 октября: 1259€
+		p.applications__price--next С 15 октября: 1599€
+		p.applications__text.
+			В стоимость не входят:
+			#[br] - перелёт до места отправления и обратно
+			#[br] - шенгенская виза
+			#[br] - ужины в ресторанах и кафе
+			#[br] - личные расходы
+		p.applications__text Для подробной информации оставьте заявку в форме.
+	.applications__right
+		h3.applications__right-title Бронируйте по самой первой цене
+		form.applications__form
+			input(type="text" placeholder="Ваше имя").brochure__field
+			input(type="email" placeholder="Ваше email").brochure__field
+			input(type="tel" placeholder="Ваш телефон").brochure__field
+			button(type="submit").brochure__submit ОТПРАВИТЬ
 .impressions
 	h2.impressions__title Что вы получите?
 	.impressions__sliders
