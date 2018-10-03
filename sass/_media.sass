@@ -58,8 +58,10 @@
 		width: 100%
 	.journey__right
 		margin-top: 30px
+		margin-bottom: 30px
 		width: 100%
 		display: flex
+		min-height: auto
 		flex-direction: column
 		&:after, &:before
 			display: none
@@ -86,6 +88,10 @@
 		margin-left: -100px
 		text-align: center
 		z-index: 10
+	.video__title--small
+		width: 300px
+		left: 50%
+		margin-left: -150px
 	.travel
 		flex-wrap: wrap
 		margin-bottom: 30px
@@ -93,13 +99,21 @@
 		width: 100%
 	.yacht
 		flex-direction: column-reverse	
-		margin-bottom: 30px
+		margin-bottom: 60px
 	.yacht__sliders, .yacht__right
 		width: 100%
+	.yacht__sliders, .yacht__slider
+		height: 300px
 	.yacht__right
 		padding: 30px 15px 120px
 		&:before
 			display: none
+	.slick-arrow
+		bottom: -80px
+		right: 50%
+	.slick-prev
+	.slick-next
+		margin-right: -48px
 	.questions
 		margin-bottom: 30px
 	.country__applications
@@ -121,6 +135,7 @@
 		margin-bottom: 50px
 	.impressions__slider-right
 		width: 100%
+		min-height: 300px
 		&:before
 			bottom: 50%
 			margin-bottom: -155px
@@ -131,6 +146,8 @@
 		left: 0
 	.impressions
 		margin-bottom: 30px
+		.slick-arrow
+			bottom: 0px
 	.team
 		margin-bottom: 30px
 		flex-direction: column
@@ -140,9 +157,9 @@
 		padding-right: 15px
 		&:before
 			display: none
-	.team__block, .team__block--alex, .team__block--michael, .team__block--olga
+	.team__block, .team__block--nik, .team__block--michael, .team__block--ann
 		width: 100%
-	.team__block--alex
+	.team__block--nik
 		order: 1
 	.team__block:nth-child(2)
 		order: 2
@@ -150,7 +167,7 @@
 		order: 3
 	.team__block:nth-child(3)
 		order: 4
-	.team__block--olga
+	.team__block--ann
 		order: 5
 	.team__block:nth-child(6)
 		order: 6
@@ -184,7 +201,6 @@
 		left: 0
 		margin-left: 0
 		width: 100%
-	
 		
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -193,9 +209,13 @@
 		&:before, &:after
 			display: none
 	.header
-		padding-top: 70px
+		padding-top: 50px
 	.header__title
-		margin-bottom: 40px
+		margin-bottom: 30px
+		font-size: 34px
+	.header__text
+		line-height: 24px
+	
 	
 
 /* Custom, iPhone Retina */

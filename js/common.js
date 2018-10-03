@@ -1,5 +1,6 @@
 $(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
-	
+	$('.header__title').fadeIn(400);
+	}
 	$('.yacht__sliders').slick({
 		autoplay: true
 	});
@@ -10,19 +11,6 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 	$('.questions__problem').click(function() {
 		$(this).next('.questions__solution').toggleClass("questions__solution--none");
 	})
-//	
-//	$('.questions__problem').click( function(event){ // лoвим клик пo ссылки с id="go"
-//		event.preventDefault(); // выключaем стaндaртную рoль элементa
-//		$(this).next('.questions__solution').fadeIn(400)
-//		$(this).next('.questions__solution').addClass("questions__solution--none")
-//	});
-//	
-//	$('.questions__problem').click( function(event){ // лoвим клик пo ссылки с id="go"
-//		event.preventDefault(); // выключaем стaндaртную рoль элементa
-//		if($(this).next('.questions__solution').hasClass("questions__solution--none")){
-//			$(this).next('.questions__solution').fadeOut(400)
-//		}
-//	});
 	
 	$('.header__detailed--router').click(function() {
 		$('.header__form').toggleClass("header__form--dasable");
@@ -120,7 +108,17 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
       jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')});
 		}
 	});
-	
+	var journey = document.getElementsByClassName("journey");
+	$(".header__detailed--more").click(function(){
+		$("html, body").animate({ scrollTop: getCoords(journey[0]).top }, 500);
+		return false;
+	}); 
+	function getCoords(elem) {
+		var box = elem.getBoundingClientRect();
+		return {
+			top: box.top + pageYOffset
+		};
+	}
 	function updater(d, h, m, s) {
 		var baseTime, period
 		baseTime = new Date(2018, 9, 7);
@@ -164,6 +162,30 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		}
 		setTimeout(update, 0);
 	}
+	$(window).scroll(function() { 
+		var st = $(this).scrollTop(); 
+		$(".header__title").css({ 
+			"transform":"translateY(-" + st/15 + "%" 
+		}); 
+		$(".header__text").css({ 
+			"transform":"translateY(-" + st/5 + "%" 
+		}); 
+		$(".header__detailed").css({ 
+			"transform":"translateY(-" + st/5 + "%" 
+		}); 
+		$(".header").css({ 
+			"background-position":50-st/100 + "%" 
+		}); 
+		$(".journey__photo--bottom").css({ 
+			"top": 5-st/100 + "%" 
+		}); 
+		$(".journey__photo--top").css({ 
+			"bottom": 20-st/100 + "%" 
+		}); 
+		$(".video").css({ 
+			"background-position":"50% " + 50-st/100 + "%" 
+		}); 
+	});
 
 	updater(document.getElementsByClassName("applications__count-days")[0],
 	 document.getElementsByClassName("applications__count-hours")[0], document.getElementsByClassName("applications__count-minutes")[0],
