@@ -142,9 +142,9 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 	}
 	function updater(d, h, m, s) {
 		var baseTime, period
-		baseTime = new Date(2018, 9, 7);
-  // День сброса - 7 октября 2018 года (и далее каждые восемь дней)
-  	period = new Date(2018, 9, 15);
+		baseTime = new Date(2018, 9, 15);
+  // День сброса - 15 октября 2018 года
+  	period = new Date(2018, 9, 22);
 		if (new Date() > baseTime) {			
 			baseTime = period
 		}

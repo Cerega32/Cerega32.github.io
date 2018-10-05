@@ -1,7 +1,7 @@
 .header
 	box-sizing: border-box
 	padding-top: 170px
-	height: 100vh
+	min-height: 100vh
 	background: url("../img/bg-header.jpg") 50% 50% no-repeat
 	background-size: cover
 	position: relative
@@ -41,7 +41,7 @@
 	color: #fff
 	max-width: 600px
 	line-height: 36px
-	font-size: 16px
+	font-size: 18px
 
 .header__detailed
 	opacity: 0
@@ -338,14 +338,13 @@
 
 .travel__item
 	display: flex
-	align-items: flex-start
+	align-items: center
 	margin-top: 40px
 
 .travel__item-img
 	margin-right: 30px
 
 .travel__item-title
-	margin-bottom: 25px
 	font-size: 16px
 	color: #333
 	font-weight: 500
@@ -698,8 +697,6 @@
 		background: url("../img/bg-ponts--yacht.png") 50% 50% no-repeat
 		top: 0
 		left: 0
-	&:nth-child(6) .team__social
-		margin-left: 27px
 
 .team__wrapper
 	z-index: 10
@@ -727,6 +724,20 @@
 	position: relative
 	&:hover
 		color: #4592d9
+
+.team__social--site
+	margin-left: 25px
+	&:before
+		position: absolute
+		content: ""
+		display: block
+		width: 17px
+		height: 17px
+		left: -25px
+		top: 50%
+		margin-top: -8.5px
+		background: url(../img/icon-site.png) 50% 50% no-repeat
+		background-size: contain
 
 .team__social--fb
 	margin-left: 25px
@@ -756,7 +767,7 @@
 .team__block--first
 	width: 50%
 	min-height: 300px
-	background: url("../img/team-nik.jpg") 50% 0% no-repeat
+	background: url("../img/team-nik.jpg") 50% 35% no-repeat
 	background-size: cover
 	position: relative
 	&:after
