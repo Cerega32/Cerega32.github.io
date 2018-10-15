@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>New discoveries</title>
+  <title>Blom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -9,256 +9,175 @@
   <link href="css/main.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
-    <div class="header__wrapper">
-      <h1 class="header__title">ПУТЕШЕСТВИЯ СО СМЫСЛОМ</h1>
-      <p class="header__text">Семидневный тур на яхте по водам Атлантического океана с авторским тренингом Анны Ардановой "Антистресс"</p>
-      <p class="header__text">Email: <a class="header__reference" href="mailto:sailingtrips@yandex.ru" target="_blank">sailingtrips@yandex.ru</a> <br class="header__paragraph"> WhatsApp: <a class="header__reference" href="https://wa.me/79653957247" target="_blank">+7 965-395-72-47</a></p><a class="header__detailed header__detailed--more" href="#">ПОДРОБНЕЕ</a><a class="header__detailed header__detailed--router" href="#">МАРШРУТ ТУРА</a>
-    </div>
-    <div class="header__country">
-      <div class="counry__spain"><img src="img/icon-spain.png">
-        <h2 class="country__title country__spain-title">Испания</h2>
-      </div>
-      <h2 class="country__title country__date">10-17 ноября</h2>
-    </div>
-    <div class="header__form">
-      <div class="header__form-close"></div>
-      <h3 class="header__form-title">Получите подробное описание путешествия</h3>
-      <input class="brochure__field" type="text" placeholder="Ваше имя">
-      <input class="brochure__field" type="email" placeholder="Ваше email">
-      <input class="brochure__field" type="tel" placeholder="Ваш телефон">
-      <button class="brochure__submit" type="submit">ОТПРАВИТЬ</button>
-    </div>
-  </div>
-  <div class="journey">
-    <div class="journey__left">
-      <h2 class="journey__title">Окунитесь в уникальное путешествие</h2>
-      <div class="journey__wave"></div>
-      <p class="journey__text">Добро пожаловать на борт! Приготовьтесь к покорению Атлантического океана. Мы совместили активный отдых и тренинг по управлению стрессом. Где, как ни в кристально чистых водах океана, под шелест парусов, в дали от толп туристов и шума мегаполисов, остаться на едине с собой.</p>
-    </div>
-    <div class="journey__right">
-      <div class="journey__photo--bottom"><img src="img/journey-photo-2.jpg"></div>
-      <div class="journey__photo--top"><img src="img/journey-photo-1.jpg"></div><span class="journey__photo-desc">- ФОТО СДЕЛАНЫ В ИСПАНИИ -</span>
-    </div>
-  </div>
-  <div class="video">
-    <div class="video__block">
-      <div class="video__btn">
-        <div class="video__btn-circle"></div>
-      </div>
-      <h2 class="video__title">Смотрите видео о том, как проходит тур </h2><span class="video__title--small">*Реальное видео появится после первого путешествия</span>
-    </div>
-    <div class="video__modal">
-      <div class="video__modal-close"></div>
-      <iframe class="video__youtube" id="ytplayer" type="text/html" max-width="640" height="350" src="https://www.youtube.com/embed/NAFTzX1nc60?autoplay=0&amp;controls=0&amp;showinfo=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1" frameborder="0"></iframe>
-    </div>
-  </div>
-  <div class="travel">
-    <div class="travel__items">
-      <h2 class="travel__title">Что будет в путешествии?</h2>
-      <div class="journey__wave"></div>
-      <p class="travel__text">Всегда мечтали покорить морские просторы? Просыпаться под шум моря утром и пить кофе, глядя на рассвет? Или может вы любите открывать для себя новые удивительные места, куда обычный турист не сможет добраться? <br> Всё это и не только, будет в нашем путешествии.</p>
-    </div>
-    <div class="travel__items">
-      <div class="travel__item"><img class="travel__item-img" src="img/icon-travel--ship.png">
-        <div class="travel__item-desc">
-          <h3 class="travel__item-title">Выйдем под парусами в открытые воды Атлантики и обойдем вокруг островов.</h3>
-        </div>
-      </div>
-      <div class="travel__item"><img class="travel__item-img" src="img/icon-travel--mask.png">
-        <div class="travel__item-desc">
-          <h3 class="travel__item-title">Нырнем с борта нашей яхты в кристально-чистые воды и исследуем подводный мир.</h3>
-        </div>
-      </div>
-      <div class="travel__item"><img class="travel__item-img" src="img/icon-travel--fish.png">
-        <div class="travel__item-desc">
-          <h3 class="travel__item-title">Любителям рыбалки можно будет попытать счастье и поймать океанского Тунца или Голубого Марлина.</h3>
-        </div>
-      </div>
-    </div>
-    <div class="travel__items">
-      <div class="travel__item"><img class="travel__item-img" src="img/icon-travel--map.png">
-        <div class="travel__item-desc">
-          <h3 class="travel__item-title">Сделаем стоянки на суше, позагораем на пляжах и погуляем по местным городам.</h3>
-        </div>
-      </div>
-      <div class="travel__item"><img class="travel__item-img" src="img/icon-travel--dolphin.png">
-        <div class="travel__item-desc">
-          <h3 class="travel__item-title">С борта судна полюбуемся дельфинами, морскими черепахами и китами.</h3>
-        </div>
-      </div>
-      <div class="travel__item"><img class="travel__item-img" src="img/icon-wave.svg" width="64" height="64">
-        <div class="travel__item-desc">
-          <h3 class="travel__item-title">Обретете новые знакомства и зарядитесь энергетикой океана.</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="yacht">
-    <div class="yacht__sliders">
-      <div class="yacht__slider" style="background: url('img/yacht-slider-1.jpg') 50% 50% no-repeat; background-size: cover"></div>
-      <div class="yacht__slider" style="background: url('img/yacht-slider-2.jpg') 50% 50% no-repeat; background-size: cover"></div>
-      <div class="yacht__slider" style="background: url('img/yacht-slider-3.jpg') 50% 50% no-repeat; background-size: cover"></div>
-      <div class="yacht__slider" style="background: url('img/yacht-slider-4.jpg') 50% 50% no-repeat; background-size: cover"></div>
-      <div class="yacht__slider" style="background: url('img/yacht-slider-5.jpg') 50% 50% no-repeat; background-size: cover"></div>
-      <div class="yacht__slider" style="background: url('img/yacht-slider-6.jpg') 50% 50% no-repeat; background-size: cover"></div>
-    </div>
-    <div class="yacht__right">
-      <h2 class="yacht__title">Что из себя представляют современные яхты?</h2>
-      <div class="journey__wave"></div>
-      <p class="yacht__text">Это настоящий дом посреди моря с площадкой для купания, в двух шагах от спальной каюты.</p>
-      <p class="yacht__text">
-        Внутри есть:
-        <br>	- 4 отдельные каюты;
-        <br>	- гостиная (кают-компания);
-        <br>	- кухня со всем необходимым;
-        <br>	- 3 санузла с душевыми;
-        <br>	- розетки и электрооборудование.
-      </p>
-    </div>
-  </div>
-  <div class="questions">
-    <h2 class="questions__title">Развеим все ваши переживания</h2>
-    <div class="journey__wave"></div>
-    <div class="questions__problems">
-      <div class="questions__problem">Есть ли риск, что мы попадем в шторм?</div>
-      <div class="questions__solution"> 
-        <p>Круизный яхтинг (именно такой предлагаем мы) — по статистике, гораздо безопаснее автомобиля. Есть простые базовые правила, следуя которым можно быть уверенным в собственной безопасности.</p>
-        <p>Вероятность попасть в шторм стремится к нулю, так как мы изначально выбираем не штормовые районы и регулярно сверяемся с прогнозом погоды. Если даже это произойдет, то поблизости всегда есть защищенные марины и бухты, куда можно спрятаться.</p>
-      </div>
-      <div class="questions__problem">Если у меня морская болезнь?</div>
-      <div class="questions__solution questions__solution--none">
-        <p> Морская болезнь и простое укачивание это 2 разные вещи. Морская болезнь присуща 3-4% (в сознательном возрасте человек о ней знает), а укачивание или отсутствует, или исчезает на 1-2 день. На борту будут мед.препараты от укачивания, чтобы ни чего не мешало вашему отдыху.</p>
-      </div>
-      <div class="questions__problem">Я не умею плавать</div>
-      <div class="questions__solution questions__solution--none">
-        <p>Вот это точно не повод отказываться от поездки. Нырять в воду человек будет исключительно по собственному желанию или же по нашему, если решит научиться.</p>
-      </div>
-    </div>
-  </div>
-  <div class="country">
-    <h2 class="country__title">Следующая остановка</h2>
-    <div class="counry__spain"><img src="img/icon-spain.png">
-      <h2 class="country__title country__spain-title">Испания</h2>
-    </div>
-    <h2 class="country__title country__date">10-17 ноября</h2>
-  </div>
-  <div class="country__applications applications">
-    <div class="applications__left">
-      <p class="applications__text">До повышения цены осталось:</p>
-      <div class="applications__count"><span class="applications__count-days"></span><span class="applications__count-hours"></span><span class="applications__count-delimiter">:</span><span class="applications__count-minutes"></span><span class="applications__count-delimiter">:</span><span class="applications__count-seconds"></span></div>
-      <h3 class="applications__price">Цена сегодня: <span class="applications__price--actual">1199€</span></h3>
-      <p class="applications__price--next">С 15 октября: 1499€</p>
-      <p class="applications__price--next">С 22 октября: 1799€</p>
-      <p class="applications__text">
-        В стоимость не входят:
-        <br> - перелёт до места отправления и обратно (поможем с покупкой билетов)
-        <br> - шенгенская виза (поможем с оформлением)
-        <br> - ужины в ресторанах и кафе
-        <br> - личные расходы
-      </p>
-      <p class="applications__text">Для подробной информации оставьте заявку в форме.</p>
-    </div>
-    <div class="applications__right">
-      <h3 class="applications__right-title">Бронируйте по первой цене</h3>
-      <form class="applications__form">
-        <input class="brochure__field" type="text" placeholder="Ваше имя">
-        <input class="brochure__field" type="email" placeholder="Ваше email">
-        <input class="brochure__field" type="tel" placeholder="Ваш телефон">
-        <button class="brochure__submit" type="submit">ОТПРАВИТЬ</button>
-      </form>
-    </div>
-  </div>
-  <div class="impressions">
-    <h2 class="impressions__title">Что вы получите?</h2>
-    <div class="impressions__sliders">
-      <div class="impressions__slider">
-        <div class="impressions__wrapper">
-          <div class="impressions__slider-left"> 
-            <h3 class="impressions__slider--title">Пройдёте тренинг по управлению стрессом от Анны Ардановой</h3>
+  <div class="header__wrapper">
+    <header class="header">
+      <div class="header__left">
+        <nav class="navbar navbar-light bg-faded"><a class="navbar-brand" href="#">BLOM</a>
+          <div class="collapse" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item active"><a class="nav-link" href="#">Home </a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+            </ul>
           </div>
-          <div class="impressions__slider-right"><img class="impressions__photo" src="img/impressions-photo-3.jpg"></div>
+          <div class="pull-xs-right navbar__right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <form class="form-inline"><a class="navbar__btn" href="#">
+                <input class="form-control navbar__search navbar__search--active" type="text" placeholder="Search"></a></form>
+          </div>
+          <div class="soc-net__items soc-net"><a class="soc-net__item soc-net__item--fb" href="#"></a><a class="soc-net__item soc-net__item--tw" href="#"></a><a class="soc-net__item soc-net__item--ig" href="#"></a><a class="soc-net__item soc-net__item--dr" href="#"></a></div>
+        </nav>
+        <div class="header__article">
+          <h1 class="header__article-title">New Horizon in a beautiful friday morning</h1><a class="header__article-category" href="#">Travel</a><span class="header__article-date">FEBRUARY 9, 2018</span>
+          <p class="header__article-text">Nibh mauris cursus mattis molestie. Rutrum quisque non tellus orci ac auctor. Feugiat in ante metus dictum. At in tellus integer feugiat scelerisque varius morbi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
         </div>
       </div>
-      <div class="impressions__slider">
-        <div class="impressions__wrapper">
-          <div class="impressions__slider-left"> 
-            <h3 class="impressions__slider--title">Почувствуете себя морским волком и возьмете управление яхтой на себя.</h3>
-          </div>
-          <div class="impressions__slider-right"><img class="impressions__photo" src="img/impressions-photo-1.jpg"></div>
+      <div class="header__sliders">
+        <div class="header__slider"><img class="header__slider-img" src="img/slider-header-1.jpg"></div>
+        <div class="header__slider"><img class="header__slider-img" src="img/slider-header-1.jpg"></div>
+        <div class="header__slider"><img class="header__slider-img" src="img/slider-header-1.jpg"></div>
+      </div>
+    </header>
+    <div class="header__panel"><a class="header__reference" href="#">
+        <div class="header__panel-wrapper">
+          <div class="header__article-reference">Read article <span class="header__article-arrow"></span></div>
+        </div></a>
+      <div class="header__panel-sliders">
+        <div class="header__panel-slider"> <span class="header__panel-number--current">01</span><span class="header__panel-number--current">02</span><span class="header__panel-number--current">03</span></div><span class="header__panel-number">/03</span>
+      </div>
+    </div>
+  </div>
+  <div class="container blog">
+    <div class="row justify-content-between">
+      <div class="col-lg-8" id="articles">
+        <div class="article">
+          <h3 class="article__title">Morning in the mountains</h3>
+          <div class="article__wrapper">
+            <div class="article__info"><a class="article__category" href="#">Travel</a><span class="article__date">FEBRUARY 9, 2018</span></div>
+            <div class="artical__social social"><a class="social__link--fb" href="#"><i class="fab fa-facebook-f" style="color: #000; font-size: 12px"></i> Share					</a><a class="social__link--tw" href="#"><i class="fab fa-twitter" style="color: #000; font-size: 12px"></i> Tweet</a></div>
+          </div><img class="article__image" src="img/blog-1.jpg">
+          <p class="article__text">Nibh mauris cursus mattis molestie. Rutrum quisque non tellus orci ac auctor. Feugiat in ante metus dictum. At in tellus integer feugiat scelerisque varius morbi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+          <div class="article__wrapper"><a class="article__reference" href="#">Read article <span class="article__arrow"></span></a><span class="article__comments">0 Comments</span></div>
+        </div>
+        <div class="article">
+          <h3 class="article__title">How long should I go to my goal so that at the end the light comes on</h3>
+          <div class="article__wrapper">
+            <div class="article__info"><a class="article__category" href="#">Livestyle</a><span class="article__date">DECEMBER 24, 2017</span></div>
+            <div class="artical__social social"><a class="social__link--fb" href="#"><i class="fab fa-facebook-f" style="color: #000; font-size: 12px"></i> Share					</a><a class="social__link--tw" href="#"><i class="fab fa-twitter" style="color: #000; font-size: 12px"></i> Tweet</a></div>
+          </div><img class="article__image" src="img/blog-2.jpg">
+          <p class="article__text">Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Volutpat est velit egestas dui id ornare arcu. Enim sit amet venenatis urna cursus. Turpis egestas pretium aenean pharetra. Sit amet consectetur adipis</p>
+          <div class="article__wrapper"><a class="article__reference" href="#">Read article <span class="article__arrow"></span></a><span class="article__comments">0 Comments</span></div>
+        </div>
+        <div class="article">
+          <h3 class="article__title">Morning in the mountains</h3>
+          <div class="article__wrapper">
+            <div class="article__info"><a class="article__category" href="#">Travel</a><span class="article__date">FEBRUARY 9, 2018</span></div>
+            <div class="artical__social social"><a class="social__link--fb" href="#"><i class="fab fa-facebook-f" style="color: #000; font-size: 12px"></i> Share					</a><a class="social__link--tw" href="#"><i class="fab fa-twitter" style="color: #000; font-size: 12px"></i> Tweet</a></div>
+          </div><img class="article__image" src="img/blog-1.jpg">
+          <p class="article__text">Nibh mauris cursus mattis molestie. Rutrum quisque non tellus orci ac auctor. Feugiat in ante metus dictum. At in tellus integer feugiat scelerisque varius morbi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+          <div class="article__wrapper"><a class="article__reference" href="#">Read article <span class="article__arrow"></span></a><span class="article__comments">0 Comments</span></div>
+        </div>
+        <div class="article">
+          <h3 class="article__title">How long should I go to my goal so that at the end the light comes on</h3>
+          <div class="article__wrapper">
+            <div class="article__info"><a class="article__category" href="#">Livestyle</a><span class="article__date">DECEMBER 24, 2017</span></div>
+            <div class="artical__social social"><a class="social__link--fb" href="#"><i class="fab fa-facebook-f" style="color: #000; font-size: 12px"></i> Share					</a><a class="social__link--tw" href="#"><i class="fab fa-twitter" style="color: #000; font-size: 12px"></i> Tweet</a></div>
+          </div><img class="article__image" src="img/blog-2.jpg">
+          <p class="article__text">Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Volutpat est velit egestas dui id ornare arcu. Enim sit amet venenatis urna cursus. Turpis egestas pretium aenean pharetra. Sit amet consectetur adipis</p>
+          <div class="article__wrapper"><a class="article__reference" href="#">Read article <span class="article__arrow"></span></a><span class="article__comments">0 Comments</span></div>
+        </div>
+        <div class="article">
+          <h3 class="article__title">Morning in the mountains</h3>
+          <div class="article__wrapper">
+            <div class="article__info"><a class="article__category" href="#">Travel</a><span class="article__date">FEBRUARY 9, 2018</span></div>
+            <div class="artical__social social"><a class="social__link--fb" href="#"><i class="fab fa-facebook-f" style="color: #000; font-size: 12px"></i> Share					</a><a class="social__link--tw" href="#"><i class="fab fa-twitter" style="color: #000; font-size: 12px"></i> Tweet</a></div>
+          </div><img class="article__image" src="img/blog-1.jpg">
+          <p class="article__text">Nibh mauris cursus mattis molestie. Rutrum quisque non tellus orci ac auctor. Feugiat in ante metus dictum. At in tellus integer feugiat scelerisque varius morbi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+          <div class="article__wrapper"><a class="article__reference" href="#">Read article <span class="article__arrow"></span></a><span class="article__comments">0 Comments</span></div>
+        </div>
+        <div class="article-page"><a class="article-page__item article-page__numeration--prev" href="#">Prev</a>
+          <div class="article-page__numeration"><a class="article-page__item" href="#">1</a><a class="article-page__item article-page__item--active" href="#">7</a><a class="article-page__item" href="#">28</a></div><a class="article-page__item article-page__numeration--next" href="#">Next</a>
         </div>
       </div>
-      <div class="impressions__slider">
-        <div class="impressions__wrapper">
-          <div class="impressions__slider-left"> 
-            <h3 class="impressions__slider--title">Научитесь вязать морские узлы и швартоваться к причалу.</h3>
+      <div class="col-lg-3" id="sidebar">
+        <div class="profile-sidebar"><img class="profile-sidebar__image" src="img/avatar.jpg">
+          <p class="profile-sidebar__info">Hello there! My name is Oleg Burtsev and this is my first blog on WordPress. Stay tune, it will be fun!</p><a class="profile-sidebar__more-detailed" href="#">Read more <span class="article__arrow"></span></a>
+        </div>
+        <div class="categories-sidebar">
+          <h4 class="sidebar__title">Categories</h4>
+          <ul>
+            <li class="categories-sidebar__item"><a class="categories-sidebar__reference" href="#">Travel</a> <span class="categories-sidebar__sum">5</span></li>
+            <li class="categories-sidebar__item"><a class="categories-sidebar__reference" href="#">Life Style</a> <span class="categories-sidebar__sum">11</span></li>
+            <li class="categories-sidebar__item"><a class="categories-sidebar__reference" href="#">Sport</a> <span class="categories-sidebar__sum">8</span></li>
+            <li class="categories-sidebar__item"><a class="categories-sidebar__reference" href="#">Music</a> <span class="categories-sidebar__sum">2</span></li>
+          </ul>
+        </div>
+        <div class="soc-net">
+          <h4 class="sidebar__title">Follow</h4>
+          <div class="soc-net__items"><a class="soc-net__item soc-net__item--fb" href="#"></a><a class="soc-net__item soc-net__item--tw" href="#"></a><a class="soc-net__item soc-net__item--ig" href="#"></a><a class="soc-net__item soc-net__item--dr" href="#"></a><a class="soc-net__item soc-net__item--be" href="#"></a><a class="soc-net__item soc-net__item--pt" href="#"></a></div>
+        </div>
+        <div class="tags-sidebar">
+          <h4 class="sidebar__title">Tags</h4>
+          <div class="tags-sidebar__items"><a class="tags-sidebar__item" href="#">Somethink</a><a class="tags-sidebar__item" href="#">Photoshop</a><a class="tags-sidebar__item" href="#">WordPress</a><a class="tags-sidebar__item" href="#">Music</a><a class="tags-sidebar__item" href="#">Cars</a><a class="tags-sidebar__item" href="#">Development</a></div>
+        </div>
+        <div class="popular-sidebar">
+          <h4 class="sidebar__title">Popular posts</h4>
+          <div class="popular-articles">
+            <div class="popular-article"><img class="popular-article__image" src="img/blog-2.jpg"><a class="article__category" href="#">Livestyle</a><span class="article__date">DECEMBER 24, 2017</span>
+              <h3 class="popular-article__title">How long should I go to my goal so that at the end the light comes on</h3>
+            </div>
+            <div class="popular-article"><img class="popular-article__image" src="img/blog-1.jpg"><a class="article__category" href="#">Travel</a><span class="article__date">FEBRUARY 9, 2018</span>
+              <h3 class="popular-article__title">Morning in the mountains</h3>
+            </div>
+            <div class="popular-article"><img class="popular-article__image" src="img/blog-2.jpg"><a class="article__category" href="#">Livestyle</a><span class="article__date">DECEMBER 24, 2017</span>
+              <h3 class="popular-article__title">How long should I go to my goal so that at the end the light comes on</h3>
+            </div>
           </div>
-          <div class="impressions__slider-right"><img class="impressions__photo" src="img/impressions-photo-2.jpg"></div>
+        </div>
+        <div class="subscription-sidebar">
+          <h4 class="sidebar__title">Subscribe</h4>
+          <form>
+            <input class="form-control subscription-sidebar__email" type="email" id="sub-sidebar-email" placeholder="Enter your email">
+            <label class="subscrition-sidebar__email-icon" for="sub-sidebar-email"></label>
+            <button class="subscription-sidebar__btn" type="submit">SIGN UP</button>
+          </form>
         </div>
       </div>
-      <div class="impressions__slider">
-        <div class="impressions__wrapper">
-          <div class="impressions__slider-left"> 
-            <h3 class="impressions__slider--title">Насладитесь красивейшими видами марин и кристально-чистой водой.</h3>
-          </div>
-          <div class="impressions__slider-right"><img class="impressions__photo" src="img/impressions-photo-5.jpg"></div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="subscription">
+          <h4 class="subscription__title">Subscribe to the best articles from my blog</h4>
+          <form>
+            <input class="form-control subscription__email" type="email" id="sub-sidebar-email" placeholder="Enter your email">
+            <label class="subscrition__email-icon" for="sub-email"></label>
+          </form>
         </div>
-      </div>
-      <div class="impressions__slider">
-        <div class="impressions__wrapper">
-          <div class="impressions__slider-left"> 
-            <h3 class="impressions__slider--title">Встретите самые красивые закаты и рассветы.</h3>
-          </div>
-          <div class="impressions__slider-right"><img class="impressions__photo" src="img/impressions-photo-4.jpg"></div>
+        <div class="instagram-feed">
+          <h5 class="instagram-feed__title">Check our instagram</h5>
+          <h3 class="instagram-feed__login">@BlornWord</h3>
+          <div class="row"><img class="col-3" src="img/ig-feed-1.jpg"><img class="col-3" src="img/ig-feed-2.jpg"><img class="col-3" src="img/ig-feed-3.jpg"><img class="col-3" src="img/ig-feed-4.jpg"></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="team">
-    <div class="team__block--first"></div>
-    <div class="team__block">
-      <h2 class="team__title">С вами будет Наш капитан Зуев Алексей</h2>
-      <div class="journey__wave"></div>
-      <p class="team__text">Организатор и идейный вдохновитель нашего путешествия. Для меня важна каждая мелочь, по этому в нашем путешествии все продумано от и до. Есть вопросы? Пиши в соц сети.</p>
-      <div class="team__socials"><a class="team__social team__social--fb" href="https://www.facebook.com/aleksey.aleksandrovich.142" target="_blank">Facebook</a><a class="team__social team__social--ig" href="https://www.instagram.com/zuev_al_al/" target="_blank">Инстаграм</a></div>
-    </div>
-    <div class="team__block team__block--left">
-      <div class="team__wrapper">
-        <h2 class="team__title">Опытный шкипер Вавилов Никита</h2>
-        <div class="journey__wave"></div>
-        <p class="team__text">20 лет опыт в яхтинге. Все это время в спортивном режиме, парусные регаты внутри России, Европы. Из достижений: призовые места в чемпионатах России в различных классах, 3 место на чемпионате мира 2014, 1 место three countries regatta 2018. В чартерный (круизный) яхтинг пришёл в 2017г. Сезон 2018 провёл в чартерах и парусных регатах в Адриатическом море. Документы: Лицензия IYT BBS, ВФПС, ГИМС. В данное время получаю лицензию инструктора на право обучения шкиперов IYT (международный сертификат)</p>
-        <div class="team__socials"><a class="team__social team__social--fb" href="https://www.facebook.com/nikita.vavilov.35" target="_blank">Facebook</a><a class="team__social team__social--ig" href="https://www.instagram.com/sailnik69" target="_blank">Инстаграм</a></div>
-      </div>
-    </div>
-    <div class="team__block--second"></div>
-    <div class="team__block--third"></div>
-    <div class="team__block">
-      <h2 class="team__title">Тренер и автор методики "Антистресс" Анна Арданова</h2>
-      <div class="journey__wave"></div>
-      <p class="team__text">Автор Проекта «Система Радости» и его тренингов. Психолог, автор и ведущая многочисленных курсов и практических тренингов, в том числе по коммуникативным, телесно-ориентированным и другим направлениям, кандидат юридических наук. Специалист по коммуникативным технологиям, международный сертификат (Indiana University, Purdue University, Office of Continuing Education), имеет высшее психологическое (Институт Социальной Психологии и Психологии Развития Личности), педагогическое (Ростовский Государственный Педагогический Университет) и юридическое образования (Дипломатическая Академия МИД РФ). Ведущая тренингов по созданию культуры и структуры управления в организации, распределению функциональной нагрузки на персонал компании, координации задач проекта посредством управления человеческими ресурсами. Автор 15 научных публикаций, более 50 (сеть Интернет) статей по актуальным психологическим, медицинским, социальным, семейным, трудовым, финансовым темам.</p>
-      <div class="team__socials"><a class="team__social team__social--site" href="http://thesystemofjoy.ru" target="_blank">Веб-сайт</a><a class="team__social team__social--ig" href="https://www.instagram.com/the_system_of_joy/?utm_source=ig_profile_share&amp;igshid=t5r8x8lvtu33" target="_blank">Инстаграм</a></div>
-    </div>
+  <div class="scroll-top scroll-top--hidden">
+    <p class="scroll-top__text">Scroll to top</p>
   </div>
-  <div class="brochure">
-    <h2 class="brochure__title-adventure">Вы готовы к приключениям?</h2>
-    <div class="brochure__wrapper">
-      <div class="brochure__left">
-        <h2 class="brochure__title">Получите подробное описание вашего путешествия</h2>
-        <div class="journey__wave"></div>
-        <p class="brochure__text">Оставьте свои контактные данные и мы отправим Вам на почту PDF файл с подробным описанием будущего тура. Ждём Вас в наших рядах!</p>
-      </div>
-      <div class="brochure__right"><span class="brochure__form-desc">- ДОБРО ПОЖАЛОВАТЬ НА БОРТ -</span>
-        <form class="brochure__form">
-          <input class="brochure__field" type="text" placeholder="Ваше имя">
-          <input class="brochure__field" type="email" placeholder="Ваше email">
-          <input class="brochure__field" type="tel" placeholder="Ваш телефон">
-          <button class="brochure__submit" type="submit">ОТПРАВИТЬ</button>
-        </form>
+  <div class="container-fluid footer">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-3 footer__development">
+          <p>© 2018 BLOM, made by <a class="footer__development-ref" href="#">BurtsevDesign</a></p>
+        </div>
+        <div class="col-3">
+          <div class="soc-net__items soc-net"><a class="soc-net__item soc-net__item--fb" href="#"></a><a class="soc-net__item soc-net__item--tw" href="#"></a><a class="soc-net__item soc-net__item--ig" href="#"></a><a class="soc-net__item soc-net__item--dr" href="#"></a><a class="soc-net__item soc-net__item--be" href="#"></a><a class="soc-net__item soc-net__item--pt" href="#"></a></div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="overlay"></div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/common.js" defer></script>
 </body>

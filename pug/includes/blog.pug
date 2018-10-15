@@ -1,209 +1,155 @@
-.header
-	.header__wrapper
-		h1.header__title ПУТЕШЕСТВИЯ СО СМЫСЛОМ
-		p.header__text Семидневный тур на яхте по водам Атлантического океана с авторским тренингом Анны Ардановой "Антистресс"
-		p.header__text Email: #[a.header__reference(href="mailto:sailingtrips@yandex.ru" target="_blank") sailingtrips@yandex.ru] #[br.header__paragraph] WhatsApp: #[a.header__reference(href="https://wa.me/79653957247" target="_blank") +7 965-395-72-47]
-		a(href="#").header__detailed.header__detailed--more ПОДРОБНЕЕ
-		a(href="#").header__detailed.header__detailed--router МАРШРУТ ТУРА
-	.header__country
-		.counry__spain
-			img(src="img/icon-spain.png")
-			h2.country__title.country__spain-title Испания
-		h2.country__title.country__date 10-17 ноября
-	.header__form
-		.header__form-close
-		h3.header__form-title Получите подробное описание путешествия
-		input(type="text" placeholder="Ваше имя").brochure__field
-		input(type="email" placeholder="Ваше email").brochure__field
-		input(type="tel" placeholder="Ваш телефон").brochure__field
-		button(type="submit").brochure__submit ОТПРАВИТЬ
-.journey
-	.journey__left
-		h2.journey__title Окунитесь в уникальное путешествие
-		.journey__wave
-		p.journey__text Добро пожаловать на борт! Приготовьтесь к покорению Атлантического океана. Мы совместили активный отдых и тренинг по управлению стрессом. Где, как ни в кристально чистых водах океана, под шелест парусов, в дали от толп туристов и шума мегаполисов, остаться на едине с собой.
-	.journey__right
-		.journey__photo--bottom
-			img(src="img/journey-photo-2.jpg")
-		.journey__photo--top
-			img(src="img/journey-photo-1.jpg")
-		span.journey__photo-desc - ФОТО СДЕЛАНЫ В ИСПАНИИ -
-.video
-	.video__block
-		.video__btn
-			.video__btn-circle
-		h2.video__title Смотрите видео о том, как проходит тур 
-		span.video__title--small *Реальное видео появится после первого путешествия
-	.video__modal
-		.video__modal-close
-		iframe.video__youtube(id="ytplayer" type="text/html" max-width="640" height="350" src="https://www.youtube.com/embed/NAFTzX1nc60?autoplay=0&controls=0&showinfo=0&iv_load_policy=3&modestbranding=1&rel=0&enablejsapi=1"
-  frameborder="0")
-.travel
-	.travel__items
-		h2.travel__title Что будет в путешествии?
-		.journey__wave
-		p.travel__text Всегда мечтали покорить морские просторы? Просыпаться под шум моря утром и пить кофе, глядя на рассвет? Или может вы любите открывать для себя новые удивительные места, куда обычный турист не сможет добраться? #[br] Всё это и не только, будет в нашем путешествии.
-	.travel__items
-		.travel__item
-			img.travel__item-img(src="img/icon-travel--ship.png")
-			.travel__item-desc
-				h3.travel__item-title Выйдем под парусами в открытые воды Атлантики и обойдем вокруг островов.
-		.travel__item
-			img.travel__item-img(src="img/icon-travel--mask.png")
-			.travel__item-desc
-				h3.travel__item-title Нырнем с борта нашей яхты в кристально-чистые воды и исследуем подводный мир.
-		.travel__item
-			img.travel__item-img(src="img/icon-travel--fish.png")
-			.travel__item-desc
-				h3.travel__item-title Любителям рыбалки можно будет попытать счастье и поймать океанского Тунца или Голубого Марлина.
-	.travel__items
-		.travel__item
-			img.travel__item-img(src="img/icon-travel--map.png")
-			.travel__item-desc
-				h3.travel__item-title Сделаем стоянки на суше, позагораем на пляжах и погуляем по местным городам.
-		.travel__item
-			img.travel__item-img(src="img/icon-travel--dolphin.png")
-			.travel__item-desc
-				h3.travel__item-title С борта судна полюбуемся дельфинами, морскими черепахами и китами.
-		.travel__item
-			img.travel__item-img(src="img/icon-wave.svg" width="64" height="64")
-			.travel__item-desc
-				h3.travel__item-title Обретете новые знакомства и зарядитесь энергетикой океана.
-.yacht
-	.yacht__sliders
-		.yacht__slider(style="background: url('img/yacht-slider-1.jpg') 50% 50% no-repeat; background-size: cover")
-		.yacht__slider(style="background: url('img/yacht-slider-2.jpg') 50% 50% no-repeat; background-size: cover")
-		.yacht__slider(style="background: url('img/yacht-slider-3.jpg') 50% 50% no-repeat; background-size: cover")
-		.yacht__slider(style="background: url('img/yacht-slider-4.jpg') 50% 50% no-repeat; background-size: cover")
-		.yacht__slider(style="background: url('img/yacht-slider-5.jpg') 50% 50% no-repeat; background-size: cover")
-		.yacht__slider(style="background: url('img/yacht-slider-6.jpg') 50% 50% no-repeat; background-size: cover")
-	.yacht__right
-		h2.yacht__title Что из себя представляют современные яхты?
-		.journey__wave
-		p.yacht__text Это настоящий дом посреди моря с площадкой для купания, в двух шагах от спальной каюты.
-		p.yacht__text. 
-			Внутри есть:
-			#[br]	- 4 отдельные каюты;
-			#[br]	- гостиная (кают-компания);
-			#[br]	- кухня со всем необходимым;
-			#[br]	- 3 санузла с душевыми;
-			#[br]	- розетки и электрооборудование.
-.questions
-	h2.questions__title Развеим все ваши переживания
-	.journey__wave
-	.questions__problems
-		.questions__problem Есть ли риск, что мы попадем в шторм?
-		.questions__solution 
-			p Круизный яхтинг (именно такой предлагаем мы) — по статистике, гораздо безопаснее автомобиля. Есть простые базовые правила, следуя которым можно быть уверенным в собственной безопасности.
-			p Вероятность попасть в шторм стремится к нулю, так как мы изначально выбираем не штормовые районы и регулярно сверяемся с прогнозом погоды. Если даже это произойдет, то поблизости всегда есть защищенные марины и бухты, куда можно спрятаться.
-		.questions__problem Если у меня морская болезнь?
-		.questions__solution.questions__solution--none
-			p  Морская болезнь и простое укачивание это 2 разные вещи. Морская болезнь присуща 3-4% (в сознательном возрасте человек о ней знает), а укачивание или отсутствует, или исчезает на 1-2 день. На борту будут мед.препараты от укачивания, чтобы ни чего не мешало вашему отдыху.
-		.questions__problem Я не умею плавать
-		.questions__solution.questions__solution--none
-			p Вот это точно не повод отказываться от поездки. Нырять в воду человек будет исключительно по собственному желанию или же по нашему, если решит научиться.
-.country
-	h2.country__title Следующая остановка
-	.counry__spain
-		img(src="img/icon-spain.png")
-		h2.country__title.country__spain-title Испания
-	h2.country__title.country__date 10-17 ноября
-.country__applications.applications
-	.applications__left
-		p.applications__text До повышения цены осталось:
-		.applications__count
-			span.applications__count-days
-			span.applications__count-hours
-			span.applications__count-delimiter :
-			span.applications__count-minutes
-			span.applications__count-delimiter :
-			span.applications__count-seconds
-		h3.applications__price Цена сегодня: #[span.applications__price--actual 1199€]
-		p.applications__price--next С 15 октября: 1499€
-		p.applications__price--next С 22 октября: 1799€
-		p.applications__text.
-			В стоимость не входят:
-			#[br] - перелёт до места отправления и обратно (поможем с покупкой билетов)
-			#[br] - шенгенская виза (поможем с оформлением)
-			#[br] - ужины в ресторанах и кафе
-			#[br] - личные расходы
-		p.applications__text Для подробной информации оставьте заявку в форме.
-	.applications__right
-		h3.applications__right-title Бронируйте по первой цене
-		form.applications__form
-			input(type="text" placeholder="Ваше имя").brochure__field
-			input(type="email" placeholder="Ваше email").brochure__field
-			input(type="tel" placeholder="Ваш телефон").brochure__field
-			button(type="submit").brochure__submit ОТПРАВИТЬ
-.impressions
-	h2.impressions__title Что вы получите?
-	.impressions__sliders
-		.impressions__slider
-			.impressions__wrapper
-				.impressions__slider-left 
-					h3.impressions__slider--title Пройдёте тренинг по управлению стрессом от Анны Ардановой
-				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-3.jpg")]
-		.impressions__slider
-			.impressions__wrapper
-				.impressions__slider-left 
-					h3.impressions__slider--title Почувствуете себя морским волком и возьмете управление яхтой на себя.
-				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-1.jpg")]
-		.impressions__slider
-			.impressions__wrapper
-				.impressions__slider-left 
-					h3.impressions__slider--title Научитесь вязать морские узлы и швартоваться к причалу.
-				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-2.jpg")]
-		.impressions__slider
-			.impressions__wrapper
-				.impressions__slider-left 
-					h3.impressions__slider--title Насладитесь красивейшими видами марин и кристально-чистой водой.
-				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-5.jpg")]
-		.impressions__slider
-			.impressions__wrapper
-				.impressions__slider-left 
-					h3.impressions__slider--title Встретите самые красивые закаты и рассветы.
-				.impressions__slider-right #[img.impressions__photo(src="img/impressions-photo-4.jpg")]
-.team
-	.team__block--first
-	.team__block
-		h2.team__title С вами будет Наш капитан Зуев Алексей
-		.journey__wave
-		p.team__text Организатор и идейный вдохновитель нашего путешествия. Для меня важна каждая мелочь, по этому в нашем путешествии все продумано от и до. Есть вопросы? Пиши в соц сети.
-		.team__socials
-			a(href="https://www.facebook.com/aleksey.aleksandrovich.142" target="_blank").team__social.team__social--fb Facebook
-			a(href="https://www.instagram.com/zuev_al_al/" target="_blank").team__social.team__social--ig Инстаграм
-	.team__block.team__block--left
-		.team__wrapper
-			h2.team__title Опытный шкипер Вавилов Никита
-			.journey__wave
-			p.team__text 20 лет опыт в яхтинге. Все это время в спортивном режиме, парусные регаты внутри России, Европы. Из достижений: призовые места в чемпионатах России в различных классах, 3 место на чемпионате мира 2014, 1 место three countries regatta 2018. В чартерный (круизный) яхтинг пришёл в 2017г. Сезон 2018 провёл в чартерах и парусных регатах в Адриатическом море. Документы: Лицензия IYT BBS, ВФПС, ГИМС. В данное время получаю лицензию инструктора на право обучения шкиперов IYT (международный сертификат)
-			.team__socials
-				a(href="https://www.facebook.com/nikita.vavilov.35" target="_blank").team__social.team__social--fb Facebook
-				a(href="https://www.instagram.com/sailnik69" target="_blank").team__social.team__social--ig Инстаграм
-	.team__block--second
-	.team__block--third
-	.team__block
-		h2.team__title Тренер и автор методики "Антистресс" Анна Арданова
-		.journey__wave
-		p.team__text Автор Проекта «Система Радости» и его тренингов. Психолог, автор и ведущая многочисленных курсов и практических тренингов, в том числе по коммуникативным, телесно-ориентированным и другим направлениям, кандидат юридических наук. Специалист по коммуникативным технологиям, международный сертификат (Indiana University, Purdue University, Office of Continuing Education), имеет высшее психологическое (Институт Социальной Психологии и Психологии Развития Личности), педагогическое (Ростовский Государственный Педагогический Университет) и юридическое образования (Дипломатическая Академия МИД РФ). Ведущая тренингов по созданию культуры и структуры управления в организации, распределению функциональной нагрузки на персонал компании, координации задач проекта посредством управления человеческими ресурсами. Автор 15 научных публикаций, более 50 (сеть Интернет) статей по актуальным психологическим, медицинским, социальным, семейным, трудовым, финансовым темам.
-		.team__socials
-			a(href="http://thesystemofjoy.ru" target="_blank").team__social.team__social--site Веб-сайт
-			a(href="https://www.instagram.com/the_system_of_joy/?utm_source=ig_profile_share&igshid=t5r8x8lvtu33" target="_blank").team__social.team__social--ig Инстаграм
-.brochure
-	h2.brochure__title-adventure Вы готовы к приключениям?
-	.brochure__wrapper
-		.brochure__left
-			h2.brochure__title Получите подробное описание вашего путешествия
-			.journey__wave
-			p.brochure__text Оставьте свои контактные данные и мы отправим Вам на почту PDF файл с подробным описанием будущего тура. Ждём Вас в наших рядах!
-		.brochure__right
-			span.brochure__form-desc - ДОБРО ПОЖАЛОВАТЬ НА БОРТ -
-			form.brochure__form
-				input(type="text" placeholder="Ваше имя").brochure__field
-				input(type="email" placeholder="Ваше email").brochure__field
-				input(type="tel" placeholder="Ваш телефон").brochure__field
-				button(type="submit").brochure__submit ОТПРАВИТЬ
-.overlay
+.container.blog
+	.row.justify-content-between
+		.col-lg-8#articles
+			.article
+				h3.article__title Morning in the mountains
+				.article__wrapper
+					.article__info
+						a(href="#").article__category Travel
+						span.article__date FEBRUARY 9, 2018
+					.artical__social.social
+						a(href="#").social__link--fb #[i.fab.fa-facebook-f(style="color: #000; font-size: 12px")] Share					
+						a(href="#").social__link--tw #[i.fab.fa-twitter(style="color: #000; font-size: 12px")] Tweet
+				img.article__image(src="img/blog-1.jpg" )
+				p.article__text Nibh mauris cursus mattis molestie. Rutrum quisque non tellus orci ac auctor. Feugiat in ante metus dictum. At in tellus integer feugiat scelerisque varius morbi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.
+				.article__wrapper
+					a(href="#").article__reference Read article #[span.article__arrow]
+					span.article__comments 0 Comments
+			.article
+				h3.article__title How long should I go to my goal so that at the end the light comes on
+				.article__wrapper
+					.article__info
+						a(href="#").article__category Livestyle
+						span.article__date DECEMBER 24, 2017
+					.artical__social.social
+						a(href="#").social__link--fb #[i.fab.fa-facebook-f(style="color: #000; font-size: 12px")] Share					
+						a(href="#").social__link--tw #[i.fab.fa-twitter(style="color: #000; font-size: 12px")] Tweet
+				img.article__image(src="img/blog-2.jpg" )
+				p.article__text Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Volutpat est velit egestas dui id ornare arcu. Enim sit amet venenatis urna cursus. Turpis egestas pretium aenean pharetra. Sit amet consectetur adipis
+				.article__wrapper
+					a(href="#").article__reference Read article #[span.article__arrow]
+					span.article__comments 0 Comments
+			.article
+					h3.article__title Morning in the mountains
+					.article__wrapper
+						.article__info
+							a(href="#").article__category Travel
+							span.article__date FEBRUARY 9, 2018
+						.artical__social.social
+							a(href="#").social__link--fb #[i.fab.fa-facebook-f(style="color: #000; font-size: 12px")] Share					
+							a(href="#").social__link--tw #[i.fab.fa-twitter(style="color: #000; font-size: 12px")] Tweet
+					img.article__image(src="img/blog-1.jpg" )
+					p.article__text Nibh mauris cursus mattis molestie. Rutrum quisque non tellus orci ac auctor. Feugiat in ante metus dictum. At in tellus integer feugiat scelerisque varius morbi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.
+					.article__wrapper
+						a(href="#").article__reference Read article #[span.article__arrow]
+						span.article__comments 0 Comments
+			.article
+				h3.article__title How long should I go to my goal so that at the end the light comes on
+				.article__wrapper
+					.article__info
+						a(href="#").article__category Livestyle
+						span.article__date DECEMBER 24, 2017
+					.artical__social.social
+						a(href="#").social__link--fb #[i.fab.fa-facebook-f(style="color: #000; font-size: 12px")] Share					
+						a(href="#").social__link--tw #[i.fab.fa-twitter(style="color: #000; font-size: 12px")] Tweet
+				img.article__image(src="img/blog-2.jpg" )
+				p.article__text Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Volutpat est velit egestas dui id ornare arcu. Enim sit amet venenatis urna cursus. Turpis egestas pretium aenean pharetra. Sit amet consectetur adipis
+				.article__wrapper
+					a(href="#").article__reference Read article #[span.article__arrow]
+					span.article__comments 0 Comments
+			.article
+				h3.article__title Morning in the mountains
+				.article__wrapper
+					.article__info
+						a(href="#").article__category Travel
+						span.article__date FEBRUARY 9, 2018
+					.artical__social.social
+						a(href="#").social__link--fb #[i.fab.fa-facebook-f(style="color: #000; font-size: 12px")] Share					
+						a(href="#").social__link--tw #[i.fab.fa-twitter(style="color: #000; font-size: 12px")] Tweet
+				img.article__image(src="img/blog-1.jpg" )
+				p.article__text Nibh mauris cursus mattis molestie. Rutrum quisque non tellus orci ac auctor. Feugiat in ante metus dictum. At in tellus integer feugiat scelerisque varius morbi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.
+				.article__wrapper
+					a(href="#").article__reference Read article #[span.article__arrow]
+					span.article__comments 0 Comments
+			.article-page
+				a(href="#").article-page__item.article-page__numeration--prev Prev
+				.article-page__numeration
+					a(href="#").article-page__item 1
+					a(href="#").article-page__item.article-page__item--active 7
+					a(href="#").article-page__item 28
+				a(href="#").article-page__item.article-page__numeration--next Next
+		.col-lg-3#sidebar
+			.profile-sidebar
+				img(src="img/avatar.jpg").profile-sidebar__image
+				p.profile-sidebar__info Hello there! My name is Oleg Burtsev and this is my first blog on WordPress. Stay tune, it will be fun!
+				a(href="#").profile-sidebar__more-detailed Read more #[span.article__arrow]
+			.categories-sidebar
+				h4.sidebar__title Categories
+				ul
+					li.categories-sidebar__item #[a(href="#").categories-sidebar__reference Travel] #[span.categories-sidebar__sum 5]
+					li.categories-sidebar__item #[a(href="#").categories-sidebar__reference Life Style] #[span.categories-sidebar__sum 11]
+					li.categories-sidebar__item #[a(href="#").categories-sidebar__reference Sport] #[span.categories-sidebar__sum 8]
+					li.categories-sidebar__item #[a(href="#").categories-sidebar__reference Music] #[span.categories-sidebar__sum 2]
+			.soc-net
+				h4.sidebar__title Follow
+				.soc-net__items
+					a(href="#").soc-net__item.soc-net__item--fb
+					a(href="#").soc-net__item.soc-net__item--tw
+					a(href="#").soc-net__item.soc-net__item--ig
+					a(href="#").soc-net__item.soc-net__item--dr
+					a(href="#").soc-net__item.soc-net__item--be
+					a(href="#").soc-net__item.soc-net__item--pt
+			.tags-sidebar
+				h4.sidebar__title Tags
+				.tags-sidebar__items
+					a(href="#").tags-sidebar__item Somethink
+					a(href="#").tags-sidebar__item Photoshop
+					a(href="#").tags-sidebar__item WordPress
+					a(href="#").tags-sidebar__item Music
+					a(href="#").tags-sidebar__item Cars
+					a(href="#").tags-sidebar__item Development
+			.popular-sidebar
+				h4.sidebar__title Popular posts
+				.popular-articles
+					.popular-article
+						img.popular-article__image(src="img/blog-2.jpg" )
+						a(href="#").article__category Livestyle
+						span.article__date DECEMBER 24, 2017
+						h3.popular-article__title How long should I go to my goal so that at the end the light comes on
+					.popular-article
+						img.popular-article__image(src="img/blog-1.jpg" )
+						a(href="#").article__category Travel
+						span.article__date FEBRUARY 9, 2018
+						h3.popular-article__title Morning in the mountains
+					.popular-article
+						img.popular-article__image(src="img/blog-2.jpg" )
+						a(href="#").article__category Livestyle
+						span.article__date DECEMBER 24, 2017
+						h3.popular-article__title How long should I go to my goal so that at the end the light comes on
+			.subscription-sidebar
+				h4.sidebar__title Subscribe
+				form
+					input(type="email" id="sub-sidebar-email" class="form-control subscription-sidebar__email" placeholder="Enter your email")
+					label.subscrition-sidebar__email-icon(for="sub-sidebar-email")
+					button.subscription-sidebar__btn(type="submit") SIGN UP
+	.row
+		.col-12
+			.subscription
+				h4.subscription__title Subscribe to the best articles from my blog
+				form
+					input(type="email" id="sub-sidebar-email" placeholder="Enter your email").form-control.subscription__email
+					label.subscrition__email-icon(for="sub-email")
+			.instagram-feed
+				h5.instagram-feed__title Check our instagram
+				h3.instagram-feed__login @BlornWord
+				.row
+					img(src="img/ig-feed-1.jpg").col-3
+					img(src="img/ig-feed-2.jpg").col-3
+					img(src="img/ig-feed-3.jpg").col-3
+					img(src="img/ig-feed-4.jpg").col-3
+.scroll-top.scroll-top--hidden
+	p.scroll-top__text Scroll to top
 		
-	
-		
+			
+				
+					

@@ -1,0 +1,46 @@
+.header__wrapper
+	header.header
+		.header__left
+			nav.navbar.navbar-light.bg-faded
+				a(href="#").navbar-brand BLOM
+				#navbar.collapse
+					ul.navbar-nav
+						li.nav-item.active
+							a.nav-link(href='#') Home 
+						li.nav-item
+							a.nav-link(href='#') Link
+						li.nav-item
+							a.nav-link(href='#') Contacts
+				.pull-xs-right.navbar__right
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation")
+						span.navbar-toggler-icon
+					form.form-inline
+						a(href="#").navbar__btn
+							input.form-control.navbar__search.navbar__search--active(type="text" placeholder="Search")
+				.soc-net__items.soc-net
+					a(href="#").soc-net__item.soc-net__item--fb
+					a(href="#").soc-net__item.soc-net__item--tw
+					a(href="#").soc-net__item.soc-net__item--ig
+					a(href="#").soc-net__item.soc-net__item--dr
+			.header__article
+				h1.header__article-title New Horizon in a beautiful friday morning
+				a(href="#").header__article-category Travel
+				span.header__article-date FEBRUARY 9, 2018
+				p.header__article-text Nibh mauris cursus mattis molestie. Rutrum quisque non tellus orci ac auctor. Feugiat in ante metus dictum. At in tellus integer feugiat scelerisque varius morbi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.
+		.header__sliders
+			.header__slider
+				img.header__slider-img(src="img/slider-header-1.jpg")
+			.header__slider
+				img.header__slider-img(src="img/slider-header-1.jpg")
+			.header__slider
+				img.header__slider-img(src="img/slider-header-1.jpg")
+	.header__panel
+		a(href="#").header__reference
+			.header__panel-wrapper
+				.header__article-reference Read article #[span.header__article-arrow]
+		.header__panel-sliders
+			.header__panel-slider 
+				span.header__panel-number--current 01
+				span.header__panel-number--current 02
+				span.header__panel-number--current 03
+			span.header__panel-number /03
