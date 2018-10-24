@@ -1,249 +1,72 @@
-.header__wrapper
-	margin-bottom: 50px
-	
-.header 
-	position: relative
-	display: flex
-	margin: 0 auto
-	
+.header
+	background: url("../img/bg-header.jpg") 50% 50% no-repeat
+	box-shadow: 0 0 0 50vh rgba(0,0,0,.4) inset
+	background-size: cover
+	color: #fff
+	height: 100vh
+	margin-bottom: 115px
 
-.header__left
-	position: relative
-	max-width: 740px
-	display: flex
-	margin-left: auto
-	flex-direction: column
-	align-items: flex-end
-
-.navbar 
-	position: absolute
-	width: 730px
-	padding: 40px 0
-	.soc-net
-		display: none
-
-	
-.navbar--fixed
-	position: fixed
-	z-index: 100
-	width: 130px
-	height: 100%
-	left: 0
-	flex-direction: column
-	justify-content: flex-start
-	.navbar-brand
-		margin-bottom: 90px
-	.navbar__right
-		flex-direction: column
-		align-items: center
-	.navbar-toggler
-		margin-bottom: 35px
-	.navbar__btn
-		margin-left: 0
-	.soc-net__items
-		margin-top: auto
-		display: flex
-		flex-direction: column
-	.soc-net__item		
-		margin-bottom: 55px
-	
-.navbar-brand
-	font-size: 30px
-	color: #000
-	font-weight: 700
-
-.navbar__btn
-	margin-left: 50px
-	position: relative
-	width: 20px
-	height: 22px
-	background: url(../img/icon-search.png) 50% 50% no-repeat
-	border: none
-
-.navbar-nav
-	flex-direction: row
-	justify-content: space-between
-	
-.nav-item
-	margin-right: 20px
+.navbar
+	margin-bottom: 200px
+	padding: 15px 50px
 
 .navbar__right
-	display: flex	
-	margin-right: 13%
-
-
-.navbar__search
-	position: absolute
-	z-index: 100
-	right: 10px
-	top: -7px	
-
-.navbar__search--active.navbar__search
-	display: none
-
-.header__left-slider
-	margin-top: 330px
-	max-width: 730px
-
-.header__article-title 
-	margin-bottom: 25px
-	font-size: 42px
-	font-weight: 900
-
-
-.header__article-category
-	margin-right: 15px
-	color: #5486b1
-	text-transform: uppercase
-
-.header__article-date
-	position: relative
-	margin-left: 22px
-	color: #858585
-	text-transform: uppercase
-	&:before
-		position: absolute
-		content: "/"
-		left: -22px
-
-.header__article-text
-	margin: 20px auto 230px
-	line-height: 40px
-
-.header__panel-left
-	position: relative
-	margin-left: auto
-	width: 730px
-
-.header__reference	
-	position: absolute
-	right: 0
-	top: 0
-	width: 730px
-	align-self: stretch
-	height: 130px
-	background: #5486b1
-	display: flex
-	justify-content: flex-end
-	
-.header__right
-	width: 380px
-	margin-right: auto
-	position: relative
-
-.header__sliders--right
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	position: absolute
-
-.header__slider
-	position: relative
-	width: 100%
-	min-height: 842px
-	overflow: hidden
-
-.header__slider-img
-	min-width: 100%
-	max-width: none
-	position: absolute
-	left: 50%
-	min-height: 100%
-
-.header__panel
-	display: flex
-	margin-bottom: 50px
-
-.header__panel-wrapper	
-	width: 730px
-	height: 130px
-
-.header__article-reference
-	display: block
-	position: relative
-	line-height: 130px
-	color: #fff	
-	text-transform: uppercase
-	
-
-.header__article-arrow
-	position: absolute
-	right: 100px
-	top: 49%
-	display: inline-block
-	width: 30px
-	height: 2px
-	background: #fff
-	&:after, &:before 
-		content: ""
-		position: absolute
-		right: -2px
-		top: 5px
-		display: inline-block
-		width: 15px
-		height: 2px
-		background: #fff
-	&:after
-		transform: rotate(-45deg)
-	&:before
-		top: -5px
-		transform: rotate(45deg)
-		
-.header__panel-right
-	position: relative
-	width: 380px
-	margin-right: auto
-	
-
-.header__panel-sliders
-	height: 130px
-	width: 380px
-	background: #f8f8f8
 	display: flex
 	align-items: center
-	justify-content: center
-	.slick-prev
-		content: "Prev"
 
-.header__panel-reference
-	margin-right: 100px
-	color: #858585
-	font-size: 18px
-	text-transform: uppercase
-	position: relative
-	cursor: pointer
-	&:after
-		position: absolute
-		content: ""
-		display: block
-		width: 30px
-		height: 2px
-		background: #858585
-		top: 50%
-		margin-top: -1px
-.header__panel-reference--prev
-	left: -140px
-	top: 24px
-	&:after
-		right: -60px
-
-.header__panel-reference--next
-	right: -140px
-	top: -24px
-	&:after
-		left: -60px
+.navbar__nav
+	display: flex
+	margin: 0
 	
-.header__panel-slider
-	width: 25px
-	max-wdith: 40px
+	li
+		list-style-type: none
 
-.header__panel-number
-	color: #858585
-	font-size: 22px
+.navbar__item
+	padding: 10px 30px
+	color: #fff
+	&:hover
+		color: #fff
 
+.navbar__barrier
+	margin: 0 60px 0 30px
+	width: 1px
+	height: 40px
+	background: rgba(#fff, .5)
 
-.header__panel-number--current
-	color: #000
-	font-size: 22px
+.navbar__number
+	position: relative
+	margin-left: 55px
+	color: #fff
+	&:hover
+		color: #fff
+	&:before
+		content: ""
+		position: absolute
+		left: -55px
+		top: 50%
+		margin-top: -12px
+		width: 24px
+		height: 24px
+		background: url("../img/icon-phone.png") 50% 50% no-repeat
+		
+.header__title
+	margin-bottom: 20px
+	font-size: 55px
+	line-height: 65px
+	font-weight: 700
 
+.header__subtitle
+	margin-bottom: 45px
+	font-size: 16px
+	line-height: 30px
+	font-weight: 500
+
+.header__btn
+	display: inline-block
+	margin-bottom: 320px
+	padding: 16px 60px
+	background: #e7ad44
+	border-radius: 5px
+	color: #fff
+	&:hover
+		color: #fff

@@ -1,339 +1,251 @@
-.article
-	margin-top: 110px
-	&:first-child
-		margin-top: 0
-
-.article__title
-	font-size: 36px
-	font-weight: 900
-	margin-bottom: 20px
-
-.article__wrapper
-	display: flex
-	justify-content: space-between	
-
-.article__category
-	margin-right: 15px
-	color: #5486b1
-	text-transform: uppercase
-
-.article__date
+.hotel
+	margin-bottom: 115px
+	
+.hotel__subtitle
+	margin-left: 35px
+	margin-bottom: 0
 	position: relative
-	margin-left: 22px	
-	color: #858585
-	text-transform: uppercase
-	&:before
-		position: absolute
-		content: "/"
-		left: -22px
-
-.article__image
-	margin-top: 25px
-
-.article__text
-	margin: 20px auto 40px
-	line-height: 40px
-
-.social__link--fb
-	color: #858585
-	margin-right: 20px	
-
-.social__link--tw
-	color: #858585
-
-.article__reference
-	position: relative
-	color: #000
-	text-transform: uppercase
-
-.article__arrow
-	position: absolute
-	right: -30px
-	top: 42%
-	display: inline-block
-	width: 13px
-	height: 2px
-	background: #b3b3b3
-	&:after, &:before 
-		content: ""
-		position: absolute
-		right: -2px
-		top: 2px
-		display: inline-block
-		width: 7px
-		height: 2px
-		background: #b3b3b3
-	&:after
-		transform: rotate(-45deg)
-	&:before
-		top: -2px
-		transform: rotate(45deg)
-
-.article__comments
-	color: #858585
-
-.article-page
-	display: -o-flex
-	display: flex
-	justify-content: space-between
-	margin-top: 80px
-	margin-bottom: 90px
-	
-.article-page__item
-	font-size: 18px
-	line-height: 48px
-	color: #858585
-	text-transform: uppercase
-		
-.article-page__numeration--prev, .article-page__numeration--next
-	position: relative
-	&:after
-		content: ""
-		position: absolute
-		display: inline-block
-		width: 30px
-		height: 2px
-		background: #e5e5e5
-		right: -60px
-		top: 50%
-
-.article-page__numeration--next:after
-	left: -60px
-
-.article-page__item--active
-	margin: 0 55px
-	color: #000
-	
-
-.profile-sidebar
-	margin-left: -30px
-
-.profile-sidebar__image
-	margin-bottom: 45px
-
-.profile-sidebar__info
-	line-height: 30px
-
-.profile-sidebar__more-detailed
-	position: relative
-	color: #000
-	text-transform: uppercase
-
-.categories-sidebar	
-	margin-left: -30px
-	
-.sidebar__title
-	margin-top: 100px
-	margin-bottom: 50px
-	font-size: 18px
-	font-weight: 500
-	text-transform: uppercase
-	&:first-child
-		margin-bottom: 40px
-
-.categories-sidebar__item
-	margin-top: 20px
-	display: flex
-	justify-content: space-between
-	list-style-type: none
-	border-bottom: 2px solid #f3f3f3
-
-.categories-sidebar__reference 
-	text-transform: uppercase
-	margin: 10px 0
-	color: #000
-
-.categories-sidebar__sum
-	margin: 10px 0
-	
-.soc-net
-	margin-left: -30px
-
-.soc-net__items
-	display: flex
-	justify-content: space-between
-
-.soc-net__item
-	width: 25px
-	height: 25px
-	border-radius: 50%
-	
-	
-.soc-net__item--fb
-	background: url("../img/soc-net--fb.png") 50% 50%
-
-.soc-net__item--tw
-	background: url("../img/soc-net--tw.png") 50% 50%
-
-.soc-net__item--ig
-	background: url("../img/soc-net--ig.png") 50% 50%
-
-.soc-net__item--dr
-	background: url("../img/soc-net--dr.png") 50% 50%
-
-.soc-net__item--be
-	background: url("../img/soc-net--be.png") 50% 50%
-
-.soc-net__item--pt
-	background: url("../img/soc-net--pt.png") 50% 50%
-
-.tags-sidebar
-	margin-left: -30px
-
-.tags-sidebar__items
-	display: flex
-	flex-wrap: wrap
-	margin-left: -15px
-	
-.tags-sidebar__item
-	margin: 15px
-	padding: 0 20px
-	line-height: 34px
-	color: #000
-	background: #f3f3f3
-
-.popular-sidebar
-	margin-left: -30px
-
-.popular-article__image
-	margin-bottom: 30px
-
-.popular-article__title
-	margin-top: 25px
-	margin-bottom: 40px
 	font-size: 14px
-	line-height: 32px
+	line-height: 26px
 	font-weight: 700
-	letter-spacing: 1px
-
-.subscription-sidebar
-	margin-left: -30px
-	form
-		position: relative
-
-.subscription-sidebar__email
-	margin-bottom: 30px
-	padding-right: 45px
-	position: relative
-
-.subscrition-sidebar__email-icon
-	display: block
-	position: absolute
-	right: 10px
-	top: 10px
-	width: 24px
-	height: 18px
-	background: url(../img/icon-email--small.png) 50% 50% no-repeat
-
-.subscription-sidebar__btn
-	width: 100%
-	height: 44px
-	background: #5486b1
-	color: #fff
-	border: none
-	cursor: pointer
-
-.subscription
-	display: flex
-	justify-content: space-around
-	align-items: center
-	height: 250px
-	background: #5486b1
-	margin-top: 20px
-	margin-bottom: 100px
-	form
-		width: 35%
-		position: relative
-
-.subscription__title
-	width: 35%
-	color: #fff
-	font-size: 36px
-	line-height: 60px
-	font-weight: 900
-
-.subscription__email
-	position: relative
-	padding-left: 0
-	padding-right: 50px
-	height: 60px
-	background: #5486b1
-	border: none
-	border-bottom: 2px solid #aac3d8
-	border-radius: 0
-	color: #fff
-	&::-moz-placeholder 
-		color: #fff
-	&::-webkit-input-placeholder 
-		color: #fff
-	&:-ms-input-placeholder
-		color: #fff
-	&::-ms-input-placeholder
-		color: #fff
-	&::placeholder
-    color: #fff
-	&:focus
-		background: #5486b1
-
-.subscrition__email-icon
-	display: block
-	position: absolute
-	right: 0px
-	top: 25%
-	width: 32px
-	height: 34px
-	background: url(../img/icon-email.png) 50% 50% no-repeat
-
-.instagram-feed__title 
-	margin-bottom: 50px
-	font-size: 18px
-	line-height: 18px
 	text-transform: uppercase
-	font-weight: 500
-
-instagram-feed__login
+	color: #e7ad44
+	&:before
+		position: absolute
+		left: -35px
+		top: 12px
+		content: ""
+		width: 25px
+		height: 2px
+		background: #e7ad44
+		
+.hotel__title
 	margin-bottom: 45px
-	font-size: 24px
-	font-weight: 500
+	font-size: 36px
+	line-height: 40px
+	color: #333
+	font-weight: 700
 
-.scroll-top	
-	position: fixed
-	top: 0
-	right: 0
-	opacity: 1
+.hotel__count
+	margin-bottom: 35px
+	text-align: center	
+	font-size: 60px
+	line-height: 60px
+	font-weight: 700
+	color: #333
+
+.hotel__in-number-desc
+	text-align: center	
+	color: #333
+
+.amenities
+	margin-bottom: 115px
+	padding: 65px 0 60px
+	background: url("../img/bg-amenities.jpg") 50% 50% no-repeat
+	box-shadow: 0 0 0 50% rgba(0,0,0,.2) inset;
+	background-size: cover
+
+.amenity
 	display: flex
+	flex-direction: column
 	align-items: center
-	justify-content: center
-	width: 50px
-	height: 100%
-	cursor: pointer
-	transition: opacity 2s linear, top 2s linear;
+	color: #fff
+	p
+		text-align: center
 
-.scroll-top--hidden
-	top: 1500px
-	opacity: 0
+.amenity__title
+	margin: 30px 0 15px
+	font-size: 16px
+	font-weight: 700
+
+.appartments
+	text-align: center
 	
-.scroll-top__text
+.appartments__subtitle
+	margin-bottom: 0
+	font-size: 14px
+	line-height: 26px
+	font-weight: 700
 	text-transform: uppercase
+	color: #e7ad44
+	
+.appartments__title
+	text-align: center
+	margin-bottom: 45px
+	font-size: 36px
+	line-height: 40px
+	color: #333
+	font-weight: 700
+
+.appartment__info
 	position: relative
-	writing-mode: vertical-rl;
-	-webkit-transform: rotate(180deg)
-	-moz-transform: rotate(180deg)
-	-ms-transform: rotate(180deg)
-	transform: rotate(180deg)
-	color: #858585
+	z-index: 10
+
+.appartment
+	position: relative
+	height: 430px
+	padding: 210px 30px 0
+	border-radius: 5px	
+	text-align: left
+	transform: translateY(0) scale(1)
+	transition: all 0.1s linear
 	&:after
 		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
 		content: ""
 		display: block
-		right: 10px
-		bottom: -50px
-		width: 2px
-		height: 30px
-		background: #e5e5e5
-	
-.sticky
-	position: fixed
+		border-radius: 5px	
+		background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.8) 100%)
+	&:hover
+		transform: translateY(-3px) scale(1.01)
+		.apparment__photos
+			color: #fff
+		.apparment__photos-arrow
+			margin-left: 13px
+	p
+		color: #fff
+		font-size: 14px
 
-.stop
+.appartment-1
+	background: url("../img/bg-appartment-1.jpg") 50% 50% no-repeat
+
+.appartment-2
+	background: url("../img/bg-appartment-2.jpg") 50% 50% no-repeat
+
+.appartment-3
+	background: url("../img/bg-appartment-3.jpg") 50% 50% no-repeat
+
+.apparment__title 
+	color: #fff
+	font-size: 20px
+	line-height: 30px
+	font-weight: 700
+	
+.apparment__photos
+	font-size: 13px
+	font-weight: 700
+	color: #e7ad44
+	text-transform: uppercase
+	
+
+.apparment__photos-arrow
+	display: inline-block
 	position: relative
+	margin-left: 7px
+	margin-bottom: 4px
+	width: 19px
+	height: 2px
+	background: rgba(#fff, .8)
+	transition: all 0.2s ease
+	&:after, &:before
+		position: absolute
+		right: 0
+		content: ""
+		width: 8px
+		height: 2px
+		background: rgba(#fff, .8)
+	&:after
+		transform: rotate(45deg)
+		top: -3px
+	&:before
+		top: 3px
+		transform: rotate(-45deg)
+		
+.appartments__more
+	margin: 44px 0 120px
+	padding: 5px 25px
+	background: #fff
+	border: 1px solid #d9d9d9
+	border-radius: 5px
+	font-size: 14px
+	font-weight: 700
+	text-transform: uppercase
+	cursor: pointer
+		
+.reservation
+	margin-bottom: 120px
+	padding: 55px 60px
+	background: #e7ad44
+	border-radius: 10px
+
+.reservation__title
+	font-size: 36px
+	line-height: 40px
+	color: #fff
+	font-weight: 700
+
+.reservation__subtitle
+	font-size: 16px
+	line-height: 30px
+	font-weight: 700
+	color: #fff
+
+.reservation__form
+	margin-right: 30px
+	width: 200px
+	padding: 4px 16px
+	background: #e7ad44
+	border: 2px solid #fff
+	border-radius: 5px
+	color: #fff
+		
+.reservation__submit
+	padding: 6px 20px
+	background: #fff
+	border: none
+	border-radius: 5px
+	color: #000
+	cursor: pointer
+
+.city
+	display: flex
+	justify-content: space-between
+	height: 620px
+
+.city__left
+	background: #f7f7f7
+	width: 50%
+	padding-right: 30px
+	display: flex
+	justify-content: flex-end
+
+.city__right
+	background: #f7f7f7
+	width: 50%
+	padding-left: 60px 
+	display: flex
+
+.city__desc
+	width: 520px
+	padding-top: 110px
+	color: #333
+
+.city__name
+	position: relative
+	margin-bottom: 50px
+	font-size: 36px
+	line-height: 56px
+	font-weight: 700
+	&:after
+		content: ""
+		position: absolute
+		bottom: -12px
+		left: 0
+		width: 25px
+		height: 2px
+		background: #e7ad44
+
+
+.city__photo
+	width: 50%
+	
+.city__photo--mirniy
+	background: url("../img/bg-mirniy.jpg") 50% 50% no-repeat
+	background-size: cover
+	
+.city__photo--udachny
+	background: url("../img/bg-udachny.jpg") 50% 50% no-repeat
+	background-size: cover
