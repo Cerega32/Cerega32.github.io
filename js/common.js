@@ -72,7 +72,6 @@ var markersData = [
 		address: "ул. Новый город микрорайон 33"
 	}
 ];
-
 var map, infoWindow;
 function initMap() {
     var centerLatLng = new google.maps.LatLng(65.209010, 112.686254);
@@ -99,7 +98,6 @@ function initMap() {
         addMarker(latLng, name, address);
     }
 }
-google.maps.event.addDomListener(window, "load", initMap);
 // Функция добавления маркера с информационным окном
 function addMarker(latLng, name, address) {
     var marker = new google.maps.Marker({
@@ -120,3 +118,41 @@ function addMarker(latLng, name, address) {
         infoWindow.open(map, marker);
     });
 }
+
+
+$(".appartments__more").click(function() {
+	$(".appartments--hide")
+		.css("display" , "block")
+		.animate({opacity: 1, top: '0'}, 500);
+	$(".appartments__more").css("display" , "none");
+	$(".appartments__less").css("display" , "inline");
+});
+
+$(".appartments__less").click(function() {
+	$(".appartments--hide")
+		.css("display" , "none")
+		.animate({opacity: 0, top: '-100px'}, 500);
+	$(".appartments__more").css("display" , "inline");
+	$(".appartments__less").css("display" , "none");
+});
+
+
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+			}
+		}
+	});
+});
