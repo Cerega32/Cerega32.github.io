@@ -4,12 +4,26 @@
 	background-size: cover
 	color: #fff
 	height: 100vh
+	padding-top: 310px
 	margin-bottom: 115px
 
 .navbar
+	position: fixed
+	top: 0
+	width: 100%
 	margin-bottom: 200px
 	padding: 15px 50px
 
+.navbar--active
+	background: #fff
+	padding: 0 50px
+	.navbar__item, .navbar__number
+		color: #000
+		&:hover
+			color: #000
+	.navbar__barrier
+		background: rgba(#000, .5)
+ 
 .navbar__right
 	display: flex
 	align-items: center

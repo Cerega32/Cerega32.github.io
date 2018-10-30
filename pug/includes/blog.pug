@@ -2,15 +2,15 @@
 	.row.justify-content-between.align-items-center
 		.col-lg-5
 			h3.hotel__subtitle Добро пожаловать в
-			h3.hotel__title Наш отель &laquo;Визит&raquo;
-			p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			h3.hotel__title Гостиницу «Стрелец»
+			p В каждых апартаментах имеются все удобства для проживания: туалетные принадлежности, ванная комната, полностью оборудованная кухня, бесплатный Wi-Fi и телевизор. Мы говорим на вашем языке!
 		.col-lg-6.row
 			.hotel__in-number.col-lg-4
-				p.hotel__count 7
-				p.hotel__in-number-desc Лет на рынке
+				p.hotel__count 7.5
+				p.hotel__in-number-desc Средняя оценка
 			.hotel__in-number.col-lg-4
-				p.hotel__count 10
-				p.hotel__in-number-desc Комнат
+				p.hotel__count 12
+				p.hotel__in-number-desc Апартаментов
 			.hotel__in-number.col-lg-4
 				p.hotel__count 700+
 				p.hotel__in-number-desc Довольных клиентов
@@ -26,17 +26,74 @@
 				h4.amenity__title Уютная мебель
 				p Новая и мягкая мебель со свежим спальным бельём
 			.col-3.amenity
-				img(src="img/amenity-1.png")
-				h4.amenity__title Бесплатный Wi-Fi
-				p Во всех номерах есть быстрый интернет
+				img(src="img/amenity-3.png")
+				h4.amenity__title Трансфер
+				p Бесплатный трансфер от/до аэропорта
 			.col-3.amenity
-				img(src="img/amenity-2.png")
-				h4.amenity__title Уютная мебель
-				p Новая и мягкая мебель со свежим спальным бельём
+				img(src="img/amenity-4.png")
+				h4.amenity__title Дешевая цена
+				p Самая низкая цена на проживание в регионе
 .appartments.container
 	h3.appartments__subtitle Посмотрите на
 	h3.appartments__title Наши номера
 	.row
+		.col-lg-4
+			.appartment.appartment-1
+				.appartment__info
+					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
+					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
+					a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+		.col-lg-4
+			.appartment.appartment-2
+				.appartment__info
+					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
+					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
+					a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+		.col-lg-4
+			.appartment.appartment-3
+				.appartment__info
+					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
+					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
+					a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+	.row
+		.col-lg-4
+			.appartment.appartment-1
+				.appartment__info
+					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
+					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
+					a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+		.col-lg-4
+			.appartment.appartment-2
+				.appartment__info
+					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
+					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
+					a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+		.col-lg-4
+			.appartment.appartment-3
+				.appartment__info
+					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
+					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
+					a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+	.row
+		.col-lg-4
+			.appartment.appartment-1
+				.appartment__info
+					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
+					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
+					a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+		.col-lg-4
+			.appartment.appartment-2
+				.appartment__info
+					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
+					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
+					a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+		.col-lg-4
+			.appartment.appartment-3
+				.appartment__info
+					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
+					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
+					a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+		.row
 		.col-lg-4
 			.appartment.appartment-1
 				.appartment__info
@@ -66,22 +123,38 @@
 				input.reservation__form(type="text" placeholder="Ваше имя")
 				input.reservation__form(type="phone" placeholder="Ваш телефон")
 				button.reservation__submit Отправить
+.cooperation
+	img(src="img/icon-report.png")
+	.cooperation__text
+		h3.cooperation__title Предоставляем всю отчётность
+		p Мы рады сотрудничеству с организациями и предоставляем специальный тариф при заключении договора. Также мы предоставим всю документацию
 .cities
-	.city
-		.city__left
-			.city__desc
-				h3.city__name Город Мирный
-				p Город Мирный находится в юго-западной части Республики Саха и является центром Мирнинского района. Его жизнь связана с наличием открытой в 1955 году кимберлитовой трубки «Мир» и активной добычей алмазов. Первоначально она велась открытым способом. В результате образовался один из самых крупных карьеров мира. Его глубина составляет 525 метров, а ширина превышает 1200.
-				.city__gismeteo
-					span Мирный
-		.city__photo.city__photo--mirniy
-	.city
-		.city__photo.city__photo--udachny
-		.city__right
-			.city__desc.city__desc--right
-				h3.city__name Город Удачный
-				p Город Удачный – город улусного значения в Мирнинском районе (улусе), расположен в западной части Якутии у самого Северного полярного круга. Удачный возник в связи с открытием алмазного месторождения – кимберлитовой трубки «Удачная», именем которой и назван город, в 15 км от города – трубка «Зарница». Именно здесь добывается большая часть алмазов России.
-				.city__gismeteo
-					span Мирный
+	.container
+		.city
+			.city__left
+				.city__desc
+					h3.city__name Город Мирный
+					p Город Мирный находится в юго-западной части Республики Саха и является центром Мирнинского района. Его жизнь связана с наличием открытой в 1955 году кимберлитовой трубки «Мир» и активной добычей алмазов. Первоначально она велась открытым способом. В результате образовался один из самых крупных карьеров мира. Его глубина составляет 525 метров, а ширина превышает 1200.
+					.city__gismeteo
+						span Мирный
+			.city__photo.city__photo--mirniy
+		.city
+			.city__photo.city__photo--udachny
+			.city__right
+				.city__desc.city__desc--right
+					h3.city__name Город Удачный
+					p Город Удачный – город улусного значения в Мирнинском районе (улусе), расположен в западной части Якутии у самого Северного полярного круга. Удачный возник в связи с открытием алмазного месторождения – кимберлитовой трубки «Удачная», именем которой и назван город, в 15 км от города – трубка «Зарница». Именно здесь добывается большая часть алмазов России.
+					.city__gismeteo
+						span Мирный
+.contacts.container
+	h3.contacts__title Контакты:
+	.contacts__info
+		span Телефон
+		p +7-914-252-22-19
+	.contacts__info
+		span Электронная почта
+		p sirina2005@mail.ru
+	a(href="#").contacts__btn Узнать о свободных номерах
+#map
 			
 				
