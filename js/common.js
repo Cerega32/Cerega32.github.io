@@ -131,28 +131,54 @@ $(".appartments__more").click(function() {
 $(".appartments__less").click(function() {
 	$(".appartments--hide")
 		.css("display" , "none")
-		.animate({opacity: 0, top: '-100px'}, 500);
+		.animate({opacity: 0, top: '-50px'}, 500);
 	$(".appartments__more").css("display" , "inline");
 	$(".appartments__less").css("display" , "none");
 });
 
-
-$(document).ready(function() {
-	$('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
-		}
-	});
+$('[data-fancybox="flat1"]').fancybox({
+	infobar: true,
+  thumbs : {
+    autoStart : false
+  }
 });
+
+$(".spincrement").spincrement({
+    from: 0,                // Стартовое число
+    to: 7.5,              // Итоговое число. Если false, то число будет браться из элемента с классом spincrement, также сюда можно напрямую прописать число. При этом оно может быть, как целым, так и с плавающей запятой
+    decimalPlaces: 1,       // Сколько знаков оставлять после запятой
+    decimalPoint: ",",
+    duration: 1000          // Продолжительность анимации в миллисекундах
+});
+
+$(".spincrement1").spincrement({
+    from: 0,                // Стартовое число
+    to: 12,              // Итоговое число. Если false, то число будет браться из элемента с классом spincrement, также сюда можно напрямую прописать число. При этом оно может быть, как целым, так и с плавающей запятой
+    decimalPlaces: 0,
+    duration: 1000          // Продолжительность анимации в миллисекундах
+});
+
+$(".spincrement2").spincrement({
+    from: 0,                // Стартовое число
+    to: 700,              // Итоговое число. Если false, то число будет браться из элемента с классом spincrement, также сюда можно напрямую прописать число. При этом оно может быть, как целым, так и с плавающей запятой
+    decimalPlaces: 0,
+    duration: 1000          // Продолжительность анимации в миллисекундах
+});
+
+$(document).scroll(function(){
+	scroll();
+});
+
+
+function scroll() {
+		var y = $(this).scrollTop();
+		if (y > 100) {
+				$(".navbar__logo").addClass("navbar__logo--inactive");
+				$(".navbar__logo--active").removeClass("navbar__logo--inactive");
+				$(".navbar").addClass("navbar--active");
+			} else {
+				$(".navbar__logo").removeClass("navbar__logo--inactive");
+				$(".navbar__logo--active").addClass("navbar__logo--inactive");
+				$(".navbar").removeClass("navbar--active");
+			}
+	}

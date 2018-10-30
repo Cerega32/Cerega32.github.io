@@ -6,13 +6,15 @@
 			p В каждых апартаментах имеются все удобства для проживания: туалетные принадлежности, ванная комната, полностью оборудованная кухня, бесплатный Wi-Fi и телевизор. Мы говорим на вашем языке!
 		.hotel__numbers.col-lg-6
 			.hotel__in-number
-				p.hotel__count 7,5
+				p.hotel__count.spincrement 75
 				p.hotel__in-number-desc Средняя оценка
 			.hotel__in-number
-				p.hotel__count 12
+				p.hotel__count.spincrement1 12
 				p.hotel__in-number-desc Апартаментов
 			.hotel__in-number
-				p.hotel__count 700+
+				.hotel__in-number-wrapper
+					span.hotel__count.spincrement2 700
+					span.hotel__count +
 				p.hotel__in-number-desc Довольных клиентов
 .amenities
 	.container
@@ -42,7 +44,7 @@
 				.appartment__info
 					h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 					p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
-					a(href="#" data-toggle="modal" data-target="#myModal").apparment__photos Смотреть фото #[.apparment__photos-arrow]
+					a(href="javascript:;" data-fancybox-trigger="flat1" data-fancybox-index="0").apparment__photos Смотреть фото #[.apparment__photos-arrow]
 		.col-lg-4
 			.appartment.appartment-2
 				.appartment__info
@@ -158,17 +160,33 @@
 		p sirina2005@mail.ru
 	a(href="#").contacts__btn Узнать о свободных номерах
 #map
-#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-	.modal-dialog(role='document')
-		.modal-content
-			.modal-header
-				button.close(type='button', data-dismiss='modal', aria-label='Close')
-					span(aria-hidden='true') ×
-			.modal-body
-				.popup-gallery
-					a(href="img/flat1-1.jpg" title="The Cleaner") #[img(src="img/flat1-1.jpg" width="75" height="75")]
-					a(href="img/flat1-2.jpg" title="The Cleaner") #[img(src="img/flat1-1.jpg" width="75" height="75")]
-			.modal-footer
-				button.btn.btn-secondary(type='button', data-dismiss='modal') Close
-			
+.flats
+	.flat1
+		a(href="img/flat1-1.jpg" data-fancybox="flat1" title="dsds" data-caption="Эти апартаменты на &lt;a href=&quot;https://www.booking.com/hotel/ru/kvart-otel-quot-vip-komfort-quot.ru.html&quot;&gt;booking.com&lt;/a&gt; и &lt;a href=&quot;https://www.booking.com/hotel/ru/kvart-otel-quot-vip-komfort-quot.ru.html&quot;&gt;Суточну.ру&lt;/a&gt;")
+			img(src="img/flat1-1.jpg")
+		a(href="img/flat1-2.jpg" data-fancybox="flat1")
+			img(src="img/flat1-2.jpg")
+		a(href="img/flat1-3.jpg" data-fancybox="flat1")
+			img(src="img/flat1-3.jpg")
+		a(href="img/flat1-4.jpg" data-fancybox="flat1")
+			img(src="img/flat1-4.jpg")
+		a(href="img/flat1-5.jpg" data-fancybox="flat1")
+			img(src="img/flat1-5.jpg")
+		a(href="img/flat1-6.jpg" data-fancybox="flat1")
+			img(src="img/flat1-6.jpg")
+		a(href="img/flat1-7.jpg" data-fancybox="flat1")
+			img(src="img/flat1-7.jpg")
+		a(href="img/flat1-8.jpg" data-fancybox="flat1")
+			img(src="img/flat1-8.jpg")
+		a(href="img/flat1-9.jpg" data-fancybox="flat1")
+			img(src="img/flat1-9.jpg")
+		a(href="img/flat1-10.jpg" data-fancybox="flat1")
+			img(src="img/flat1-10.jpg")
+		a(href="img/flat1-11.jpg" data-fancybox="flat1")
+			img(src="img/flat1-11.jpg")
+		a(href="img/flat1-12.jpg" data-fancybox="flat1")
+			img(src="img/flat1-12.jpg")
+		a(href="img/flat1-13.jpg" data-fancybox="flat1")
+			img(src="img/flat1-13.jpg")
+
 				

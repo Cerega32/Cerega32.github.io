@@ -38,10 +38,14 @@
 	display: flex
 	flex-direction: column
 	justify-content: center
+	align-items: center
 	width: 30%
 	border: 1px solid #d9d9d9
 	border-radius: 5px
 
+.hotel__in-number-wrapper
+	margin-bottom: 35px
+	
 .hotel__count
 	margin-bottom: 35px
 	text-align: center	
@@ -81,7 +85,8 @@
 	display: none
 	opacity: 0
 	position: relative
-	top: 50px
+	top: -50px
+	z-index: 1
 
 .appartments__subtitle
 	margin-bottom: 0
@@ -106,6 +111,7 @@
 .appartment
 	margin-bottom: 30px
 	position: relative
+	z-index: 10
 	height: 430px
 	padding: 210px 30px 0
 	border-radius: 5px	
@@ -353,3 +359,6 @@
 #map
 	width: 100%
 	height: 500px
+
+.flats
+	display: none

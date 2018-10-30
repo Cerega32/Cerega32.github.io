@@ -3,7 +3,7 @@
 	box-shadow: 0 0 0 50vh rgba(0,0,0,.4) inset
 	background-size: cover
 	color: #fff
-	height: 100vh
+	min-height: 100vh
 	padding-top: 310px
 	margin-bottom: 115px
 
@@ -24,15 +24,23 @@
 			color: #000
 	.navbar__barrier
 		background: rgba(#000, .5)
+	.navbar__number:before
+		background: url("../img/icon-phone--black.png") 50% 50% no-repeat
  
 .navbar__right
 	display: flex
 	align-items: center
 
+
+.navbar__logo--active
+	display: block
+	
+.navbar__logo--inactive
+	display: none
+
 .navbar__nav
 	display: flex
 	margin: 0
-	
 	li
 		list-style-type: none
 
