@@ -14,10 +14,12 @@
 	margin-bottom: 200px
 	padding: 15px 50px
 	z-index: 101
+	transition: background 0.3s ease, padding 0.25s ease, opacity 0.3s ease
 
 .navbar--active
 	background: #fff
 	padding: 0 50px
+	transition: background 0.3s ease, padding 0.25s ease, opacity 0.3s ease
 	.navbar__item, .navbar__number
 		color: #000
 		&:hover
@@ -58,14 +60,14 @@
 
 .navbar__number
 	position: relative
-	margin-left: 55px
+	padding-left: 55px
 	color: #fff
 	&:hover
 		color: #fff
 	&:before
 		content: ""
 		position: absolute
-		left: -55px
+		left: 0
 		top: 50%
 		margin-top: -12px
 		width: 24px
