@@ -139,7 +139,7 @@ $(".appartments__less").click(function() {
 });
 
 $('[data-fancybox="flat1"]').fancybox({
-	caption : `Эти апартаменты на <a href="https://www.booking.com/hotel/ru/kvart-otel-quot-vip-komfort-quot.ru.html">booking.com</a> и <a href="https://www.booking.com/hotel/ru/kvart-otel-quot-vip-komfort-quot.ru.html">суточну.ру</a>`,
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/kvart-otel-quot-vip-komfort-quot.ru.html">booking.com</a> и <a href="https://www.booking.com/hotel/ru/kvart-otel-quot-vip-komfort-quot.ru.html">суточну.ру</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -147,7 +147,7 @@ $('[data-fancybox="flat1"]').fancybox({
 });
 
 $('[data-fancybox="flat2"]').fancybox({
-	caption : `Эти апартаменты на <a href="https://mirnii.sutochno.ru/400801">суточну.ру</a>`,
+	caption : 'Эти апартаменты на <a href="https://mirnii.sutochno.ru/400801">суточну.ру</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -155,7 +155,7 @@ $('[data-fancybox="flat2"]').fancybox({
 });
 
 $('[data-fancybox="flat3"]').fancybox({
-	caption : `Эти апартаменты на <a href="https://www.booking.com/hotel/ru/vip-komfort-sovetskaia-3.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/363449">суточну.ру</a>`,
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/vip-komfort-sovetskaia-3.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/363449">суточну.ру</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -163,7 +163,7 @@ $('[data-fancybox="flat3"]').fancybox({
 });
 
 $('[data-fancybox="flat5"]').fancybox({
-	caption : `Эти апартаменты на <a href="https://www.booking.com/hotel/ru/vip-komfort-tikhonova-15-47-2.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/496195">суточну.ру</a>`,
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/vip-komfort-tikhonova-15-47-2.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/496195">суточну.ру</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -171,7 +171,7 @@ $('[data-fancybox="flat5"]').fancybox({
 });
 
 $('[data-fancybox="flat6"]').fancybox({
-	caption : `Эти апартаменты на <a href="https://mirnii.sutochno.ru/471853">суточну.ру</a>`,
+	caption : 'Эти апартаменты на <a href="https://mirnii.sutochno.ru/471853">суточну.ру</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -179,7 +179,7 @@ $('[data-fancybox="flat6"]').fancybox({
 });
 
 $('[data-fancybox="flat7"]').fancybox({
-	caption : `Эти апартаменты на <a href="https://www.booking.com/hotel/ru/apartamenty-na-pavlova-8.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/458073">суточну.ру</a>`,
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/apartamenty-na-pavlova-8.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/458073">суточну.ру</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -187,7 +187,7 @@ $('[data-fancybox="flat7"]').fancybox({
 });
 
 $('[data-fancybox="flat8"]').fancybox({
-	caption : `Эти апартаменты на <a href="https://www.booking.com/hotel/ru/vip-kosfort-oiunskogo-36.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/431813">суточну.ру</a>`,
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/vip-kosfort-oiunskogo-36.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/431813">суточну.ру</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -195,7 +195,7 @@ $('[data-fancybox="flat8"]').fancybox({
 });
 
 $('[data-fancybox="flat9"]').fancybox({
-	caption : `Эти апартаменты на <a href="https://www.booking.com/hotel/ru/dvushka-na-50-let-oktiabria.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/543781">суточну.ру</a>`,
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/dvushka-na-50-let-oktiabria.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/543781">суточну.ру</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -203,7 +203,7 @@ $('[data-fancybox="flat9"]').fancybox({
 });
 
 $('[data-fancybox="flat12"]').fancybox({
-	caption : `Эти апартаменты на <a href="https://www.booking.com/hotel/ru/udachnyi-n-gorod-33.ru.html">booking.com</a>`,
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/udachnyi-n-gorod-33.ru.html">booking.com</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -232,6 +232,8 @@ $(".spincrement2").spincrement({
     decimalPlaces: 0,
     duration: 1000
 });
+
+scroll();
 
 $(document).scroll(function(){
 	scroll();
