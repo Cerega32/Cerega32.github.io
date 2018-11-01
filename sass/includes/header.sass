@@ -12,13 +12,13 @@
 	top: 0
 	width: 100%
 	margin-bottom: 200px
-	padding: 15px 50px
+	padding: 30px 50px
 	z-index: 101
 	transition: background 0.3s ease, padding 0.25s ease, opacity 0.3s ease
 
 .navbar--active
 	background: #fff
-	padding: 0 50px
+	padding: 15px 50px
 	transition: background 0.3s ease, padding 0.25s ease, opacity 0.3s ease
 	.navbar__item, .navbar__number
 		color: #000
@@ -94,4 +94,62 @@
 	border-radius: 5px
 	color: #fff
 	&:hover
+		color: #fff
+
+.header__form
+	position: fixed
+	top: 45%
+	left: 50%
+	margin-top: -287.5px
+	margin-left: -284.5px
+	display: none
+	flex-direction: column
+	justify-content: space-between
+	width: 585px
+	height: 595px
+	padding: 50px
+	background: #e7ad44
+	z-index: 1001
+	opacity: 0
+
+.header__form-close
+	position: absolute
+	top: 20px
+	right: 20px
+	width: 16px
+	height: 16px
+	z-index: 1002
+	background: url("../img/icon-cross.png") 50% 50% no-repeat
+	cursor: pointer
+
+.header__form-title
+	color: #fff
+	font-size: 36px
+	font-weight: 700	
+
+.brochure__field
+	margin-bottom: 50px
+	width: 100%
+	box-sizing: border-box
+	height: 50px
+	border: none
+	border-bottom: 2px solid rgba(255,255,255,.5)
+	background: #e7ad44
+	color: #fff
+	&:focus
+		border-bottom: 2px solid rgba(255,255,255,1)
+	&::-webkit-input-placeholder
+		color: rgba(255,255,255,.8)
+	&::-moz-placeholder
+		color: rgba(255,255,255,.8)
+
+.brochure__submit
+	width: 100%
+	box-sizing: border-box
+	height: 50px
+	border: none
+	background: #fff
+	cursor: pointer
+	&:hover
+		background: #333
 		color: #fff
