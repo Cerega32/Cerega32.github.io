@@ -19,19 +19,19 @@
 .amenities
 	.container
 		.row
-			.col-3.amenity
+			.col-lg-3.col-md-6.amenity
 				img(src="img/amenity-1.png")
 				h4.amenity__title Бесплатный Wi-Fi
 				p Во всех номерах есть быстрый интернет
-			.col-3.amenity
+			.col-lg-3.col-md-6.amenity
 				img(src="img/amenity-2.png")
 				h4.amenity__title Уютная мебель
 				p Новая и мягкая мебель со свежим спальным бельём
-			.col-3.amenity
+			.col-lg-3.col-md-6.amenity
 				img(src="img/amenity-3.png")
 				h4.amenity__title Трансфер
 				p Бесплатный трансфер от/до аэропорта
-			.col-3.amenity
+			.col-lg-3.col-md-6.amenity
 				img(src="img/amenity-4.png")
 				h4.amenity__title Дешевая цена
 				p Самая низкая цена на проживание в регионе
@@ -132,10 +132,10 @@
 .container
 	.reservation
 		.row.align-items-center
-			.col-5
+			.col-xl-5.col-lg-12
 				h4.reservation__title Понравился номер?
 				h4.reservation__subtitle Оставьте заявку, чтобы забронировать его
-			form
+			form.reservation__field
 				input.reservation__form(type="text" placeholder="Ваше имя")
 				input.reservation__form(type="phone" placeholder="Ваш телефон")
 				button.reservation__submit Отправить
@@ -146,17 +146,17 @@
 		p Мы рады сотрудничеству с организациями и предоставляем специальный тариф при заключении договора. Также мы предоставим всю документацию
 .cities
 	.container
-		.city
-			.city__left
+		.city.row
+			.city__left.col-xl-6.col-lg-5
 				.city__desc
 					h3.city__name Город Мирный
 					p Город Мирный находится в юго-западной части Республики Саха и является центром Мирнинского района. Его жизнь связана с наличием открытой в 1955 году кимберлитовой трубки «Мир» и активной добычей алмазов. Первоначально она велась открытым способом. В результате образовался один из самых крупных карьеров мира. Его глубина составляет 525 метров, а ширина превышает 1200.
 					.city__gismeteo
 						span Мирный
-			.city__photo.city__photo--mirniy
-		.city
-			.city__photo.city__photo--udachny
-			.city__right
+			.city__photo.city__photo--mirniy.col-xl-6.col-lg-5
+		.city.row
+			.city__photo.city__photo--udachny.col-xl-6.col-lg-5
+			.city__right.col-xl-6.col-lg-5
 				.city__desc.city__desc--right
 					h3.city__name Город Удачный
 					p Город Удачный – город улусного значения в Мирнинском районе (улусе), расположен в западной части Якутии у самого Северного полярного круга. Удачный возник в связи с открытием алмазного месторождения – кимберлитовой трубки «Удачная», именем которой и назван город, в 15 км от города – трубка «Зарница». Именно здесь добывается большая часть алмазов России.
