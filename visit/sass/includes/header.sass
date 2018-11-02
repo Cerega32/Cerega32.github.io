@@ -30,14 +30,16 @@
 		background: url("../img/icon-phone--black.png") 50% 50% no-repeat
  
 .navbar__right
-	display: flex
+	display: none
 	align-items: center
 
+.navbar__right--active
+	display: flex
 
-.navbar__logo--active
-	display: block
-	
 .navbar__logo--inactive
+	display: none
+
+.navbar__logo--mobile
 	display: none
 
 .navbar__nav
@@ -47,7 +49,7 @@
 		list-style-type: none
 
 .navbar__item
-	padding: 10px 30px
+	padding: 10px 20px
 	color: rgba(#fff, .8)
 	&:hover
 		color: #fff
@@ -73,7 +75,50 @@
 		width: 24px
 		height: 24px
 		background: url("../img/icon-phone.png") 50% 50% no-repeat
+
+.navbar__btn
+	display: none
+	width: 40px
+	height: 30px
+	cursor: pointer
+
+.navbar__btn--active
+	display: block
+
+.navbar__btn-line
+	margin: 14px auto 0
+	position: relative
+	display: block
+	background: #fff
+	width: 30px
+	height: 2px
+	border-radius: 1px
+	&:after, &:before
+		content: ""
+		position: absolute
+		display: block
+		width: 30px
+		height: 2px
+		background: #fff
+		border-radius: 1px
+	&:after
+		top: -6px
+	&:before
+		bottom: -6px
+
+
+.header__menu-close
+	display: none
+	position: absolute
+	top: 62px
+	right: 62px
+	width: 16px
+	height: 16px
+	z-index: 1002
+	background: url("../img/icon-cross.png") 50% 50% no-repeat
+	cursor: pointer
 		
+
 .header__title
 	margin-bottom: 20px
 	font-size: 55px
@@ -128,6 +173,7 @@
 	font-size: 26px
 	font-weight: 700
 	text-align: center
+
 
 .brochure__field
 	margin-bottom: 50px

@@ -210,27 +210,42 @@ $('[data-fancybox="flat12"]').fancybox({
   }
 });
 
-
-$(".spincrement").spincrement({
-    from: 0,                // Стартовое число
-    to: 7.5,
-    decimalPlaces: 1,       // Сколько знаков оставлять после запятой
-    decimalPoint: ",",
-    duration: 1000
-});
-
-$(".spincrement1").spincrement({
-    from: 0,
-    to: 12,
-    decimalPlaces: 0,
-    duration: 1000
-});
-
-$(".spincrement2").spincrement({
-    from: 0,
-    to: 700,
-    decimalPlaces: 0,
-    duration: 1000
+$(document).ready(function () { 
+	var show = true;
+	var countbox = ".hotel__numbers";
+	$(window).on("scroll load resize", function () {
+		if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+		var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+		var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+		var w_height = $(window).height(); // Высота окна браузера
+		var d_height = $(document).height(); // Высота всего документа
+		var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+		if (document.documentElement.clientWidth > 768) {
+			if (w_top + 800 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+				$('.hotel__count').css('opacity', '1');
+				$('.spincrement').spincrement({
+						thousandSeparator: "",
+						duration: 1200
+				});
+				$(".spincrement1").spincrement({
+					duration: 1200
+				});
+				show = false;
+			}
+		} else {
+			if (w_top + 400 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+				$('.hotel__count').css('opacity', '1');
+				$('.spincrement').spincrement({
+						thousandSeparator: "",
+						duration: 1200
+				});
+				$(".spincrement1").spincrement({
+					duration: 1200
+				});
+				show = false;
+			}
+		}
+	});
 });
 
 scroll();
@@ -241,8 +256,9 @@ $(document).scroll(function(){
 
 
 function scroll() {
-	var y = $(this).scrollTop();
-	if (y > 100) {
+	if (document.documentElement.clientWidth > 1200) {
+		var y = $(this).scrollTop();
+		if (y > 100) {
 			$(".navbar__logo").addClass("navbar__logo--inactive");
 			$(".navbar__logo--active").removeClass("navbar__logo--inactive");
 			$(".navbar").addClass("navbar--active");
@@ -251,6 +267,7 @@ function scroll() {
 			$(".navbar__logo--active").addClass("navbar__logo--inactive");
 			$(".navbar").removeClass("navbar--active");
 		}
+	}
 }
 
 $('.header__btn, .contacts__btn').click( function(event){ // лoвим клик пo ссылки с id="go"
@@ -310,3 +327,12 @@ $('.overlay, .header__form-close').click( function(){ // лoвим клик пo 
 			);
 		}
 	});
+
+$('.navbar__btn').click(function() {
+	$('.navbar__right--active').toggleClass("navbar__right--open");
+	$('.navbar__right--active').addClass("navbar__right--opacity");
+})
+
+$('.header__menu-close').click(function() {
+	$('.navbar__right--active').toggleClass("navbar__right--open");
+})

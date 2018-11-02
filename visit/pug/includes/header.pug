@@ -2,7 +2,10 @@
 	.navbar
 		img.navbar__logo(src="img/logo.png")
 		img.navbar__logo--active.navbar__logo--inactive(src="img/logo--black.png")
-		.navbar__right
+		.navbar__btn
+			span.navbar__btn-line
+		.navbar__right.navbar__right--active
+			img.navbar__logo.navbar__logo--mobile(src="img/logo.png")
 			ul.navbar__nav
 				li #[a.navbar__item(href="#") О нас] 
 				li #[a.navbar__item(href="#") Наши номера] 
@@ -11,6 +14,7 @@
 				li #[a.navbar__item(href="#") Контакты] 
 			.navbar__barrier
 			a(href="#").navbar__number +7 326 564 2455
+			.header__menu-close
 	.container
 		.col-lg-7
 			h1.header__title Домашняя гостиница в г.Мирном (Якутия)
