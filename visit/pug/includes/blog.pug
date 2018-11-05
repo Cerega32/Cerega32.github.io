@@ -1,4 +1,4 @@
-.container.hotel
+.container.hotel#we
 	.row.justify-content-between
 		.col-lg-5.sagittarius
 			h3.hotel__subtitle Добро пожаловать в
@@ -33,9 +33,9 @@
 				p Бесплатный трансфер от/до аэропорта
 			.col-lg-3.col-md-6.amenity
 				img(src="img/amenity-4.png")
-				h4.amenity__title Дешевая цена
-				p Самая низкая цена на проживание в регионе
-.appartments.container
+				h4.amenity__title Выгоднее гостиниц
+				p  Квартира выгоднее гостиниц в городе примерно в два раза
+.appartments.container#appartments
 	h3.appartments__subtitle Посмотрите на
 	h3.appartments__title Наши номера
 	.row
@@ -63,21 +63,21 @@
 	.appartments--hide
 		.row
 			.col-lg-4
-				.appartment.appartment-1
+				.appartment.appartment-4
 					.appartment__info
 						h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 						p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
 						a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
 					span.appartment__city г.Мирный
 			.col-lg-4
-				.appartment.appartment-2
+				.appartment.appartment-5
 					.appartment__info
 						h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 						p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
 						a(href="javascript:;" data-fancybox-trigger="flat5" data-fancybox-index="0").apparment__photos Смотреть фото #[.apparment__photos-arrow]
 					span.appartment__city г.Мирный
 			.col-lg-4
-				.appartment.appartment-3
+				.appartment.appartment-6
 					.appartment__info
 						h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 						p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
@@ -85,21 +85,21 @@
 					span.appartment__city г.Мирный
 		.row
 			.col-lg-4
-				.appartment.appartment-1
+				.appartment.appartment-7
 					.appartment__info
 						h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 						p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
 						a(href="javascript:;" data-fancybox-trigger="flat7" data-fancybox-index="0").apparment__photos Смотреть фото #[.apparment__photos-arrow]
 					span.appartment__city г.Мирный
 			.col-lg-4
-				.appartment.appartment-2
+				.appartment.appartment-8
 					.appartment__info
 						h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 						p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
 						a(href="javascript:;" data-fancybox-trigger="flat8" data-fancybox-index="0").apparment__photos Смотреть фото #[.apparment__photos-arrow]
 					span.appartment__city г.Мирный
 			.col-lg-4
-				.appartment.appartment-3
+				.appartment.appartment-9
 					.appartment__info
 						h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 						p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
@@ -107,21 +107,21 @@
 					span.appartment__city г.Мирный
 		.row
 			.col-lg-4
-				.appartment.appartment-1
+				.appartment.appartment-10
 					.appartment__info
 						h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 						p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
 						a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
 					span.appartment__city г.Удачный
 			.col-lg-4
-				.appartment.appartment-2
+				.appartment.appartment-11
 					.appartment__info
 						h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 						p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
 						a(href="#").apparment__photos Смотреть фото #[.apparment__photos-arrow]
 					span.appartment__city г.Удачный
 			.col-lg-4
-				.appartment.appartment-3
+				.appartment.appartment-12
 					.appartment__info
 						h4.apparment__title 2-комнатная квартира 65 м2 на 2 человек 
 						p Комната с туалетным столиком и рабочим местом. Wi-Fi. Квартира после ремонта!
@@ -139,12 +139,12 @@
 				input.reservation__form(type="text" placeholder="Ваше имя")
 				input.reservation__form(type="phone" placeholder="Ваш телефон")
 				button.reservation__submit Отправить
-.cooperation
+.cooperation#cooperation
 	img.cooperation__image(src="img/icon-report.png")
 	.cooperation__text
 		h3.cooperation__title Предоставляем всю отчётность
 		p Мы рады сотрудничеству с организациями и предоставляем специальный тариф при заключении договора. Также мы предоставим всю документацию
-.cities
+.cities#cities
 	.container
 		.city.row
 			.city__left.col-xl-6.col-lg-5.col-md-5.col-sm-12.col-12
@@ -162,7 +162,7 @@
 					p Город Удачный – город улусного значения в Мирнинском районе (улусе), расположен в западной части Якутии у самого Северного полярного круга. Удачный возник в связи с открытием алмазного месторождения – кимберлитовой трубки «Удачная», именем которой и назван город, в 15 км от города – трубка «Зарница». Именно здесь добывается большая часть алмазов России.
 					.city__gismeteo
 						span Мирный
-.contacts.container
+.contacts.container#contacts
 	h3.contacts__title Контакты:
 	.contacts__info
 		span Телефон

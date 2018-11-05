@@ -56,9 +56,7 @@
 		margin: 5px
 
 	.navbar__barrier
-		margin-left: 0
-		position: relative
-		height: 60px
+		display: none
 
 	.navbar__number
 		margin-top: -60px
@@ -93,7 +91,9 @@
 	
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 992px)	
+	.navbar__item
+		padding-left: 0
 	.sagittarius
 		margin-bottom: 20px
 	.hotel__in-number
@@ -152,7 +152,7 @@
 	.header__btn
 		margin-bottom: 100px
 	.navbar__nav
-		margin: 50px 0 0
+		margin: 50px 0 50px
 		padding-left: 20px
 	.hotel__in-number-desc
 		font-size: 14px
