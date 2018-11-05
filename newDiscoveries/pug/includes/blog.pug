@@ -8,8 +8,8 @@
 	.header__country
 		.counry__spain
 			img(src="img/icon-spain.png")
-			h2.country__title.country__spain-title Испания
-		h2.country__title.country__date 10-17 ноября
+			h2.header__country-title Испания
+		h2.header__country-date 10-17 ноября
 	.header__form
 		.header__form-close
 		h3.header__form-title Получите подробное описание путешествия
@@ -112,21 +112,48 @@
 		h3.application__date 10-17 ноября
 		p.application__desc остров Крит, остров Святой Надежлы, город Мармарис, остров ещё.
 		span.application__price Текущая цена: #[span.application__price--blur 1599€]
-		a(href="#").application__choose Выбрать
+		a(href="#").application__choose.application__choose-1 Выбрать
 	.application
 		img(src="img/icon-italia.png")
 		h2.application__title Италия
 		h3.application__date 10-17 ноября
 		p.application__desc остров Крит, остров Святой Надежлы, город Мармарис, остров ещё.
 		span.application__price Текущая цена: #[span.application__price--blur 1599€]
-		a(href="#").application__choose Выбрать
+		a(href="#").application__choose.application__choose-2 Выбрать
 	.application
 		img(src="img/icon-italia.png")
 		h2.application__title Италия
 		h3.application__date 10-17 ноября
 		p.application__desc остров Крит, остров Святой Надежлы, город Мармарис, остров ещё.
 		span.application__price Текущая цена: #[span.application__price--blur 1599€]
-		a(href="#").application__choose Выбрать
+		a(href="#").application__choose.application__choose-3 Выбрать
+.application__modal.application-1
+	.application__modal-close
+	h3.application__modal-title Успейте оставить заявку по низкой цене
+	form#form-2.applications__form(action='mail.php', method='POST')
+		input.brochure__field(type='text', placeholder='Ваше имя', name='name', required='')
+		input.brochure__field(type='email', placeholder='Ваше email', name='email', required='')
+		input.brochure__field(type='tel', placeholder='Ваш телефон', name='tel', required='')
+		input(type='hidden', name='form', value='Форма бронирования')
+		button.brochure__submit(type='submit', onclick="yaCounter50654122.reachGoal('BTN2'); return true;") ЗАБРОНИРОВАТЬ
+.application__modal.application-2
+	.application__modal-close
+	h3.application__modal-title Успейте оставить заявку по низкой цене
+	form#form-2.applications__form(action='mail.php', method='POST')
+		input.brochure__field(type='text', placeholder='Ваше имя', name='name', required='')
+		input.brochure__field(type='email', placeholder='Ваше email', name='email', required='')
+		input.brochure__field(type='tel', placeholder='Ваш телефон', name='tel', required='')
+		input(type='hidden', name='form', value='Форма бронирования')
+		button.brochure__submit(type='submit', onclick="yaCounter50654122.reachGoal('BTN2'); return true;") ЗАБРОНИРОВАТЬ
+.application__modal.application-3
+	.application__modal-close
+	h3.application__modal-title Успейте оставить заявку по низкой цене
+	form#form-2.applications__form(action='mail.php', method='POST')
+		input.brochure__field(type='text', placeholder='Ваше имя', name='name', required='')
+		input.brochure__field(type='email', placeholder='Ваше email', name='email', required='')
+		input.brochure__field(type='tel', placeholder='Ваш телефон', name='tel', required='')
+		input(type='hidden', name='form', value='Форма бронирования')
+		button.brochure__submit(type='submit', onclick="yaCounter50654122.reachGoal('BTN2'); return true;") ЗАБРОНИРОВАТЬ
 .impressions
 	h2.impressions__title Что вы получите?
 	.impressions__sliders

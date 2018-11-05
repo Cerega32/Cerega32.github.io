@@ -135,6 +135,25 @@
 	font-size: 36px
 	font-weight: 700	
 
+.counry__spain
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-bottom: 5px
+
+.header__country-title    
+	font-size: 25px
+  margin-left: 15px
+	margin: 0 0 0 15px
+	text-align: center
+	color: #fff
+	font-weight: 700
+
+.header__country-date
+	font-size: 18px
+	font-weight: 300
+	text-align: center
+	color: #fff
 
 .journey
 	max-width: 1200px
@@ -536,6 +555,7 @@
 	font-weight: 300
 
 .applications
+	position: relative
 	margin: -250px auto 0
 	max-width: 1200px
 	padding: 15px
@@ -544,6 +564,37 @@
 	align-items: center
 	position: relative
 	z-index: 10
+
+.application__modal
+	color: #fff
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	margin-top: -287.5px;
+	margin-left: -284.5px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 585px;
+	height: 595px;
+	padding: 50px;
+	background: #4592d9
+	z-index: 1001;
+	opacity: 0;
+
+.application__modal-title
+	font-size: 36px
+	font-weight: 700
+
+.application__modal-close
+	position: absolute
+	top: 20px
+	right: 20px
+	width: 16px
+	height: 16px
+	z-index: 1002
+	background: url("../img/icon-cross.png") 50% 50% no-repeat
+	cursor: pointer
 
 .application
 	width: 370px
@@ -591,6 +642,9 @@
 	padding: 15px 0
 	background: #4592d9
 	color: #fff
+	&:hover
+		background: #333
+		color: #fff
 
 
 .impressions
