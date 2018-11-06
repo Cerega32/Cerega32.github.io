@@ -34,7 +34,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 	$('.impressions__sliders').slick({
 		fade: true
 	});
-	
+
 	$('.questions__problem').click(function() {
 		$(this).next('.questions__solution').toggleClass("questions__solution--none");
 	})
@@ -135,7 +135,6 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
       jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')});
 		}
 	});
-	
 	$('.application__choose-1').click( function(event){ // лoвим клик пo ссылки с id="go"
 		event.preventDefault(); // выключaем стaндaртную рoль элементa
 		$('.overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
@@ -222,8 +221,6 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		}
 		}
 	});
-	
-	
 	var journey = document.getElementsByClassName("journey");
 	$(".header__detailed--more").click(function(){
 		$("html, body").animate({ scrollTop: getCoords(journey[0]).top }, 500);
@@ -235,7 +232,6 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			top: box.top + pageYOffset
 		};
 	}
-	
 	$(window).scroll(function() { 
 		var st = $(this).scrollTop(); 
 		$(".header__title").css({ 
@@ -259,5 +255,51 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		$(".video").css({ 
 			"background-position":"50% " + 50-st/100 + "%" 
 		}); 
-	})
-})
+	});
+	
+	$("#form-3").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			window.location.href = "https://drive.google.com/file/d/1tebawqQB4jtqyVOjvXLQwZgNHW9LxIcG/view?usp=sharing";
+//			alert("Проверьте вашу почту! PDF файл с маршрутом уже отправлен. Ждём вас на борту!");
+//			$("#form-3").trigger("reset");
+		});
+		return false;
+	});
+	
+	$("#form-2").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			window.location.href = "https://drive.google.com/file/d/1tebawqQB4jtqyVOjvXLQwZgNHW9LxIcG/view?usp=sharing";
+//			alert("Спасибо за заявку! Скоро мы с вами свяжемся. А пока мы отправляем Вам PDF файл с маршрутом путешествия. Ждём вас на борту!");
+//			$("#form-2").trigger("reset");
+		});
+		return false;
+	});
+	
+	$("#form-1").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			window.location.href = "https://drive.google.com/file/d/1tebawqQB4jtqyVOjvXLQwZgNHW9LxIcG/view?usp=sharing";
+//			alert("Проверьте вашу почту! PDF файл с маршрутом уже отправлен. Ждём вас на борту!");
+//			$("#form-1").trigger("reset");
+		});
+		return false;
+	});
+
+	updater(document.getElementsByClassName("applications__count-days")[0],
+	 document.getElementsByClassName("applications__count-hours")[0], document.getElementsByClassName("applications__count-minutes")[0],
+	 document.getElementsByClassName("applications__count-seconds")[0]);
+});
