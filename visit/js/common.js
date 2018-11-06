@@ -333,6 +333,17 @@ $('.navbar__btn').click(function() {
 	$('.navbar__right--active').addClass("navbar__right--opacity");
 })
 
+function closeMenu() {
+	$('.navbar__right--active').toggleClass("navbar__right--open");
+}
+$(document).ready(function(){
+	$(".navbar__nav").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top - 110}, 1500);
+	});
+});
 $('.header__menu-close').click(function() {
 	$('.navbar__right--active').toggleClass("navbar__right--open");
 })
