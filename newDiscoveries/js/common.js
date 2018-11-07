@@ -200,7 +200,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 				);
 		}
 	});
-	$(document).keyup(function(e) {
+$(document).keyup(function(e) {
      if (e.keyCode == 27) { 
 			if (document.documentElement.clientWidth > 768) {
 			$('.application-1, .application-2, .application-3')
@@ -231,6 +231,49 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		return {
 			top: box.top + pageYOffset
 		};
+	}
+	function updater(d, h, m, s) {
+		var baseTime, period
+		baseTime = new Date(2018, 9, 15);
+  // День сброса - 15 октября 2018 года
+  	period = new Date(2018, 9, 22);
+		if (new Date() > baseTime) {			
+			baseTime = period
+		}
+		function update() {
+			var cur = new Date();
+			// сколько осталось миллисекунд
+			var diff = (baseTime - cur);
+			// сколько миллисекунд до конца секунды
+			var millis = diff % 1000;
+			diff = Math.floor(diff/1000);
+			// сколько секунд до конца минуты
+			var sec = diff % 60;
+			if(sec < 10) sec = "0"+sec;
+			diff = Math.floor(diff/60);
+			// сколько минут до конца часа
+			var min = diff % 60;
+			if(min < 10) min = "0"+min;
+			diff = Math.floor(diff/60);
+			// сколько часов до конца дня
+			var hours = diff % 24;
+			if(hours < 10) hours = "0"+hours;
+			var days = Math.floor(diff / 24);
+			if ((days == 1) || (((days-1)%10 == 0) && (Math.floor(days/10) > 1))) {
+				d.innerHTML = days + " День ";
+			} else if ((days == 2) || (days == 3) || (days == 4) || (((days-2)%10 == 0) && (Math.floor(days/10) > 1)) || (((days-3)%10 == 0) && (Math.floor(days/10) > 1)) || (((days-4)%10 == 0) && (Math.floor(days/10) > 1))) {
+				d.innerHTML = days + " Дня ";				 
+			} else {
+				d.innerHTML = days + " Дней ";
+			}
+			h.innerHTML = hours;
+			m.innerHTML = min;
+			s.innerHTML = sec;
+
+			// следующий раз вызываем себя, когда закончится текущая секунда
+			setTimeout(update, millis);
+		}
+		setTimeout(update, 0);
 	}
 	$(window).scroll(function() { 
 		var st = $(this).scrollTop(); 
