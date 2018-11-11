@@ -26,7 +26,7 @@ gulp.task('main-js', function() {
         ])
         .pipe(plumber())
         .pipe(concat('main.min.js'))
-        .pipe(uglify())
+//        .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('app/js'));
 });
