@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     cache = require('gulp-cache'),
+    sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     ftp = require('vinyl-ftp'),
     notify = require("gulp-notify"),
@@ -19,23 +20,26 @@ var gulp = require('gulp'),
 
 // Пользовательские скрипты проекта
 
-gulp.task('common-js', function() {
+gulp.task('main-js', function() {
     return gulp.src([
-            'app/js/common.js',
+            'app/js/main.js',
         ])
         .pipe(plumber())
-        .pipe(concat('common.min.js'))
+        .pipe(concat('main.min.js'))
         .pipe(uglify())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('app/js'));
 });
 
-gulp.task('js', ['common-js'], function() {
+gulp.task('js', ['main-js'], function() {
     return gulp.src([
-            'app/libs/jquery/dist/jquery.min.js',
-            'app/js/common.min.js', // Всегда в конце
+            '../node_modules/jquery/dist/jquery.min.js',
+            '../node_modules/bootstrap/dist/js/bootstrap.min.js',
+            'app/js/main.min.js', // Всегда в конце
         ])
         .pipe(concat('scripts.min.js'))
         // .pipe(uglify()) // Минимизировать весь js (на выбор)
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({ stream: true }));
 });
@@ -63,6 +67,7 @@ gulp.task('sass', function() {
         .pipe(rename({ suffix: '.min', prefix: '' }))
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(cleanCSS()) // Опционально, закомментировать при отладке
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({ stream: true }));
 });
@@ -70,7 +75,7 @@ gulp.task('sass', function() {
 gulp.task('watch', ['pug', 'sass', 'js', 'browser-sync'], function() {
     gulp.watch('app/pug/**/*.pug', ['pug']);
     gulp.watch('app/sass/**/*.sass', ['sass']);
-    gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
+    gulp.watch(['libs/**/*.js', 'app/js/main.js'], ['js']);
     gulp.watch('app/*.html', browserSync.reload);
 });
 
