@@ -1,264 +1,284 @@
 @import "vars"
+@media only screen and (max-width: 1200px)
+  .applications
+    width: auto
+  .brochure
+    margin-bottom: 50px
+  .travel__title:before, .questions__title:before, .impressions__title:before, .brochure__title-adventure:before
+    content: ""
 
-/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 992px)
+  .video__title
+    font-size: 24px
+    left: 50%
+    width: 200px
+    margin-left: -100px
+    text-align: center
+    z-index: 10
+    top: 20px
+  .team__block--alex:after
+    right: -100px
+  .impressions__sliders .slick-arrow
+    bottom: 10%
+  .country__spain-title
+    font-size: 32px
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	.applications
-		width: auto
-	.brochure
-		margin-bottom: 50px
-	.travel__title:before
-		content: ""
-	.questions__title:before
-		content: ""
-	.impressions__title:before
-		content: ""
-	.brochure__title-adventure:before
-		content: ""
-		
+@media only screen and (max-width: 768px)
+  .header__form
+    top: 0
+    left: 0
+    margin-left: 0
+    margin-top: 0
+    height: 100%
+    width: 100%
+    -webkit-box-pack: start
+    -webkit-justify-content: flex-start
+    -ms-flex-pack: start
+    justify-content: flex-start
+  .header
+    padding-bottom: 100px
+    min-height: auto
+    margin-bottom: 30px
+  .header__detailed
+    margin-bottom: 30px
+  .brochure__wrapper
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-pack: start
+    -webkit-justify-content: flex-start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+  .header__title
+    font-size: 40px
+  .journey
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+  .journey__left
+    width: 100%
+  .journey__right
+    margin-top: 30px
+    margin-bottom: 30px
+    width: 100%
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    min-height: auto
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    &:after, &:before
+      display: none
+    img
+      width: 100%
+  .journey__photo--bottom, .journey__photo--top
+    position: relative
+    width: 100%
+    margin-bottom: 20px
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  .journey__photo-desc
+    position: relative
+    text-align: center
+    -webkit-writing-mode: lr-tb
+    -ms-writing-mode: lr-tb
+    writing-mode: lr-tb
+  .video
+    margin-bottom: 30px
+  .video__title
+    font-size: 24px
+    left: 50%
+    width: 200px
+    margin-left: -100px
+    text-align: center
+    z-index: 10
+  .video__title--small
+    width: 300px
+    left: 50%
+    margin-left: -150px
+  .travel
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    margin-bottom: 30px
+  .travel__items
+    width: 100%
+  .yacht
+    -webkit-box-orient: vertical
+    -webkit-box-direction: reverse
+    -webkit-flex-direction: column-reverse
+    -ms-flex-direction: column-reverse
+    flex-direction: column-reverse
+    margin-bottom: 60px
+  .yacht__right, .yacht__sliders
+    width: 100%
+  .yacht__slider, .yacht__sliders
+    height: 300px
+  .yacht__right
+    padding: 30px 15px 120px
+    &:before
+      display: none
+  .slick-arrow
+    bottom: -80px
+    right: 50%
+  .slick-next
+    margin-right: -48px
+  .questions
+    margin-bottom: 30px
+  .country__applications
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+  .application
+    width: 100%
+    margin: 0 50px 30px
+    &:nth-child(3n)
+      margin-right: 50px
+  .application__modal
+    top: 0
+    left: 0
+    margin-left: 0
+    margin-top: 0
+    height: 100%
+    width: 100%
+    -webkit-box-pack: start
+    -webkit-justify-content: flex-start
+    -ms-flex-pack: start
+    justify-content: flex-start
+  .impressions__wrapper
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+  .impressions__title
+    display: none
+    margin-bottom: 50px
+  .impressions__slider-right
+    width: 100%
+    min-height: 300px
+    &:before
+      bottom: 50%
+      margin-bottom: -155px
+  .impressions__slider--title
+    font-size: 30px
+  .impressions__photo
+    top: 0
+    left: 0
+  .impressions
+    margin-bottom: 30px
+    .slick-arrow
+      bottom: 0
+  .team
+    margin-bottom: 30px
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+  .team__block
+    padding-top: 30px
+    padding-left: 15px
+    padding-right: 15px
+    &:before
+      display: none
+    width: 100%
+  .team__block--first, .team__block--second, .team__block--third
+    width: 100%
+  .team__block--first
+    -webkit-box-ordinal-group: 2
+    -webkit-order: 1
+    -ms-flex-order: 1
+    order: 1
+    &:after
+      display: none
+  .team__block:nth-child(2)
+    -webkit-box-ordinal-group: 3
+    -webkit-order: 2
+    -ms-flex-order: 2
+    order: 2
+  .team__block--second
+    -webkit-box-ordinal-group: 4
+    -webkit-order: 3
+    -ms-flex-order: 3
+    order: 3
+  .team__block:nth-child(3)
+    -webkit-box-ordinal-group: 5
+    -webkit-order: 4
+    -ms-flex-order: 4
+    order: 4
+  .team__block--third
+    -webkit-box-ordinal-group: 6
+    -webkit-order: 5
+    -ms-flex-order: 5
+    order: 5
+  .team__block:nth-child(6)
+    -webkit-box-ordinal-group: 7
+    -webkit-order: 6
+    -ms-flex-order: 6
+    order: 6
+  .brochure__left
+    width: 100%
+    margin-bottom: 0
+  .brochure__text
+    margin-bottom: 30px
+  .brochure__right
+    width: 100%
+    &:after
+      display: none
+  .brochure__form-desc
+    position: relative
+    text-align: center
+    -webkit-writing-mode: lr-tb
+    -ms-writing-mode: lr-tb
+    writing-mode: lr-tb
+  .brochure__form
+    position: relative
+    width: 100%
+    left: 0
+  .brochure__title-adventure
+    display: none
+  .team__block--alex:after
+    right: auto
+    left: 0
+    top: -58px
+    font-size: 60px
+  .country__applications
+    margin-bottom: 30px
+  .video__modal
+    left: 0
+    margin-left: 0
+    width: 100%
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	.video__title
-		font-size: 24px
-		left: 50%
-		width: 200px
-		margin-left: -100px
-		text-align: center
-		z-index: 10
-		top: 20px
-	.team__block--alex:after
-		right: -100px
-	.impressions__sliders .slick-arrow
-		bottom: 10%
-	.country__spain-title
-		font-size: 32px	
-	
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	.header__form
-		top: 0
-		left: 0
-		margin-left: 0
-		margin-top: 0
-		height: 100%
-		width: 100%	
-		justify-content: flex-start
-	.header
-		padding-bottom: 100px
-		min-height: auto
-		margin-bottom: 30px
-	.header__detailed
-		margin-bottom: 30px
-	.brochure__wrapper
-		display: flex
-		flex-direction: column
-		justify-content: flex-start
-		align-items: center
-	.header__title
-		font-size: 40px
-	.journey
-		flex-direction: column
-	.journey__left 
-		width: 100%
-	.journey__right
-		margin-top: 30px
-		margin-bottom: 30px
-		width: 100%
-		display: flex
-		min-height: auto
-		flex-direction: column
-		&:after, &:before
-			display: none
-		img
-			width: 100%
-	.journey__photo--bottom, .journey__photo--top
-		position: relative
-		width: 100%
-		margin-bottom: 20px
-		top: 0
-		left: 0
-		bottom: 0
-		right: 0
-	.journey__photo-desc
-		position: relative
-		text-align: center
-		writing-mode: lr-tb
-	.video
-		margin-bottom: 30px
-	.video__title
-		font-size: 24px
-		left: 50%
-		width: 200px
-		margin-left: -100px
-		text-align: center
-		z-index: 10
-	.video__title--small
-		width: 300px
-		left: 50%
-		margin-left: -150px
-	.travel
-		flex-wrap: wrap
-		margin-bottom: 30px
-	.travel__items
-		width: 100%
-	.yacht
-		flex-direction: column-reverse	
-		margin-bottom: 60px
-	.yacht__sliders, .yacht__right
-		width: 100%
-	.yacht__sliders, .yacht__slider
-		height: 300px
-	.yacht__right
-		padding: 30px 15px 120px
-		&:before
-			display: none
-	.slick-arrow
-		bottom: -80px
-		right: 50%
-	.slick-prev
-	.slick-next
-		margin-right: -48px
-	.questions
-		margin-bottom: 30px
-	.country__applications
-		flex-direction: column
-	.country__applications
-		flex-direction: column
-	.application
-		width: 100%
-		margin: 0 50px 30px
-		&:nth-child(3n)
-			margin-right: 50px
-	.application__modal
-		top: 0
-		left: 0
-		margin-left: 0
-		margin-top: 0
-		height: 100%
-		width: 100%
-		justify-content: flex-start
-	.impressions__wrapper
-		flex-direction: column
-	.impressions__title
-		display: none
-		margin-bottom: 50px
-	.impressions__slider-right
-		width: 100%
-		min-height: 300px
-		&:before
-			bottom: 50%
-			margin-bottom: -155px
-	.impressions__slider--title
-		font-size: 30px
-	.impressions__photo
-		top: 0
-		left: 0
-	.impressions
-		margin-bottom: 30px
-		.slick-arrow
-			bottom: 0px
-	.team
-		margin-bottom: 30px
-		flex-direction: column
-	.team__block
-		padding-top: 30px
-		padding-left: 15px
-		padding-right: 15px
-		&:before
-			display: none
-	.team__block, .team__block--first, .team__block--second, .team__block--third
-		width: 100%
-	.team__block--first
-		order: 1
-		&:after
-			display: none
-	.team__block:nth-child(2)
-		order: 2
-	.team__block--second
-		order: 3
-	.team__block:nth-child(3)
-		order: 4
-	.team__block--third
-		order: 5
-	.team__block:nth-child(6)
-		order: 6
-	.brochure__left
-		width: 100%
-		margin-bottom: 0
-	.brochure__text
-		margin-bottom: 30px
-	.brochure__right
-		width: 100%
-	.brochure__right:after
-		display: none
-	.brochure__form-desc
-		position: relative
-		text-align: center
-		writing-mode: lr-tb
-	.brochure__form
-		position: relative
-		width: 100%
-		left: 0
-	.brochure__title-adventure
-		display: none
-	.team__block--alex:after
-		right: auto
-		left: 0
-		top: -58px
-		font-size: 60px
-	.country__applications 
-		margin-bottom: 30px
-	.video__modal
-		left: 0
-		margin-left: 0
-		width: 100%
-		
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	.impressions__slider-right
-		min-height: 300px
-		&:before, &:after
-			display: none
-	.header
-		padding-top: 50px
-	.header__title
-		margin-bottom: 30px
-		font-size: 34px
-	.header__text
-		line-height: 24px
-	
-	
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+@media only screen and (max-width: 480px)
+  .impressions__slider-right
+    min-height: 300px
+    &:after, &:before
+      display: none
+  .header
+    padding-top: 50px
+  .header__title
+    margin-bottom: 30px
+    font-size: 34px
+  .header__text
+    line-height: 24px

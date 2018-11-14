@@ -1,0 +1,6 @@
+{
+    "name": "captain/sailingtrips",
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4"
+    }
+}
