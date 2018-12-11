@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Visit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
+  <link href="css/main.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+		<div class="navbar">
+			<div class="navbar__wrapper">
+				<img class="navbar__logo" src="img/logo.png">
+				<img class="navbar__logo--active navbar__logo--inactive" src="img/logo--black.png">
+				<a class="navbar__number navbar__number--mobile" href="tel:+79142522219">+7-914-252-22-19</a>
+			</div>
+			<div class="navbar__btn"><span class="navbar__btn-line"></span></div>
+			<div class="navbar__right navbar__right--active"><img class="navbar__logo navbar__logo--mobile" src="img/logo.png">
+				<ul class="navbar__nav">
+					<li><a class="navbar__item" href="#we" onclick="closeMenu()">О нас</a> </li>
+					<li><a class="navbar__item" href="#appartments" onclick="closeMenu()">Наши номера</a> </li>
+					<li><a class="navbar__item" href="#cooperation" onclick="closeMenu()">Партнёрам</a> </li>
+					<li><a class="navbar__item" href="#cities" onclick="closeMenu()">О городах</a> </li>
+					<li><a class="navbar__item" href="#contacts" onclick="closeMenu()">Контакты</a> </li>
+				</ul>
+				<div class="navbar__barrier"></div><a class="navbar__number" href="tel:+79142522219">+7-914-252-22-19</a>
+				<div class="header__menu-close"></div>
+			</div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-12">
+          <h1 class="header__title">Сеть домашних гостиниц в г.Мирном и г.Удачном (Якутия)</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 col-12">
+          <h3 class="header__subtitle">Номера квартирноого типа со всеми удобствами от 3000 руб/сутки.  Гостям предоставляется бесплатный трансфер от/до аэропорта.</h3><a class="header__btn" href="#">Узнать о свободных номерах</a>
+        </div>
+      </div>
+    </div>
+    <form class="header__form" id="form" action="mail.php" method="POST">
+      <div class="header__form-close"></div>
+      <h3 class="header__form-title">Оставьте свои контактные данные для получения информации о свободных номерах</h3>
+      <input class="brochure__field" type="text" name="name" placeholder="Ваше имя" required>
+      <input class="brochure__field" type="tel" name="phone" placeholder="Ваш телефон" minlength="6" required>
+      <button class="brochure__submit" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </div>
+  <div class="container hotel" id="we">
+    <div class="row justify-content-between">
+      <div class="col-lg-5 sagittarius">
+        <h3 class="hotel__subtitle">Добро пожаловать в</h3>
+        <h3 class="hotel__title">«VIP комфорт»</h3>
+        <p>В каждых апартаментах имеются все удобства для проживания: туалетные принадлежности, ванная комната, полностью оборудованная кухня, бесплатный Wi-Fi и телевизор. Мы говорим на вашем языке!</p>
+      </div>
+      <div class="hotel__numbers col-lg-6">
+        <div class="hotel__in-number">
+          <p class="hotel__count spincrement">11</p>
+          <p class="hotel__in-number-desc">Лет работы</p>
+        </div>
+        <div class="hotel__in-number">
+          <p class="hotel__count spincrement">12</p>
+          <p class="hotel__in-number-desc">Апартаментов</p>
+        </div>
+        <div class="hotel__in-number">
+          <div class="hotel__in-number-wrapper"><span class="hotel__count spincrement1">700</span><span class="hotel__count">+</span></div>
+          <p class="hotel__in-number-desc">Довольных клиентов</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="amenities">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 amenity">
+          <div class="amenity__image"> <img src="img/amenity-1.png"></div>
+          <h4 class="amenity__title">Бесплатный Wi-Fi</h4>
+          <p>Во всех номерах есть быстрый интернет</p>
+        </div>
+        <div class="col-lg-3 col-md-6 amenity">
+          <div class="amenity__image"> <img src="img/amenity-2.png"></div>
+          <h4 class="amenity__title">Уютная мебель</h4>
+          <p>Новая и мягкая мебель со свежим спальным бельём</p>
+        </div>
+        <div class="col-lg-3 col-md-6 amenity">
+          <div class="amenity__image"> <img src="img/amenity-3.png"></div>
+          <h4 class="amenity__title">Трансфер</h4>
+          <p>Бесплатный трансфер от/до аэропорта</p>
+        </div>
+        <div class="col-lg-3 col-md-6 amenity">
+          <div class="amenity__image"> <img src="img/amenity-4.png"></div>
+          <h4 class="amenity__title">Выгоднее гостиниц</h4>
+          <p> Квартира выгоднее гостиниц в городе примерно в два раза</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="appartments container" id="appartments">
+    <h3 class="appartments__subtitle">Наши номера</h3>
+    <h3 class="appartments__title">город Мирный</h3>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="appartment appartment-1">
+          <div class="appartment__info">
+            <h4 class="apparment__title">1-комнатная квартира на Ленина 23 за 3500р/с</h4>
+            <p>В распоряжении гостей балкон, спальня с телевизором и ванная комната. Wi-Fi.</p><a class="apparment__photos" href="javascript:;" data-fancybox-trigger="flat1" data-fancybox-index="0">Смотреть фото 
+              <div class="apparment__photos-arrow"></div></a>
+          </div><span class="appartment__city">г.Мирный</span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="appartment appartment-2">
+          <div class="appartment__info">
+            <h4 class="apparment__title">1-комнатная квартира на Ленина 43 за 3000р/с</h4>
+            <p>В распоряжении гостей спальня с 2 кроватями и ванная комната. Wi-Fi</p><a class="apparment__photos" href="javascript:;" data-fancybox-trigger="flat2" data-fancybox-index="0">Смотреть фото 
+              <div class="apparment__photos-arrow"></div></a>
+          </div><span class="appartment__city">г.Мирный</span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="appartment appartment-3">
+          <div class="appartment__info">
+            <h4 class="apparment__title">1-комнатная квартира на Советской 3 за 3500р/с</h4>
+            <p>В распоряжении гостей балкон, спальня с телевизором и ванная комната. Wi-Fi.</p><a class="apparment__photos" href="javascript:;" data-fancybox-trigger="flat3" data-fancybox-index="0">Смотреть фото 
+              <div class="apparment__photos-arrow"></div></a>
+          </div><span class="appartment__city">г.Мирный</span>
+        </div>
+      </div>
+    </div>
+    <div class="appartments--hide">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="appartment appartment-4">
+            <div class="appartment__info">
+              <h4 class="apparment__title">1-комнатная квартира на Советской 13</h4>
+              <p>Больше информации и фото появятся в ближайшее время</p><span class="apparment__photos">Смотреть фото 
+                <div class="apparment__photos-arrow"></div></span>
+            </div><span class="appartment__city">г.Мирный</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="appartment appartment-5">
+            <div class="appartment__info">
+              <h4 class="apparment__title">1-комнатная квартира на Тихонова 15/2 за 3500р/с</h4>
+              <p>В распоряжении гостей балкон, спальня с телевизором и ванная комната. Wi-Fi.</p><a class="apparment__photos" href="javascript:;" data-fancybox-trigger="flat5" data-fancybox-index="0">Смотреть фото 
+                <div class="apparment__photos-arrow"></div></a>
+            </div><span class="appartment__city">г.Мирный</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="appartment appartment-6">
+            <div class="appartment__info">
+              <h4 class="apparment__title">1-комнатная квартира на Тихонова 16а за 3000р/с</h4>
+              <p>В распоряжении гостей балкон, спальня с телевизором и ванная комната. Wi-Fi.</p><a class="apparment__photos" href="javascript:;" data-fancybox-trigger="flat6" data-fancybox-index="0">Смотреть фото 
+                <div class="apparment__photos-arrow"></div></a>
+            </div><span class="appartment__city">г.Мирный</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="appartment appartment-7">
+            <div class="appartment__info">
+              <h4 class="apparment__title">2-комнатная квартира на Павлова 8 за 4500р/с</h4>
+              <p>В распоряжении гостей балкон, 2 спальни с телевизором и ванная комната. Wi-Fi.</p><a class="apparment__photos" href="javascript:;" data-fancybox-trigger="flat7" data-fancybox-index="0">Смотреть фото 
+                <div class="apparment__photos-arrow"></div></a>
+            </div><span class="appartment__city">г.Мирный</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="appartment appartment-8">
+            <div class="appartment__info">
+              <h4 class="apparment__title">1-комнатная квартира на Ойунского 36 за 3500р/с</h4>
+              <p>В распоряжении гостей балкон, спальня с телевизором и ванная комната. Wi-Fi.</p><a class="apparment__photos" href="javascript:;" data-fancybox-trigger="flat8" data-fancybox-index="0">Смотреть фото 
+                <div class="apparment__photos-arrow"></div></a>
+            </div><span class="appartment__city">г.Мирный</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="appartment appartment-9">
+            <div class="appartment__info">
+              <h4 class="apparment__title">2-комнатная квартира на 50 лет Октября 1 за 4500р/с</h4>
+              <p>В распоряжении гостей балкон, 2 спальни с телевизором и ванная комната. Wi-Fi.</p><a class="apparment__photos" href="javascript:;" data-fancybox-trigger="flat9" data-fancybox-index="0">Смотреть фото 
+                <div class="apparment__photos-arrow"></div></a>
+            </div><span class="appartment__city">г.Мирный</span>
+          </div>
+        </div>
+			</div>    	
+		</div>
+		<button class="appartments__more">Показать еще</button>
+    <button class="appartments__less">Свернуть</button>
+		<h3 class="appartments__title">город Удачный</h3>
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="appartment appartment-10">
+					<div class="appartment__info">
+						<h4 class="apparment__title">1-комнатная квартира в мкр. Новый город 19</h4>
+						<p>Больше информации и фото появятся в ближайшее время</p><span class="apparment__photos">Смотреть фото 
+							<div class="apparment__photos-arrow"></div></span>
+					</div><span class="appartment__city">г.Удачный</span>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="appartment appartment-11">
+					<div class="appartment__info">
+						<h4 class="apparment__title">1-комнатная квартира в мкр. Новый город 21</h4>
+						<p>Больше информации и фото появятся в ближайшее время</p><span class="apparment__photos">Смотреть фото 
+							<div class="apparment__photos-arrow"></div></span>
+					</div><span class="appartment__city">г.Удачный</span>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="appartment appartment-12">
+					<div class="appartment__info">
+						<h4 class="apparment__title">1-комнатная квартира в мкр. Новый город 33 за 3500р/с</h4>
+						<p>В распоряжении гостей балкон, спальня с телевизором и ванная комната. Wi-Fi.</p><a class="apparment__photos" href="javascript:;" data-fancybox-trigger="flat12" data-fancybox-index="0">Смотреть фото 
+							<div class="apparment__photos-arrow"></div></a>
+					</div><span class="appartment__city">г.Удачный</span>
+				</div>
+			</div>
+		</div>    
+  </div>
+  <div class="container">
+    <div class="reservation">
+      <div class="row align-items-center">
+        <div class="col-xl-5 col-lg-12">
+          <h4 class="reservation__title">Понравился номер?</h4>
+          <h4 class="reservation__subtitle">Оставьте заявку, чтобы забронировать его</h4>
+        </div>
+        <form class="reservation__field" id="form-2" action="mail.php" method="POST">
+          <input class="reservation__form" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="reservation__form" type="tel" name="phone" placeholder="Ваш телефон" minlength="6" required>
+          <button class="reservation__submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="cooperation" id="cooperation"><img class="cooperation__image" src="img/icon-report.png">
+    <div class="cooperation__text">
+      <h3 class="cooperation__title">Предоставляем всю отчётность</h3>
+      <p>Мы рады сотрудничеству с организациями и предоставляем специальный тариф при заключении договора. Также мы предоставим всю документацию</p>
+    </div>
+  </div>
+  <div class="cities" id="cities">
+    <div class="container">
+      <div class="city row">
+        <div class="city__left col-xl-6 col-lg-5 col-md-5 col-sm-12 col-12">
+          <div class="city__desc">
+            <h3 class="city__name">Город Мирный</h3>
+            <p>Город Мирный находится в юго-западной части Республики Саха и является центром Мирнинского района. Его жизнь связана с наличием открытой в 1955 году кимберлитовой трубки «Мир» и активной добычей алмазов. Первоначально она велась открытым способом. В результате образовался один из самых крупных карьеров мира. Его глубина составляет 525 метров, а ширина превышает 1200.</p>
+            <div class="city__gismeteo">
+              <div class="gsInformer" id="gsInformerID-ewV48vHteMf8AL" style="max-width:363px;height:115px">
+                <div class="gsIContent">
+                  <div id="cityLink"><a href="https://www.gismeteo.ru/weather-mirny-4022/" target="_blank">&Pcy;&ocy;&gcy;&ocy;&dcy;&acy; &vcy; &Mcy;&icy;&rcy;&ncy;&ocy;&mcy;</a></div>
+                  <div class="gsLinks">
+                    <table>
+                      <tr>
+                        <td>
+                          <div class="leftCol"><a href="https://www.gismeteo.ru/" target="_blank"><img alt="Gismeteo" title="Gismeteo" src="https://nst1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0"><span>Gismeteo</span></a></div>
+                          <div class="rightCol"><a href="https://www.gismeteo.ru/weather-mirny-4022/2-weeks/" target="_blank">&Pcy;&rcy;&ocy;&gcy;&ncy;&ocy;&zcy; &ncy;&acy; 2 &ncy;&iecy;&dcy;&iecy;&lcy;&icy;</a></div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="city__photo city__photo--mirniy col-xl-6 col-lg-5 col-md-5 col-sm-12 col-12"></div>
+      </div>
+      <div class="city row">
+        <div class="city__photo city__photo--udachny col-xl-6 col-lg-5 col-md-5 col-sm-12 col-12"></div>
+        <div class="city__right col-xl-6 col-lg-5 col-md-5 col-sm-12 col-12">
+          <div class="city__desc city__desc--right">
+            <h3 class="city__name">Город Удачный</h3>
+            <p>Город Удачный – город улусного значения в Мирнинском районе (улусе), расположен в западной части Якутии у самого Северного полярного круга. Удачный возник в связи с открытием алмазного месторождения – кимберлитовой трубки «Удачная», именем которой и назван город, в 15 км от города – трубка «Зарница». Именно здесь добывается большая часть алмазов России.</p>
+            <div class="city__gismeteo">
+              <div class="gsInformer" id="gsInformerID-sBnd03F8BMOj6F" style="max-width:363px;height:115px">
+                <div class="gsIContent">
+                  <div id="cityLink"><a href="https://www.gismeteo.ru/weather-udachny-12754/" target="_blank">&Pcy;&ocy;&gcy;&ocy;&dcy;&acy; &vcy; &Ucy;&dcy;&acy;&chcy;&ncy;&ocy;&mcy;</a></div>
+                  <div class="gsLinks">
+                    <table>
+                      <tr>
+                        <td>
+                          <div class="leftCol"><a href="https://www.gismeteo.ru/" target="_blank"><img alt="Gismeteo" title="Gismeteo" src="https://nst1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0"><span>Gismeteo</span></a></div>
+                          <div class="rightCol"><a href="https://www.gismeteo.ru/weather-udachny-12754/2-weeks/" target="_blank">&Pcy;&rcy;&ocy;&gcy;&ncy;&ocy;&zcy; &ncy;&acy; 2 &ncy;&iecy;&dcy;&iecy;&lcy;&icy;</a></div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contacts container" id="contacts">
+    <h3 class="contacts__title">Контакты:</h3>
+    <div class="contacts__info"><span>Телефон</span>
+      <p>+7-914-252-22-19</p>
+    </div>
+    <div class="contacts__info"><span>Электронная почта</span>
+      <p>sirina2005@mail.ru</p>
+    </div><a class="contacts__btn" href="#">Узнать о свободных номерах</a>
+  </div>
+  <div id="map"></div>
+  <div class="flats">
+    <div class="flat1"><a href="img/flat1-1.jpg" data-fancybox="flat1"><img data-src="img/flat1-1.jpg"></a><a href="img/flat1-2.jpg" data-fancybox="flat1"><img data-src="img/flat1-2.jpg"></a><a href="img/flat1-3.jpg" data-fancybox="flat1"><img data-src="img/flat1-3.jpg"></a><a href="img/flat1-4.jpg" data-fancybox="flat1"><img data-src="img/flat1-4.jpg"></a><a href="img/flat1-5.jpg" data-fancybox="flat1"><img data-src="img/flat1-5.jpg"></a><a href="img/flat1-6.jpg" data-fancybox="flat1"><img data-src="img/flat1-6.jpg"></a><a href="img/flat1-7.jpg" data-fancybox="flat1"><img data-src="img/flat1-7.jpg"></a><a href="img/flat1-8.jpg" data-fancybox="flat1"><img data-src="img/flat1-8.jpg"></a><a href="img/flat1-9.jpg" data-fancybox="flat1"><img data-src="img/flat1-9.jpg"></a><a href="img/flat1-10.jpg" data-fancybox="flat1"><img data-src="img/flat1-10.jpg"></a><a href="img/flat1-11.jpg" data-fancybox="flat1"><img data-src="img/flat1-11.jpg"></a><a href="img/flat1-12.jpg" data-fancybox="flat1"><img data-src="img/flat1-12.jpg"></a><a href="img/flat1-13.jpg" data-fancybox="flat1"><img data-src="img/flat1-13.jpg"></a></div>
+    <div class="flat2"><a href="img/flat2-1.webp" data-fancybox="flat2"><img data-src="img/flat2-1.webp"></a><a href="img/flat2-2.webp" data-fancybox="flat2"><img data-src="img/flat2-2.webp"></a><a href="img/flat2-3.webp" data-fancybox="flat2"><img data-src="img/flat2-3.webp"></a><a href="img/flat2-4.webp" data-fancybox="flat2"><img data-src="img/flat2-4.webp"></a><a href="img/flat2-5.webp" data-fancybox="flat2"><img data-src="img/flat2-5.webp"></a><a href="img/flat2-6.webp" data-fancybox="flat2"><img data-src="img/flat2-6.webp"></a><a href="img/flat2-7.webp" data-fancybox="flat2"><img data-src="img/flat2-7.webp"></a></div>
+    <div class="flat3"><a href="img/flat3-1.jpg" data-fancybox="flat3"><img data-src="img/flat3-1.jpg"></a><a href="img/flat3-2.jpg" data-fancybox="flat3"><img data-src="img/flat3-2.jpg"></a><a href="img/flat3-3.jpg" data-fancybox="flat3"><img data-src="img/flat3-3.jpg"></a><a href="img/flat3-4.jpg" data-fancybox="flat3"><img data-src="img/flat3-4.jpg"></a><a href="img/flat3-5.jpg" data-fancybox="flat3"><img data-src="img/flat3-5.jpg"></a><a href="img/flat3-6.jpg" data-fancybox="flat3"><img data-src="img/flat3-6.jpg"></a><a href="img/flat3-7.jpg" data-fancybox="flat3"><img data-src="img/flat3-7.jpg"></a><a href="img/flat3-8.jpg" data-fancybox="flat3"><img data-src="img/flat3-8.jpg"></a><a href="img/flat3-9.jpg" data-fancybox="flat3"><img data-src="img/flat3-9.jpg"></a><a href="img/flat3-10.jpg" data-fancybox="flat3"><img data-src="img/flat3-10.jpg"></a><a href="img/flat3-11.jpg" data-fancybox="flat3"><img data-src="img/flat3-11.jpg"></a></div>
+    <div class="flat5"><a href="img/flat5-1.jpg" data-fancybox="flat5"><img data-src="img/flat5-1.jpg"></a><a href="img/flat5-2.jpg" data-fancybox="flat5"><img data-src="img/flat5-2.jpg"></a><a href="img/flat5-3.jpg" data-fancybox="flat5"><img data-src="img/flat5-3.jpg"></a><a href="img/flat5-4.jpg" data-fancybox="flat5"><img data-src="img/flat5-4.jpg"></a><a href="img/flat5-5.jpg" data-fancybox="flat5"><img data-src="img/flat5-5.jpg"></a><a href="img/flat5-6.jpg" data-fancybox="flat5"><img data-src="img/flat5-6.jpg"></a><a href="img/flat5-7.jpg" data-fancybox="flat5"><img data-src="img/flat5-7.jpg"></a><a href="img/flat5-8.jpg" data-fancybox="flat5"><img data-src="img/flat5-8.jpg"></a><a href="img/flat5-9.jpg" data-fancybox="flat5"><img data-src="img/flat5-9.jpg"></a><a href="img/flat5-10.jpg" data-fancybox="flat5"><img data-src="img/flat5-10.jpg"></a><a href="img/flat5-11.jpg" data-fancybox="flat5"><img data-src="img/flat5-11.jpg"></a></div>
+    <div class="flat6"><a href="img/flat6-1.webp" data-fancybox="flat6"><img data-src="img/flat6-1.webp"></a><a href="img/flat6-2.webp" data-fancybox="flat6"><img data-src="img/flat6-2.webp"></a><a href="img/flat6-3.webp" data-fancybox="flat6"><img data-src="img/flat6-3.webp"></a><a href="img/flat6-4.webp" data-fancybox="flat6"><img data-src="img/flat6-4.webp"></a><a href="img/flat6-5.webp" data-fancybox="flat6"><img data-src="img/flat6-5.webp"></a><a href="img/flat6-6.webp" data-fancybox="flat6"><img data-src="img/flat6-6.webp"></a><a href="img/flat6-7.webp" data-fancybox="flat6"><img data-src="img/flat6-7.webp"></a><a href="img/flat6-8.webp" data-fancybox="flat6"><img data-src="img/flat6-8.webp"></a></div>
+    <div class="flat7"><a href="img/flat7-1.jpg" data-fancybox="flat7"><img data-src="img/flat7-1.jpg"></a><a href="img/flat7-2.jpg" data-fancybox="flat7"><img data-src="img/flat7-2.jpg"></a><a href="img/flat7-3.jpg" data-fancybox="flat7"><img data-src="img/flat7-3.jpg"></a><a href="img/flat7-4.jpg" data-fancybox="flat7"><img data-src="img/flat7-4.jpg"></a><a href="img/flat7-5.jpg" data-fancybox="flat7"><img data-src="img/flat7-5.jpg"></a><a href="img/flat7-6.jpg" data-fancybox="flat7"><img data-src="img/flat7-6.jpg"></a><a href="img/flat7-7.jpg" data-fancybox="flat7"><img data-src="img/flat7-7.jpg"></a><a href="img/flat7-8.jpg" data-fancybox="flat7"><img data-src="img/flat7-8.jpg"></a><a href="img/flat7-9.jpg" data-fancybox="flat7"><img data-src="img/flat7-9.jpg"></a><a href="img/flat7-10.jpg" data-fancybox="flat7"><img data-src="img/flat7-10.jpg"></a><a href="img/flat7-11.jpg" data-fancybox="flat7"><img data-src="img/flat7-11.jpg"></a><a href="img/flat7-12.jpg" data-fancybox="flat7"><img data-src="img/flat7-12.jpg"></a></div>
+    <div class="flat8"><a href="img/flat8-1.jpg" data-fancybox="flat8"><img data-src="img/flat8-1.jpg"></a><a href="img/flat8-2.jpg" data-fancybox="flat8"><img data-src="img/flat8-2.jpg"></a><a href="img/flat8-3.jpg" data-fancybox="flat8"><img data-src="img/flat8-3.jpg"></a><a href="img/flat8-4.jpg" data-fancybox="flat8"><img data-src="img/flat8-4.jpg"></a><a href="img/flat8-5.jpg" data-fancybox="flat8"><img data-src="img/flat8-5.jpg"></a><a href="img/flat8-6.jpg" data-fancybox="flat8"><img data-src="img/flat8-6.jpg"></a><a href="img/flat8-7.jpg" data-fancybox="flat8"><img data-src="img/flat8-7.jpg"></a><a href="img/flat8-8.jpg" data-fancybox="flat8"><img data-src="img/flat8-8.jpg"></a><a href="img/flat8-9.jpg" data-fancybox="flat8"><img data-src="img/flat8-9.jpg"></a><a href="img/flat8-10.jpg" data-fancybox="flat8"><img data-src="img/flat8-10.jpg"></a></div>
+    <div class="flat9"><a href="img/flat9-1.jpg" data-fancybox="flat9"><img data-src="img/flat9-1.jpg"></a><a href="img/flat9-2.jpg" data-fancybox="flat9"><img data-src="img/flat9-2.jpg"></a><a href="img/flat9-3.jpg" data-fancybox="flat9"><img data-src="img/flat9-3.jpg"></a><a href="img/flat9-4.jpg" data-fancybox="flat9"><img data-src="img/flat9-4.jpg"></a><a href="img/flat9-5.jpg" data-fancybox="flat9"><img data-src="img/flat9-5.jpg"></a><a href="img/flat9-6.jpg" data-fancybox="flat9"><img data-src="img/flat9-6.jpg"></a><a href="img/flat9-7.jpg" data-fancybox="flat9"><img data-src="img/flat9-7.jpg"></a><a href="img/flat9-8.jpg" data-fancybox="flat9"><img data-src="img/flat9-8.jpg"></a><a href="img/flat9-9.jpg" data-fancybox="flat9"><img data-src="img/flat9-9.jpg"></a><a href="img/flat9-10.jpg" data-fancybox="flat9"><img data-src="img/flat9-10.jpg"></a><a href="img/flat9-11.jpg" data-fancybox="flat9"><img data-src="img/flat9-11.jpg"></a><a href="img/flat9-12.jpg" data-fancybox="flat9"><img data-src="img/flat9-12.jpg"></a><a href="img/flat9-13.jpg" data-fancybox="flat9"><img data-src="img/flat9-13.jpg"></a><a href="img/flat9-14.jpg" data-fancybox="flat9"><img data-src="img/flat9-14.jpg"></a></div>
+    <div class="flat12"><a href="img/flat12-1.jpg" data-fancybox="flat12"><img data-src="img/flat12-1.jpg"></a><a href="img/flat12-2.jpg" data-fancybox="flat12"><img data-src="img/flat12-2.jpg"></a><a href="img/flat12-3.jpg" data-fancybox="flat12"><img data-src="img/flat12-3.jpg"></a><a href="img/flat12-4.jpg" data-fancybox="flat12"><img data-src="img/flat12-4.jpg"></a><a href="img/flat12-5.jpg" data-fancybox="flat12"><img data-src="img/flat12-5.jpg"></a><a href="img/flat12-6.jpg" data-fancybox="flat12"><img data-src="img/flat12-6.jpg"></a><a href="img/flat12-7.jpg" data-fancybox="flat12"><img data-src="img/flat12-7.jpg"></a><a href="img/flat12-8.jpg" data-fancybox="flat12"><img data-src="img/flat12-8.jpg"></a><a href="img/flat12-9.jpg" data-fancybox="flat12"><img data-src="img/flat12-9.jpg"></a><a href="img/flat12-10.jpg" data-fancybox="flat12"><img data-src="img/flat12-10.jpg"></a><a href="img/flat12-11.jpg" data-fancybox="flat12"><img data-src="img/flat12-11.jpg"></a><a href="img/flat12-12.jpg" data-fancybox="flat12"><img data-src="img/flat12-12.jpg"></a><a href="img/flat12-13.jpg" data-fancybox="flat12"><img data-src="img/flat12-13.jpg"></a><a href="img/flat12-14.jpg" data-fancybox="flat12"><img data-src="img/flat12-14.jpg"></a><a href="img/flat12-15.jpg" data-fancybox="flat12"><img data-src="img/flat12-15.jpg"></a><a href="img/flat12-16.jpg" data-fancybox="flat12"><img data-src="img/flat12-16.jpg"></a><a href="img/flat12-17.jpg" data-fancybox="flat12"><img data-src="img/flat12-17.jpg"></a></div>
+  </div>
+  <div class="overlay"></div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvJVrj-xz7RB83ynwI-hNhmEW7I8Q7Fuc&amp;callback=initMap" async defer></script>
+  <script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=sBnd03F8BMOj6F" type="text/javascript"></script>
+  <script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=ewV48vHteMf8AL" type="text/javascript"></script>
+  <script src="js/jquery.spincrement.min.js" defer></script>
+  <script src="js/common.js" defer></script>
+</body>

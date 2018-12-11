@@ -1,0 +1,67 @@
+@import "fonts"
+@import "vars"
+
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #000
+body input:required:valid,
+body textarea:required:valid
+	color: #000
+
+html, body
+	height: 100%
+
+body
+	min-width: 360px
+	font-size: 14px
+	position: relative
+	line-height: 1.5
+	font-family: 'Raleway', sans-serif
+	overflow-x: hidden
+	opacity: 1
+	background: #fff
+	margin: 0 auto
+	color: #888
+
+img
+	display: block
+	max-width: 100%
+	height: auto
+
+a:hover
+	text-decoration: none
+
+p
+	line-height: 30px
+
+@import "includes/header" 
+@import "includes/blog" 
+@import "includes/footer" 
+@import "media" // Всегда в конце
