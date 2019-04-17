@@ -1,0 +1,373 @@
+.about
+	background: #ECF4FE
+	padding-top: 120px
+	color: #1F3651
+
+.block__subtitle
+	margin-bottom: 10px
+	display: block
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 12px
+	line-height: 12px
+	color: #21B65C
+
+.block__title
+	display: block
+	margin-bottom: 30px
+	font-size: 30px
+	line-height: 42px
+	font-weight: 700
+
+.block__title--center
+	text-align: center
+
+.block__title--white
+	color: #fff
+
+.about__text
+	margin-bottom: 65px
+	max-width: 635px
+	font-weight: 500
+	line-height: 32px
+
+.services
+	margin-bottom: 120px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.service
+	margin-right: 125px
+
+.service__img
+	margin-bottom: 27px
+
+.service__title
+	margin-bottom: 20px
+	font-size: 20px
+	line-height: 28px
+	font-weight: 700
+
+.service__text
+	font-size: 12px
+	line-height: 28px
+	color: #4773A9
+
+.count__wrappers
+	position: relative
+	z-index: 10
+	transform: translateY(50px)
+	margin-left: auto
+	width: calc(100vw - ((100vw - 1110px)) / 2);
+	background: #21B65C
+
+.count__items	
+	padding: 68px 65px
+	display: flex
+	width: 1110px
+	justify-content: space-between	
+	
+
+.count__item
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.count__item-number
+	margin-bottom: 10px
+	font-size: 30px
+	line-height: 30px
+	font-weight: 700
+
+.count__item-text
+	font-size: 16px
+	line-height: 24px
+	font-weight: 500
+
+
+.portfolio
+	position: relative
+	padding-top: 170px	
+	background: url(../img/bg__porfolio.jpg) 50% 50% no-repeat
+	background-size: cover
+	&:after
+		z-index: 1
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 100%
+		height: 100%
+		background: rgba(6, 61, 27, 0.7)
+	.swiper-pagination
+		display: flex
+		align-items: center
+		justify-content: center
+	.swiper-container-horizontal>.swiper-pagination-bullets
+		bottom: -40px
+	.swiper-pagination-bullet
+		width: 12px
+		height: 12px
+		border-radius: 50%
+		border: 1px solid #344043
+	.swiper-pagination-bullet-active
+		width: 16px
+		height: 16px
+		background: #CEBC19
+	.swiper-slide-active
+		&:after
+			opacity: 0
+		.portfolio__item-desc
+			opacity: 1
+
+.portfolio__wrapper
+	position: relative
+	z-index: 10
+	margin-bottom: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.portfolio__all
+	position: relative
+	padding: 20px 40px
+	display: inline-block
+	font-size: 16px
+	line-height: 16px
+	font-weight: 500
+	color: #fff
+	border: 1px solid #fff
+	&:hover
+		color: #fff
+	&:after
+		content: ""
+		display: inline-block
+		width: 0
+		opacity: 0
+		height: 13px
+		position: relative
+		right: -10px
+		background: url("../img/right-arrow.svg")
+		transition: 1s all		
+	&:hover:after
+		width: 18px
+		opacity: 1
+	
+.portfolio__items
+	position: relative
+	z-index: 10
+	margin-top: -115px
+	width: 100%
+	height: 100%
+	transform: translateY(115px)
+	
+.portfolio__item
+	position: relative
+	height: 630px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column-reverse
+	border-bottom: 10px solid #21B65C
+	overflow: hidden
+	&:after
+		z-index: 1
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, 0.5)
+		opacity: 1
+		transition: all .5s
+
+.portfolio__item-desc
+	z-index: 10
+	position: relative
+	padding: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	opacity: 0
+	background: rgba(12, 66, 33, 0.7)
+	transition: all .5s
+
+
+
+.portfolio__item:hover 
+	&:after
+		opacity: 0
+	.portfolio__item-desc
+		opacity: 1
+
+.portfolio__item-name
+	margin: 0
+	font-size: 18px
+	line-height: 40px
+	font-weight: 700
+	
+.portfolio__item-link
+	display: inline-block
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	background: rgba(0, 0, 0, 0.15) url("../img/right-arrow.svg") 50% 50% no-repeat
+
+
+.reviews
+	margin-bottom: 112px
+	padding-top: 300px
+	.swiper-button-next, .swiper-button-prev
+		display: none
+		top: auto
+		bottom: 60px
+		width: 25px
+		height: 18px
+		background: url("../img/right-arrow.svg") 50% 50% no-repeat
+	.swiper-button-next
+		right: 60px
+	.swiper-button-prev
+		left: auto
+		right: 100px
+		transform: rotate(180deg)
+	.swiper-slide-active .swiper-button-next, .swiper-slide-active .swiper-button-prev
+		display: block
+
+.review__slider
+	position: relative
+	margin-top: 70px
+
+.review
+	margin: 0 auto
+	width: 930px
+
+.review__block
+	position: relative
+	padding: 60px 285px 60px 80px
+	width: 730px
+	background: #21B65C
+
+.review__text
+	margin: 0
+	line-height: 40px
+	color: #094320
+	
+.review__author
+	position: absolute
+	top: 0
+	right: -200px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: stretch
+
+.review__author-wrapper
+	padding: 0 60px 0 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: center
+	background: #48585c
+
+.review__author-name
+	margin-bottom: 5px
+	display: inline-block
+	font-size: 16px
+	line-height: 40px
+	font-weight: 700
+
+.review__author-company
+	font-size: 12px
+	line-height: 32px
+	color: #8BA6AD
+
+.team
+	margin-left: auto
+	width: calc(100vw - ((100vw - 1110px)) / 2)
+	display: flex
+	transform: translateY(128px)
+
+.team__desc
+	margin-right: 30px
+	width: 255px
+	flex-shrink: 0
+
+.team__title
+	margin-bottom: 30px
+	font-size: 30px
+	line-height: 42px
+	font-weight: 700
+
+.team__text
+	line-height: 32px
+	color: #637C83
+
+.team__slider
+	overflow: hidden
+
+.team__slide
+	height: 498px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column-reverse
+	&:hover
+		.team__item-desc
+			height: 100%
+		.team__item-social
+			opacity: 1
+			font-size: 22px
+
+.team__item-desc
+	padding: 30px 0
+	height: auto
+	text-align: center
+	display: flex
+	flex-direction: column
+	background: rgba(12, 66, 33, 0.7)
+
+.team__item-socials
+	margin: auto 0
+	font-size: 0
+
+.team__item-social
+	margin-right: 30px
+	color: #fff
+	opacity: 0
+	transition: all .5s
+	&:last-child
+		margin-right: 0
+
+.team__item-name
+	font-size: 18px
+	line-height: 42px
+	font-weight: 700
+	
+.team__item-post
+	font-size: 12px
+
+.plan
+	background: #ECF4FE

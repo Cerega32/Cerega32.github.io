@@ -48,15 +48,18 @@ gulp.task('browser-sync', function() {
     browserSync({
         server: {
             baseDir: 'app'
-        },
-        notify: false,
-        tunnel: true,
-        tunnel: "cerega32", //Demonstration page: http://projectmane.localtunnel.me
+					},
+//					ui: {
+//						port: 7000
+//				},
+        notify: false
+//        tunnel: true,
+//        tunnel: "cerega", //Demonstration page: http://projectmane.localtunnel.me
     });
 });
 
 gulp.task('pug', function() {
-    return gulp.src('app/pug/*.pug')
+    return gulp.src(['app/pug/**/*.pug', '!app/pug/**/_*.pug'])
         .pipe(pug({ pretty: true }).on("error", notify.onError()))
         .pipe(gulp.dest('app'));
 });
@@ -66,7 +69,7 @@ gulp.task('sass', function() {
         .pipe(sass({ outputStyle: 'expand' }).on("error", notify.onError()))
         .pipe(rename({ suffix: '.min', prefix: '' }))
         .pipe(autoprefixer(['last 15 versions']))
-        .pipe(cleanCSS()) // Опционально, закомментировать при отладке
+        // .pipe(cleanCSS()) // Опционально, закомментировать при отладке
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({ stream: true }));
@@ -76,7 +79,7 @@ gulp.task('watch', ['pug', 'sass', 'js', 'browser-sync'], function() {
     gulp.watch('app/pug/**/*.pug', ['pug']);
     gulp.watch('app/sass/**/*.sass', ['sass']);
     gulp.watch(['libs/**/*.js', 'app/js/main.js'], ['js']);
-    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/**/*.html', browserSync.reload);
 });
 
 gulp.task('imagemin', function() {

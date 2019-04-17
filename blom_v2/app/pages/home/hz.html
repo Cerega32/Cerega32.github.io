@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<head>
+  <title>Grid with sidebar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="../../css/libs/slick.css" rel="stylesheet">
+  <link href="../../css/libs/slick-theme.css" rel="stylesheet">
+  <link href="../../css/libs/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+  <link href="../../css/main.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="header-main"><a class="navbar-brand" href="/">BLOM<span class="navbar-brand--blur">V2</span>.</a></div>
+  <div class="header header--subheader header--active">
+    <header class="container">
+      <nav class="navbar">
+        <div class="header__btns">
+          <div class="header__btn-bars"><i class="fas fa-bars"></i></div>
+          <div class="header__btn"><i class="fas fa-search"></i></div>
+        </div>
+        <ul class="navbar-nav navbar-expand">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a class="dropdown-link" href="#">Home Page Grid With Sidebar</a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li class="dropdown-item"><a class="dropdown-link" href="grid-with-slider.html">Home Grid With Slider</a></li>
+                  <li class="dropdown-item"><a class="dropdown-link" href="grid-with-sidebar.html">Home Grid With Sidebar </a></li>
+                  <li class="dropdown-item"><a class="dropdown-link" href="horizontal-posts-with-sidebar.html">Home Horizontal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-item"><a class="dropdown-link" href="grid-with-big-slider.html">Home Grid With Big Sidebar</a></li>
+              <li class="dropdown-item"> <a class="dropdown-link" href="#">Posts</a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li class="dropdown-item"><a class="dropdown-link" href="../post/post-layaot-1.html">Post Layaot 1</a></li>
+                  <li class="dropdown-item"><a class="dropdown-link" href="../post/post-layaot-2.html">Post Layaot 2</a></li>
+                  <li class="dropdown-item"><a class="dropdown-link" href="../post/post-layaot-3.html">Post Layaot 3</a></li>
+                  <li class="dropdown-item"><a class="dropdown-link" href="../post/post-layaot-4.html">Post Layaot 4</a></li>
+                  <li class="dropdown-item"><a class="dropdown-link" href="../post/post-layaot-5.html">Post Layaot 5</a></li>
+                  <li class="dropdown-item"><a class="dropdown-link" href="../post/post-layaot-6.html">Post Layaot 6</a></li>
+                  <li class="dropdown-item"><a class="dropdown-link" href="../post/post-layaot-7.html">Post Layaot 7</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-item"> <a class="dropdown-link" href="hz.html">Hz</a></li>
+              <li class="dropdown-item"> <a class="dropdown-link" href="#">Home Page List Post</a></li>
+              <li class="dropdown-item"> <a class="dropdown-link" href="#">Home Grid Overlay</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Featerus</a></li>
+          <li class="nav-item nav-item--position"><a class="nav-link" href="#">Gadgets</a>
+            <div class="dropdown-blocks">
+              <div class="dropdown-block"><a class="link-post" href="#"></a>
+                <div class="dropdowm-block__img" style="background: url(img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+                <div class="vertical-post__info vertical-post__info--small">
+                  <h3 class="st-post__title st-post__title--small">Trending Events for Developers and Designers in New York</h3>
+                  <div class="block-info"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span></div>
+                </div>
+              </div>
+              <div class="dropdown-block"><a class="link-post" href="#"></a>
+                <div class="dropdowm-block__img" style="background: url(img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+                <div class="vertical-post__info vertical-post__info--small">
+                  <h3 class="st-post__title st-post__title--small">Trending Events for Developers and Designers in New York</h3>
+                  <div class="block-info"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span></div>
+                </div>
+              </div>
+              <div class="dropdown-block"><a class="link-post" href="#"></a>
+                <div class="dropdowm-block__img" style="background: url(img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+                <div class="vertical-post__info vertical-post__info--small">
+                  <h3 class="st-post__title st-post__title--small">Trending Events for Developers and Designers in New York</h3>
+                  <div class="block-info"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span></div>
+                </div>
+              </div>
+              <div class="dropdown-block"><a class="link-post" href="#"></a>
+                <div class="dropdowm-block__img" style="background: url(img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+                <div class="vertical-post__info vertical-post__info--small">
+                  <h3 class="st-post__title st-post__title--small">Trending Events for Developers and Designers in New York</h3>
+                  <div class="block-info"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018		</span></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Marketing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Buy Theme</a></li>
+        </ul>
+        <div class="navbar__right"><a class="header__social" href="#"><i class="fab fa-facebook-f"></i></a><a class="header__social" href="#"><i class="fab fa-twitter"></i></a><a class="header__social" href="#"><i class="fab fa-instagram"></i>				</a><a class="header__social" href="#"><i class="fab fa-dribbble"></i>				</a><a class="header__social" href="#"><i class="fab fa-vk"></i></a></div>
+      </nav>
+    </header>
+  </div>
+  <div class="header-sidebar">
+    <nav class="navbar">
+      <ul class="navbar-nav navbar-expand">
+        <li class="nav-item"><a class="navbar-brand" href="/">BLOM<span class="navbar-brand--blur">V2</span>.</a></li>
+        <li class="nav-item"><a class="nav-link nav-item__dropdown" href="#">Home</a>
+          <ul class="sidebar__dropdown-menu">
+            <li> <a class="sidebar__dropdown-link nav-item__dropdown" href="#">Home Page Grid With Sidebar</a>
+              <div class="sidebar__dropdown-menu"><a class="sidebar__dropdown-link" href="grid-with-slider.html">Home Grid With Slider</a><a class="sidebar__dropdown-link" href="grid-with-sidebar.html">Home Grid With Sidebar </a><a class="sidebar__dropdown-link" href="horizontal-posts-with-sidebar.html">Home Horizontal</a></div>
+            </li>
+            <li><a class="sidebar__dropdown-link" href="grid-with-big-slider.html">Home Grid With Big Sidebar</a></li>
+            <li><a class="sidebar__dropdown-link nav-item__dropdown" href="#">Home Main With Grid Sidebar</a>
+              <div class="sidebar__dropdown-menu"><a class="sidebar__dropdown-link" href="grid-with-slider.html">Home Grid With Slider</a><a class="sidebar__dropdown-link" href="grid-with-sidebar.html">Home Grid With Sidebar </a><a class="sidebar__dropdown-link" href="horizontal-posts-with-sidebar.html">Home Horizontal</a></div>
+            </li>
+            <li><a class="sidebar__dropdown-link" href="hz.html">Hz</a></li>
+            <li><a class="sidebar__dropdown-link" href="#">Home Page List Post</a></li>
+            <li><a class="sidebar__dropdown-link" href="#">Home Grid Overlay</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Featerus</a></li>
+        <li class="nav-item nav-item--position"><a class="nav-link nav-item__dropdown" href="#">Gadgets</a>
+          <div class="sidebar__dropdown-menu"><a class="sidebar__dropdown-link" href="grid-with-slider.html">Home Grid With Slider</a><a class="sidebar__dropdown-link" href="grid-with-sidebar.html">Home Grid With Sidebar </a><a class="sidebar__dropdown-link" href="horizontal-posts-with-sidebar.html">Home Horizontal	</a></div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Marketing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Buy Theme</a></li>
+      </ul>
+      <div class="navbar__bottom">
+        <h3 class="header__title">Subscribe</h3>
+        <form class="subscribe__form">
+          <input class="subscribe__email subscribe__email--sm" type="email" placeholder="Enter your email here">
+          <button class="subscribe__btn" type="submit"><i class="fab fa-telegram-plane"></i></button>
+        </form>
+        <div class="navbar__right"><a class="header__social header__social--sidebar" href="#"><i class="fab fa-facebook-f"></i></a><a class="header__social header__social--sidebar" href="#"><i class="fab fa-twitter"></i></a><a class="header__social header__social--sidebar" href="#"><i class="fab fa-instagram"></i>				</a><a class="header__social header__social--sidebar" href="#"><i class="fab fa-dribbble"></i>				</a><a class="header__social header__social--sidebar" href="#"><i class="fab fa-vk"></i></a></div>
+      </div>
+    </nav>
+    <div class="header-sidebar__close"></div>
+  </div>
+  <div class="container">
+    <form class="header__form">
+      <input class="header__search" type="search" placeholder="Enter a keyword to search...">
+      <button class="header__submit" type="submit">Search<i class="fas fa-search"></i></button>
+    </form>
+  </div>
+  <div class="container">
+    <div class="relevant relevant--top">
+      <div class="relevant__blog relevant__blog--1-3 blog--marketing"><a class="link-post" href="#"></a><a class="tag tag--marketing" href="#">Marketing</a>
+        <h2 class="relevant__head-title">Try These Methods to Avoid Conflicts in the Working Space</h2>
+        <div class="block-info block-info--light">
+          <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+        </div>
+      </div>
+      <div class="relevant__blog relevant__blog--1-3 blog--vogue"><a class="link-post" href="#"></a><a class="tag tag--vogue" href="#">Vogue</a>
+        <h2 class="relevant__title">Trending Events for Developers and Designers in New York</h2>
+        <div class="block-info block-info--light">
+          <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read										</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+        </div>
+      </div>
+      <div class="relevant__blog blog--gadgets"><a class="link-post" href="#"></a><a class="tag tag--gadgets" href="#">Gadgets</a>
+        <h2 class="relevant__title">Trending Events for Developers and Designers in New York</h2>
+        <div class="block-info block-info--light">
+          <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+        </div>
+      </div>
+      <div class="relevant__blog blog--design"><a class="link-post" href="#"></a><a class="tag tag--design" href="#">Design</a>
+        <h2 class="relevant__title">Trending Events for Developers and Designers in New York</h2>
+        <div class="block-info block-info--light">
+          <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+        </div>
+      </div>
+      <div class="relevant__blog blog--travel"><a class="link-post" href="#"></a><a class="tag tag--travel" href="#">Travel</a>
+        <h2 class="relevant__title">Trending Events for Developers and Designers in New York</h2>
+        <div class="block-info block-info--light">
+          <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+        </div>
+      </div>
+    </div>
+    <div class="best">
+      <h2 class="category__title">Dont Miss Today <i class="fas fa-bookmark" style="font-size: 14px; color: #C8C8C8;"></i></h2>
+      <div class="best__posts">
+        <div class="vertical-post vertical-slide"><a class="link-post" href="#"></a>
+          <div class="vertical-post__img" style="background: url(../../img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--travel" href="#">Travel</a></div>
+          <div class="vertical-post__info vertical-post__info--small">
+            <h3 class="st-post__title st-post__title--small">Trending Events for Developers and Designers in New York</h3>
+            <div class="block-info"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span></div>
+          </div>
+        </div>
+        <div class="vertical-post vertical-slide"><a class="link-post" href="#"></a>
+          <div class="vertical-post__img" style="background: url(../../img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--travel" href="#">Travel</a></div>
+          <div class="vertical-post__info vertical-post__info--small">
+            <h3 class="st-post__title st-post__title--small">Trending Events for Developers and Designers in New York</h3>
+            <div class="block-info"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span></div>
+          </div>
+        </div>
+        <div class="vertical-post vertical-slide"><a class="link-post" href="#"></a>
+          <div class="vertical-post__img" style="background: url(../../img/design-2.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--design" href="#">Design</a></div>
+          <div class="vertical-post__info vertical-post__info--small">
+            <h3 class="st-post__title st-post__title--small">Need More Time? Read These Tips To Eliminate WORK</h3>
+            <div class="block-info"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span></div>
+          </div>
+        </div>
+        <div class="vertical-post vertical-slide"><a class="link-post" href="#"></a>
+          <div class="vertical-post__img" style="background: url(../../img/vogue-6.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--vogue" href="#">Vogue</a></div>
+          <div class="vertical-post__info vertical-post__info--small">
+            <h3 class="st-post__title st-post__title--small">3 Things Everyone Knows About WORK That You Don't</h3>
+            <div class="block-info"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span></div>
+          </div>
+        </div>
+        <div class="vertical-post vertical-slide"><a class="link-post" href="#"></a>
+          <div class="vertical-post__img" style="background: url(../../img/gadgets-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--gadgets" href="#">Gadgets</a></div>
+          <div class="vertical-post__info vertical-post__info--small">
+            <h3 class="st-post__title st-post__title--small">3 Ways To Master WORK Without Breaking A Sweat</h3>
+            <div class="block-info"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="category__title">Latest Posts <i class="fas fa-bookmark"></i></h2>
+    <div class="block-masonry">
+      <div class="vertical-post vertical-post--lg vertical-post--3-columns"><a class="link-post" href="#"></a>
+        <div class="vertical-post__img vertical-post__img--lg" style="background: url(../../img/design-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--small" href="#"><i class="fas fa-star"></i></a><a class="tag tag--design" href="#">Design</a></div>
+        <div class="vertical-post__info">
+          <h3 class="st-post__title">Trending Events for Developers and Designers in New York</h3>
+          <div class="st-post__block-info block-info">
+            <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-post vertical-post--3-columns"><a class="link-post" href="#"></a>
+        <div class="vertical-post__img" style="background: url(../../img/design-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--small" href="#"><i class="fas fa-image"></i></a><a class="tag tag--design" href="#">Design</a></div>
+        <div class="vertical-post__info">
+          <h3 class="st-post__title">Trending Events for Developers and Designers in New York</h3>
+          <div class="st-post__block-info block-info">
+            <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5	</span>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-post vertical-post--lg vertical-post--3-columns"><a class="link-post" href="#"></a>
+        <div class="vertical-post__img vertical-post__img--lg" style="background: url(../../img/design-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--design" href="#">Design</a></div>
+        <div class="vertical-post__info">
+          <h3 class="st-post__title">Trending Events for Developers and Designers in New York</h3>
+          <div class="st-post__block-info block-info">
+            <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-post vertical-post--md vertical-post--3-columns"><a class="link-post" href="#"></a>
+        <div class="vertical-post__img vertical-post__img--md" style="background: url(../../img/design-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--design" href="#">Design</a></div>
+        <div class="vertical-post__info">
+          <h3 class="st-post__title">Trending Events for Developers and Designers in New York</h3>
+          <div class="st-post__block-info block-info">
+            <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-post vertical-post--3-columns"><a class="link-post" href="#"></a>
+        <div class="vertical-post__img" style="background: url(../../img/design-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--design" href="#">Design</a></div>
+        <div class="vertical-post__info">
+          <h3 class="st-post__title">Trending Events for Developers and Designers in New York</h3>
+          <div class="st-post__block-info block-info">
+            <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-post vertical-post--md vertical-post--3-columns"><a class="link-post" href="#"></a>
+        <div class="vertical-post__img vertical-post__img--md" style="background: url(../../img/design-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--small" href="#"><i class="fas fa-video"></i></a><a class="tag tag--design" href="#">Design</a></div>
+        <div class="vertical-post__info">
+          <h3 class="st-post__title">Trending Events for Developers and Designers in New York</h3>
+          <div class="st-post__block-info block-info">
+            <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-post vertical-post--3-columns vertical-post--lg"><a class="link-post" href="#"></a>
+        <div class="vertical-post__img vertical-post__img--lg" style="background: url(../../img/design-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--design" href="#">Design</a></div>
+        <div class="vertical-post__info">
+          <h3 class="st-post__title">Trending Events for Developers and Designers in New York</h3>
+          <div class="st-post__block-info block-info">
+            <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5	</span>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-post vertical-post--3-columns vertical-post--lg"><a class="link-post" href="#"></a>
+        <div class="vertical-post__img vertical-post__img--lg" style="background: url(../../img/design-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--design" href="#">Design</a></div>
+        <div class="vertical-post__info">
+          <h3 class="st-post__title">Trending Events for Developers and Designers in New York</h3>
+          <div class="st-post__block-info block-info">
+            <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-post vertical-post--3-columns vertical-post--lg"><a class="link-post" href="#"></a>
+        <div class="vertical-post__img vertical-post__img--lg" style="background: url(../../img/design-4.jpg) 50% 50% no-repeat; background-size: cover;"><a class="tag tag--design" href="#">Design</a></div>
+        <div class="vertical-post__info">
+          <h3 class="st-post__title">Trending Events for Developers and Designers in New York</h3>
+          <div class="st-post__block-info block-info">
+            <div class="block-info__left"><span class="block-info__date"><i class="fas fa-calendar-alt"></i>October 25, 2018</span><span class="block-info__time-to-read"><i class="far fa-clock"></i>5 mins read</span></div><span class="block-info__comments"><i class="far fa-comment-alt"></i>5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="posts-load"><a class="latest-posts__btn" href="#">LOAD MORE </a></div>
+    <div class="subscribe">
+      <h2 class="category__title subscribe__title">Sign up for our Newsletter and stay informed</h2>
+      <p>To the best news from marketing, sport and many more</p>
+      <form class="subscribe__form">
+        <input class="subscribe__email subscribe__email" type="email" placeholder="Enter your email here">
+        <button class="subscribe__btn subscribe__submit" type="submit">Subscribe<i class="fab fa-telegram-plane"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-slider"><img class="footer-slide" src="../../img/gadgets-3.jpg"><img class="footer-slide" src="../../img/gadgets-2.jpg"><img class="footer-slide" src="../../img/gadgets-1.jpg"><img class="footer-slide" src="../../img/gadgets-4.jpg"><img class="footer-slide" src="../../img/design-1.jpg"><img class="footer-slide" src="../../img/design-2.jpg"><img class="footer-slide" src="../../img/design-3.jpg"><img class="footer-slide" src="../../img/design-4.jpg"><img class="footer-slide" src="../../img/design-5.jpg"><img class="footer-slide" src="../../img/vogue-3.jpg"><img class="footer-slide" src="../../img/vogue-1.jpg"><img class="footer-slide" src="../../img/vogue-2.jpg"><img class="footer-slide" src="../../img/vogue-4.jpg"></div>
+  <div class="sub-footer"><a class="sub-footer-category" href="#">Marketing <span class="sub-footer__category-count sub-footer__category--marketing">14</span></a><a class="sub-footer-category" href="#">Travel <span class="sub-footer__category-count sub-footer__category--travel">28</span></a><a class="sub-footer-category" href="#">Vogue <span class="sub-footer__category-count sub-footer__category--vogue">37</span></a><a class="sub-footer-category" href="#">Gadgets <span class="sub-footer__category-count sub-footer__category--gadgets">5</span></a><a class="sub-footer-category" href="#">Design <span class="sub-footer__category-count sub-footer__category--design">124</span></a></div>
+  <footer class="footer">
+    <div class="container footer--sm">
+      <div class="footer-menu"><a class="footer-contacts__title" href="#">BLOM<span class="footer-contacts__title--blur">V2</span>.</a><a class="footer__link" href="#">Home</a><a class="footer__link" href="#">Features</a><a class="footer__link" href="#">About</a><a class="footer__link" href="#">Contact</a></div>
+      <div class="footer__socials"><a class="footer__social" href="#"><i class="fab fa-facebook-f"></i></a><a class="footer__social" href="#"><i class="fab fa-twitter"></i></a><a class="footer__social" href="#"><i class="fab fa-instagram"></i></a><a class="footer__social" href="#"><i class="fab fa-dribbble"></i>	</a><a class="footer__social" href="#"><i class="fab fa-vk"></i></a></div>
+    </div>
+  </footer>
+  <div class="container">
+    <form class="footer__form">
+      <input class="footer__subscribe" type="email" placeholder="Enter your e-mail">
+      <button class="footer__submit" type="submit">Subscribe<i class="fab fa-telegram-plane"></i></button>
+    </form>
+  </div>
+  <div class="overlay">
+    <div class="overlay__close"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../../js/libs/slick.js"></script>
+  <script src="../../js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../js/libs/jquery.sticky-sidebar.min.js"></script>
+  <script src="../../js/libs/masonry.pkgd.min.js"></script>
+  <script src="../../js/main.js" defer></script>
+</body>

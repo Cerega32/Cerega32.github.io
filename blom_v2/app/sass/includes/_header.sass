@@ -1,0 +1,321 @@
+.subheader
+	margin-bottom: 172px
+	background: linear-gradient(91.99deg, #A62E2E 0%, #5933AA 100%)
+
+.subheader__wrapper
+	padding: 14px 0 
+	display: flex
+	justify-content: space-between
+
+.subheader__navbar
+	margin: 0
+	padding: 0
+	
+.subheader__item
+	margin-right: 30px
+	display: inline
+	font-size: 12px
+
+.subheader__link
+	color: #fff
+
+.subheader__date
+	padding: 2px 15px
+	border-radius: 11px
+	background: rgba(255, 255, 255, 0.2)
+	font-size: 12px
+	color: #fff
+
+.header
+	z-index: 900
+	position: absolute
+	top: 50px
+	margin-bottom: 60px
+	width: 100%
+	background: #EBEBFA
+
+.header--subheader
+	position: absolute
+	top: 130px
+	background: #fff
+	.navbar
+		padding: 0
+		margin: 13px 0
+	
+.header-main
+	margin-bottom: 77px
+	padding: 39px
+	display: flex
+	justify-content: center
+	align-items: center
+	background: #EBEBFA
+	
+
+.header--active
+	position: fixed
+	top: 0
+
+.subheader--mb
+	margin-bottom: 111px
+	
+.navbar
+	padding: 30px 0
+
+
+.navbar-brand
+	margin-right: 25px
+	font-size: 28px
+	font-weight: 700
+	color: #282D2F
+
+.navbar-brand--blur
+	color: #00B3FF
+
+.navbar__right
+	display: flex
+	align-items: center
+
+
+.nav-item .nav-link
+	padding: 15px 25px
+	color: #000
+	font-weight: 500
+
+.navbar-nav .dropdown-menu
+	position: absolute
+	visibility: hidden
+	display: block
+	top: 100%
+	left: 25px
+	margin: 0
+	min-width: 150px
+	border: 1px solid #EBEBF5
+	border-radius: 10px
+	box-shadow: 0px 15px 30px rgba(166, 166, 182, 0.5)
+	opacity: 0
+	transition: all .5s	
+
+.dropdown-blocks
+	z-index: 1000
+	position: absolute
+	top: 82px
+	left: 0
+	visibility: hidden
+	padding: 15px
+	display: flex
+	background: #fff
+	border-radius: 10px
+	box-shadow: 0px 15px 30px rgba(166, 166, 182, 0.5)
+	opacity: 0
+	transition: all .5s	
+
+.header--subheader .dropdown-blocks
+	top: 50px
+
+.dropdown-block
+	position: relative	
+	margin: 15px 15px 0
+	width: 240px
+	border-radius: 10px
+	overflow: hidden	
+	.vertical-post__info
+		border: none
+
+.dropdowm-block__img
+	width: 240px
+	height: 140px
+	border-radius: 10px
+
+.nav-item .dropdown-submenu
+	top: 0
+	left: 95%
+	opacity: 0
+
+.dropdown-link
+	display: block
+	padding: 15px 30px
+	font-size: 12px
+	color: #000
+	&:hover
+		color: #000
+
+.nav-item
+	position: relative
+	display: flex
+	align-items: center
+	&:hover > .dropdown-menu
+		opacity: 1
+		visibility: visible
+	&:hover > .dropdown-blocks
+		opacity: 1
+		visibility: visible
+		
+.nav-item--position
+	position: static
+	
+.dropdown-item
+	padding: 0
+	position: relative
+	text-align: left
+	&:hover .dropdown-submenu
+		opacity: 1
+		visibility: visible
+	&:hover > .dropdown-link
+		background: #EBEBF5
+
+.header__social
+	margin-right: 15px
+	color: #282D2F
+	&:hover
+		color: #00B3FF
+
+.vertical__line
+	height: 14px
+	width: 1px
+	background: #D3D3E8
+
+.header__form
+	position: fixed
+	opacity: 0
+	visibility: hidden
+	top: 45%
+	margin-top: -50px
+	z-index: 1001
+	transition: all .4s
+
+.header__form--active
+	visibility: visible
+	top: 50%
+	opacity: 1
+	
+.header__search
+	z-index: 1001
+	width: 1110px
+	height: 100px
+	padding: 0 220px 0 60px
+	border: none
+	border-radius: 50px
+	font-size: 20px
+	color: #7F8B90
+
+.header__submit
+	position: absolute
+	right: 20px
+	top: 24px
+	width: 187px
+	height: 52px
+	border: none
+	border-radius: 26px
+	background: #00B3FF
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 500
+	color: #fff
+	cursor: pointer
+	.fa-search
+		margin-left: 10px
+
+.header__btn
+	position: relative
+	z-index: 5
+	margin-left: 15px
+	border: none
+	font-size: 14px
+	cursor: pointer
+	&:hover
+		color: #00B3FF
+
+.header__btn-bars
+	cursor: pointer
+
+.header__btns
+	display: flex
+
+.header-sidebar
+	z-index: 1000
+	visibility: hidden
+	position: fixed
+	top: 0
+	left: -380px
+	padding: 30px
+	min-width: 380px
+	height: 100%
+	background: #fff
+	transition: all .4s
+	opacity: 0
+	.navbar
+		padding: 0
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: stretch
+		height: 100%
+	.navbar-brand
+		margin-bottom: 35px
+	.navbar-nav
+		width: 100%
+		align-self: flex-start
+		display: flex
+		flex-direction: column
+	.nav-item .nav-link
+		padding: 15px 0
+	.subscribe__email
+		width: 200px
+	
+.header-sidebar--active
+	left: 0
+	opacity: 1
+	visibility: visible
+	
+.sidebar__dropdown-menu
+	position: relative
+	height: 0
+	margin-left: 30px 
+	display: flex
+	flex-direction: column
+	list-style: none
+	visibility: hidden
+	top: -20px
+	left: 0
+	opacity: 0
+	transition: all .3s
+
+.sidebar__dropdown-link
+	display: block
+	color: #282D2F
+	font-weight: 500
+	padding: 15px 0
+	
+.dropdown-menu--active
+	margin: 0 30px
+	height: 100%
+	top: 0
+	opacity: 1
+	visibility: visible
+
+.navbar__bottom
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.header__title
+	margin-bottom: 20px
+	text-transform: uppercase
+	font-size: 16px
+	font-weight: 500
+	color: #282D2F
+
+.header__social--sidebar 
+	margin: 50px 15px 0
+	font-size: 18px
+
+.header-sidebar__close
+	position: absolute
+	top: 37px
+	right: 30px
+	width: 18px
+	height: 18px
+	background: url(../../img/close--sm.svg) 50% 50% no-repeat
+	cursor: pointer
+	
+	

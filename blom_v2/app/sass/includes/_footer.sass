@@ -1,0 +1,209 @@
+.footer-slider
+	margin-top: 80px
+	.slick-slide
+		margin: 0
+
+.footer-slide
+	width: 180px
+	height: 180px
+
+.sub-footer
+	padding: 30px
+	display: flex
+	justify-content: center
+	align-items: center
+	background: #fff
+
+.sub-footer-category
+	display: flex
+	align-items: center
+	margin-right: 50px
+	font-size: 14px
+	font-weight: 500
+	color: #545E63
+
+.sub-footer__category-count
+	margin-left: 10px
+	padding: 0 5px
+	display: inline-block
+	background: #54548B
+	color: #fff
+	font-size: 9px
+	font-weight: 500
+	border-radius: 8px
+
+.sub-footer__category--marketing
+	background: $color-mk
+
+.sub-footer__category--travel
+	background: $color-tr
+
+.sub-footer__category--vogue
+	background: $color-vog
+
+.sub-footer__category--gadgets
+	background: $color-gd
+
+.sub-footer__category--design
+	background: $color-dg
+
+.footer
+	padding: 50px 0
+	background: #EBEBFA
+
+.footer--mt
+	margin-top: 80px
+
+.footer--sm
+	display: flex
+	justify-content: space-between
+	align-items: center
+	.footer-contacts__title, .footer__link, .footer__socials
+		margin-bottom: 0
+	
+
+.footer-contacts__title
+	display: inline-block
+	margin-bottom: 30px
+	margin-right: 50px
+	font-size: 28px
+	font-weight: 700
+	color: #000	
+
+.footer-contacts__title--blur
+	color: #00B3FF
+
+.footer-contacts__copyright
+	margin-top: 30px
+
+.footer-menu
+	display: flex
+	align-items: center
+
+.footer__title
+	margin-bottom: 50px
+	font-size: 16px
+	font-weight: 700
+	text-transform: uppercase
+
+.footer-links
+	display: flex
+	flex-direction: column
+
+.footer__link
+	margin-bottom: 30px
+	margin-right: 50px
+	color: #545E63
+	line-height: 14px
+	font-weight: 500
+	&:hover
+		color: #00B3FF
+
+.footer__category 
+	position: relative
+	display: block
+	padding-left: 18px
+	&:after
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -4px
+		content: ""
+		display: block
+		width: 8px
+		height: 8px
+		border-radius: 50%
+		
+.footer__category--marketing:after
+	background: $color-mk
+
+.footer__category--travel:after
+	background: $color-tr
+
+.footer__category--vogue:after
+	background: $color-vog
+
+.footer__category--gadgets:after
+	background: $color-gd
+
+.footer__category--design:after
+	background: $color-dg
+
+.footer__socials
+	display: flex
+	margin-bottom: 30px
+
+.footer__social
+	margin-right: 30px
+	color: #545E63 
+	font-size: 18px
+	&:hover
+		color: #00B3FF
+
+.footer__btn
+	margin: 0
+
+.footer__form
+	position: fixed
+	visibility: hidden
+	opacity: 0
+	top: 45%
+	margin-top: -50px
+	z-index: 1001
+	transition: all .4s
+
+.footer__form--active
+	visibility: visible
+	top: 50%
+	opacity: 1
+	
+.footer__subscribe
+	z-index: 1001
+	width: 1110px
+	height: 100px
+	padding: 0 220px 0 60px
+	border: none
+	border-radius: 50px
+	font-size: 20px
+	color: #000
+
+.footer__submit
+	position: absolute
+	right: 20px
+	top: 24px
+	width: 187px
+	height: 52px
+	border: none
+	border-radius: 26px
+	background: #00B3FF
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 500
+	color: #fff
+	cursor: pointer
+	.fab
+		margin-left: 10px
+	
+	
+.overlay
+	z-index: 999
+	position: fixed
+	background: #000
+	opacity: .6
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: none
+
+.overlay--active
+	opacity: .6
+	
+.overlay__close
+	position: absolute
+	top: 60px
+	right: 60px
+	width: 30px
+	height: 30px
+	background: url("../img/close.svg") 50% 50% no-repeat
+	cursor: pointer

@@ -20,57 +20,70 @@ var markersData = [
 	{
 		lat: 62.541832,
 		lng: 113.983377,
-		name: "-", // Произвольное название, которое будем выводить в информационном окне
-		address: "ул. Советская 3"   // Адрес, который также будем выводить в информационном окне
+		name: "2комнатная кв - 4500р/сутки", // Произвольное название, которое будем выводить в информационном окне
+		address: "ул. Советская 13к5"   // Адрес, который также будем выводить в информационном окне
 	},
 	{
 		lat: 62.546399,
 		lng: 113.983133,
-		name: "1комнаткная кв - 3500р/сутки", // Произвольное название, которое будем выводить в информационном окне
+		name: "1комнатная кв - 3500р/сутки", // Произвольное название, которое будем выводить в информационном окне
 		address: "ул. Тихонова 15/2"   // Адрес, который также будем выводить в информационном окне
 	},
 	{
 		lat: 62.543129,
 		lng: 113.990280,
-		name: "1комнаткная кв - 3000р/сутки", // Произвольное название, которое будем выводить в информационном окне
+		name: "1комнатная кв - 3000р/сутки", // Произвольное название, которое будем выводить в информационном окне
 		address: "ул. Тихонова 16а"   // Адрес, который также будем выводить в информационном окне
 	},
 	{
 		lat: 62.543820,
 		lng: 113.977911,
-		name: "2комнаткная кв - 4500р/сутки", // Произвольное название, которое будем выводить в информационном окне
+		name: "2комнатная кв - 4500р/сутки", // Произвольное название, которое будем выводить в информационном окне
 		address: "ул. Павлова 8"   // Адрес, который также будем выводить в информационном окне
 	},
 	{
 		lat: 62.541982,
 		lng: 113.973978,
-		name: "1комнаткная кв - 3500р/сутки", // Произвольное название, которое будем выводить в информационном окне
+		name: "1комнатная кв - 3500р/сутки", // Произвольное название, которое будем выводить в информационном окне
 		address: "ул. Ойунского 36"   // Адрес, который также будем выводить в информационном окне
 	},
 	{
 		lat: 62.543572,
 		lng: 113.971735,
-		name: "2комнаткная кв - 4500р/сутки", // Произвольное название, которое будем выводить в информационном окне
+		name: "2комнатная кв - 4500р/сутки", // Произвольное название, которое будем выводить в информационном окне
 		address: "ул. 50 лет Октября 1"   // Адрес, который также будем выводить в информационном окне
 	},
 	{
 		lat: 66.412468,
 		lng: 112.246203,
-		name: "-", // Произвольное название, которое будем выводить в информационном окне
+		name: "1комнатная кв - 4000р/сутки", // Произвольное название, которое будем выводить в информационном окне
 		address: "ул. Новый город микрорайон 19"   // Адрес, который также будем выводить в информационном окне
 	},
 	{
-		lat: 66.410153,
-		lng: 112.244803,
+		lat: 66.413671,
+		lng: 112.253277,
 		name: "-", // Произвольное название, которое будем выводить в информационном окне
-		address: "ул. Новый город микрорайон 21"   // Адрес, который также будем выводить в информационном окне
+		address: "ул. Новый город микрорайон 3"   // Адрес, который также будем выводить в информационном окне
 	},
 	{
 		lat: 66.413892,
 		lng: 112.242271,
-		name: "1комнаткная кв - 3000р/сутки",
+		name: "1комнатная кв - 3000р/сутки",
 		address: "ул. Новый город микрорайон 33"
+	},
+	{
+		lat: 62.542157,
+		lng: 113.981590,
+		name: "2комнатная кв - 5000р/сутки",
+		address: "ул. Cоветская 11/4"
+	},
+	{
+		lat: 66.415471,
+		lng: 112.243495,
+		name: "1комнатная кв - 5000р/сутки",
+		address: "ул. Новый город микрорайон 13"
 	}
+
 ];
 var map, infoWindow;
 function initMap() {
@@ -132,9 +145,27 @@ $(".appartments__less").click(function() {
 	setTimeout(function() {$(".appartments--hide").css("display" , "none")}, 1000);
 	$(".appartments--hide").animate({opacity: 0, top: '-100px'}, 1000);
 	$(".appartments__more").css("display" , "inline");
-	$(".appartments__less").css("display" , "none");
+	$(".appartments__less").css("display", "none");
 	$('html, body').animate({
-		scrollTop: $(".appartments").offset().top
+		scrollTop: $(".appartments").offset().top - 100
+	}, 1000);
+});
+
+$(".appartments__more1").click(function() {
+	$(".appartments--hide1")
+		.css("display" , "block")
+		.animate({opacity: 1, top: '0'}, 500);
+	$(".appartments__more1").css("display" , "none");
+	$(".appartments__less1").css("display" , "inline");
+});
+
+$(".appartments__less1").click(function() {
+	setTimeout(function() {$(".appartments--hide1").css("display" , "none")}, 1000);
+	$(".appartments--hide1").animate({opacity: 0, top: '-100px'}, 1000);
+	$(".appartments__more1").css("display" , "inline");
+	$(".appartments__less1").css("display", "none");
+	$('html, body').animate({
+		scrollTop: $(".appartments__title1").offset().top - 100
 	}, 1000);
 });
 
@@ -156,6 +187,14 @@ $('[data-fancybox="flat2"]').fancybox({
 
 $('[data-fancybox="flat3"]').fancybox({
 	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/vip-komfort-sovetskaia-3.ru.html">booking.com</a> и <a href="https://mirnii.sutochno.ru/363449">суточну.ру</a>',
+	infobar: true,
+  thumbs : {
+    autoStart : false
+  }
+});
+
+$('[data-fancybox="flat4"]').fancybox({
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/sovetskaia-ulitsa-13-korp-5.ru.html">booking.com</a>',
 	infobar: true,
   thumbs : {
     autoStart : false
@@ -202,8 +241,32 @@ $('[data-fancybox="flat9"]').fancybox({
   }
 });
 
+$('[data-fancybox="flat10"]').fancybox({
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/vip-komfort-udachnyi-novyi-gorod-19.ru.html">booking.com</a>',
+	infobar: true,
+  thumbs : {
+    autoStart : false
+  }
+});
+
 $('[data-fancybox="flat12"]').fancybox({
 	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/udachnyi-n-gorod-33.ru.html">booking.com</a>',
+	infobar: true,
+  thumbs : {
+    autoStart : false
+  }
+});
+
+$('[data-fancybox="flat13"]').fancybox({
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/apartamenty-na-sovetskoi-11-47-4.ru.html">booking.com</a>',
+	infobar: true,
+  thumbs : {
+    autoStart : false
+  }
+});
+
+$('[data-fancybox="flat14"]').fancybox({
+	caption : 'Эти апартаменты на <a href="https://www.booking.com/hotel/ru/vip-komfort-udachnyi-novyi-gorod-13.ru.html">booking.com</a>',
 	infobar: true,
   thumbs : {
     autoStart : false

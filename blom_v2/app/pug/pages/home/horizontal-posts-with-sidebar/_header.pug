@@ -1,0 +1,105 @@
+.subheader
+	header.container
+		.subheader__wrapper
+			ul.subheader__navbar
+				li.subheader__item
+					a.subheader__link(href="#") Home
+				li.subheader__item
+					a.subheader__link(href="#") About
+				li.subheader__item
+					a.subheader__link(href="#") Contact Us
+				li.subheader__item
+					a.subheader__link(href="#") Support Info
+			.subheader__date
+				span #[i.far.fa-calendar-alt(style="margin-right: 5px;")]Today is #[span.subheader__today]
+.header.header--active
+	header.container
+		nav.navbar
+			ul.navbar-nav.navbar-expand
+				li.nav-item
+					a(href="/").navbar-brand BLOM#[span.navbar-brand--blur V2].
+				li.nav-item
+					a.nav-link(href="#") Home
+					ul.dropdown-menu
+						li.dropdown-item
+							a.dropdown-link(href="#") Home Page Grid With Sidebar
+							ul.dropdown-menu.dropdown-submenu
+								li.dropdown-item
+									a.dropdown-link(href="grid-with-slider.html") Home Grid With Slider
+								li.dropdown-item
+									a.dropdown-link(href="grid-with-sidebar.html") Home Grid With Sidebar 
+								li.dropdown-item
+									a.dropdown-link(href="horizontal-posts-with-sidebar.html") Home Horizontal
+						li.dropdown-item
+							a.dropdown-link(href="grid-with-big-slider.html") Home Grid With Big Sidebar
+						li.dropdown-item 
+							a.dropdown-link(href="#") Posts
+							ul.dropdown-menu.dropdown-submenu
+								li.dropdown-item
+									a.dropdown-link(href="../post/post-layaot-1.html") Post Layaot 1
+								li.dropdown-item
+									a.dropdown-link(href="../post/post-layaot-2.html") Post Layaot 2
+								li.dropdown-item
+									a.dropdown-link(href="../post/post-layaot-3.html") Post Layaot 3
+								li.dropdown-item
+									a.dropdown-link(href="../post/post-layaot-4.html") Post Layaot 4
+								li.dropdown-item
+									a.dropdown-link(href="../post/post-layaot-5.html") Post Layaot 5
+								li.dropdown-item
+									a.dropdown-link(href="../post/post-layaot-6.html") Post Layaot 6
+								li.dropdown-item
+									a.dropdown-link(href="../post/post-layaot-7.html") Post Layaot 7
+						li.dropdown-item 
+							a.dropdown-link(href="hz.html") Hz
+						li.dropdown-item 
+							a.dropdown-link(href="#") Home Page List Post
+						li.dropdown-item 
+							a.dropdown-link(href="#") Home Grid Overlay
+				li.nav-item
+					a.nav-link(href="#") Featerus
+				li.nav-item.nav-item--position
+					a.nav-link(href="#") Gadgets
+					.dropdown-blocks
+						.dropdown-block
+							a(href="#").link-post
+							.dropdowm-block__img(style="background: url(img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;")
+							.vertical-post__info.vertical-post__info--small
+								h3.st-post__title.st-post__title--small Trending Events for Developers and Designers in New York
+								.block-info
+									span.block-info__date #[i.fas.fa-calendar-alt]October 25, 2018
+						.dropdown-block
+							a(href="#").link-post
+							.dropdowm-block__img(style="background: url(img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;")
+							.vertical-post__info.vertical-post__info--small
+								h3.st-post__title.st-post__title--small Trending Events for Developers and Designers in New York
+								.block-info
+									span.block-info__date #[i.fas.fa-calendar-alt]October 25, 2018
+						.dropdown-block
+							a(href="#").link-post
+							.dropdowm-block__img(style="background: url(img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;")
+							.vertical-post__info.vertical-post__info--small
+								h3.st-post__title.st-post__title--small Trending Events for Developers and Designers in New York
+								.block-info
+									span.block-info__date #[i.fas.fa-calendar-alt]October 25, 2018
+						.dropdown-block
+							a(href="#").link-post
+							.dropdowm-block__img(style="background: url(img/travel-6.jpg) 50% 50% no-repeat; background-size: cover;")
+							.vertical-post__info.vertical-post__info--small
+								h3.st-post__title.st-post__title--small Trending Events for Developers and Designers in New York
+								.block-info
+									span.block-info__date #[i.fas.fa-calendar-alt]October 25, 2018		
+				li.nav-item
+					a.nav-link(href="#") Marketing
+				li.nav-item
+					a.nav-link(href="#") Buy Theme
+			.navbar__right
+				a(href="#").header__social #[i.fab.fa-facebook-f]
+				a(href="#").header__social #[i.fab.fa-twitter]
+				a(href="#").header__social #[i.fab.fa-instagram]
+				.vertical__line
+				.header__btn #[i.fas.fa-search]
+.container
+	form.header__form
+		input.header__search(type="search" placeholder="Enter a keyword to search...")
+		button(type="submit").header__submit Search#[i.fas.fa-search]
+				
