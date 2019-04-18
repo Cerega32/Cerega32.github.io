@@ -21,8 +21,8 @@ var sliderPortfolio = new Swiper ('.portfolio__items', {
 		loop: true,
 		initialSlide: 3,
 		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
+			el: '.portfolio__pagination',
+			clickable: true
 		}   
   })
 
@@ -31,10 +31,10 @@ var sliderTeam = new Swiper ('.team__slider', {
 		spaceBetween: 30,
 		centeredSlides: true,
 		loop: true,
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		}   
+		navigation: {
+			nextEl: '.team__btn.swiper-button-next',
+			prevEl: '.team__btn.swiper-button-prev',
+		}
   })
 
 var sliderReview = new Swiper ('.review__slider', {
@@ -42,7 +42,7 @@ var sliderReview = new Swiper ('.review__slider', {
 		loop: true,
 		effect: 'cube',
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.review__btn.swiper-button-next',
+			prevEl: '.review__btn.swiper-button-prev',
 		}  
   })

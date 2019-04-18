@@ -36,7 +36,7 @@ section.about
 				span.count__item-text Positive Rewievs		
 section.portfolio
 	.container
-		.portfolio__wrapper
+		.title__wrapper
 			.portfolio__title
 				span.block__subtitle Works we made
 				span.block__title.block__title--white Our Portfolio
@@ -46,32 +46,32 @@ section.portfolio
 			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-1.jpg) 50% 50% no-repeat; background-size: cover;")
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
-					a(href="#").portfolio__item-link
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
 			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-2.jpg) 50% 50% no-repeat; background-size: cover;")
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
-					a(href="#").portfolio__item-link
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
 			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-3.jpg) 50% 50% no-repeat; background-size: cover;")
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
-					a(href="#").portfolio__item-link
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow] 
 			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-1.jpg) 50% 50% no-repeat; background-size: cover;")
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
-					a(href="#").portfolio__item-link
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
 			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-2.jpg) 50% 50% no-repeat; background-size: cover;")
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
-					a(href="#").portfolio__item-link
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
 			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-3.jpg) 50% 50% no-repeat; background-size: cover;")
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
-					a(href="#").portfolio__item-link
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
 			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-1.jpg) 50% 50% no-repeat; background-size: cover;")
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
-					a(href="#").portfolio__item-link
-		.swiper-pagination
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
+		.portfolio__pagination
 section.reviews
 	.container
 		span.block__subtitle.block__title--center Clients love us
@@ -98,12 +98,16 @@ section.reviews
 								b.review__author-name Anastasiya Novikova 
 								span.review__author-company Creative Group
 							img(src="img/review-1.jpg").review__author-photo
-						.swiper-button-next
-						.swiper-button-prev
+						.review__btn.swiper-button-next
+						.review__btn.swiper-button-prev
 section.team
 	.team__desc
-		span.team__title Our team
-		p.team__text About id ornare arcu odio ut sem. Habita platea dictumst quisque sagittis purus sit amet.
+		.team__wrapper
+			span.team__title Our team
+			p.team__text About id ornare arcu odio ut sem. Habita platea dictumst quisque sagittis purus sit amet.
+		.team__substrate
+		.team__btn.swiper-button-next
+		.team__btn.swiper-button-prev
 	.team__slider
 		.swiper-wrapper
 			article.swiper-slide.team__slide(style="background: url(img/team-1.jpg) 50% 50% no-repeat; background-size: cover;")
@@ -130,8 +134,69 @@ section.team
 						a(href="#").team__item-social #[i.fab.fa-instagram]
 					h3.team__item-name Lollita Dolina
 					span.team__item-post Manager
-section.plan #[br] #[br]#[br]  #[br] #[br]#[br]  #[br] #[br]#[br] #[br] #[br]#[br] fd
-	
+section.plan
+	.container
+		span.block__subtitle.block__title--center Clients love us
+		span.block__title.block__title--center.block__title--dark What people says
+		.packages
+			.package
+				span.package__title Basic
+				p.package__price 49#[span.package__price--small $]#[span.package__price--small.package__price--gray /mo]
+				ul.package__services
+					li.package__service 1 Exclusive Projects
+					li.package__service Unlimited Support
+					li.package__service Marketing Kit
+				a(href="#").package__buy Get Started
+			.package
+				span.package__title Standart
+				p.package__price 99#[span.package__price--small $]#[span.package__price--small.package__price--gray /mo]
+				ul.package__services
+					li.package__service 5 Exclusive Projects
+					li.package__service 10 Themes
+					li.package__service Unlimited Support
+					li.package__service Marketing Kit1
+				a(href="#").package__buy Get Started
+			.package
+				span.package__title Business
+				p.package__price 240#[span.package__price--small $]#[span.package__price--small.package__price--gray /mo]
+				ul.package__services
+					li.package__service 15 Exclusive Projects
+					li.package__service 20 Themes
+					li.package__service Unlimited Support
+					li.package__service Marketing Kit
+				a(href="#").package__buy Get Started
+			.packages__desc
+				h3.packages__title The best prices for you from 2014
+				p.packages__text Tempus iaculis urna id volutpat lacus laoreet. Nunc scelerisque viverra mauris in aliquam. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
+section.latest-news
+	.container
+		.title__wrapper
+			.portfolio__title
+				span.block__subtitle Check our blog
+				span.block__title.block__title--white Latests News
+			a(href="#").portfolio__all View all
+		.news
+			.news__item
+				img(src="img/news-1.jpg" width="350" height="270").news__picture
+				.news__wrapper
+					h3.news__title AGENCY Works Only Under These Conditions
+					p.news__info Creative #[span.news__info-date / October 25, 2018]
+					a(href="#").news__more Read more
+			.news__item
+				img(src="img/news-2.jpg" width="350" height="270").news__picture
+				.news__wrapper
+					h3.news__title Quick and Easy Fix For Your AGENCY
+					p.news__info Design #[span.news__info-date / October 25, 2018]
+					a(href="#").news__more Read more
+			.news__item
+				img(src="img/news-3.jpg" width="350" height="270").news__picture
+				.news__wrapper
+					h3.news__title Now You Can Have Your AGENCY Done Safely
+					p.news__info Marketing #[span.news__info-date / October 25, 2018]
+					a(href="#").news__more Read more
+			
+				
+				
 			
 
 			
