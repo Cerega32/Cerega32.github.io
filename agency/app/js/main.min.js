@@ -17,7 +17,6 @@
 var sliderPortfolio = new Swiper ('.portfolio__items', {
     slidesPerView: 3,
 		spaceBetween: 30,
-		centeredSlides: true,
 		loop: true,
 		initialSlide: 3,
 		pagination: {
@@ -29,7 +28,6 @@ var sliderPortfolio = new Swiper ('.portfolio__items', {
 var sliderTeam = new Swiper ('.team__slider', {
     slidesPerView: 3,
 		spaceBetween: 30,
-		centeredSlides: true,
 		loop: true,
 		navigation: {
 			nextEl: '.team__btn.swiper-button-next',
