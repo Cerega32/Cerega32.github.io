@@ -11,11 +11,327 @@
 	/**/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.header
+		height: 100vh
 	
 	/**/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-
+	.navbar
+		padding: 20px 0
+		margin-bottom: 40px
+	.header__title
+		font-size: 34px
+		line-height: 44px
+	.header__text
+		font-size: 12px
+		line-height: 32px
+	.header__btns
+		margin-bottom: 0
+	.header__btn
+		margin-bottom: 18px
+		width: 100%	
+	.header__contact-us
+		margin-right: 0
+	
+	.about
+		padding-top: 60px
+	.block__title
+		margin-bottom: 20px
+		font-size: 18px
+		line-height: 25px
+	.about__text
+		margin-bottom: 45px
+		font-size: 12px
+		line-height: 28px
+	.services
+		margin-bottom: 60px
+		flex-wrap: wrap
+		justify-content: center
+	.service
+		margin-right: 0
+		display: flex
+		flex-direction: column
+		align-items: center
+	.service__text
+		text-align: center
+	.count__wrappers
+		width: 100%
+		transform: translateY(0)
+	.count__items
+		padding: 60px 25px 20px
+		width: auto
+		justify-content: space-around
+	.count__item
+		margin-bottom: 40px
+	.count__item-number
+		font-size: 18px
+		line-height: 18px
+	.count__item-text
+		font-size: 12px
+		line-height: 18px
+	
+	.portfolio__items
+		padding: 0 15px
+		margin-top: -68px
+		transform: translateY(68px)
+	.portfolio__item
+		height: 295px
+	.swiper-slide-active
+		&:after
+			opacity: 0
+		.portfolio__item-desc
+			opacity: 1
+			padding: 15px
+		.portfolio__picture
+			filter: brightness(100%)
+			filter: grayscale(0%)
+	.portfolio__item-name
+		font-size: 12px
+		line-height: 28px
+	.portfolio__item-link
+		width: 28px
+		height: 28px
+	.portfolio__item-arrow
+		width: 13px
+	.portfolio__all
+		padding: 15px 30px
+		font-size: 11px
+		line-height: 11px
+	.portfolio__all:hover:after
+		width: 13px
+		height: 9px
+	.portfolio .portfolio__pagination
+		bottom: -100px
+	
+	.block__title--center
+		text-align: left
+	
+	.reviews
+		margin-bottom: 90px
+		padding-top: 160px
+	.review__slider
+		margin-top: 40px
+	.review
+		width: 100%
+	.review__block
+		padding: 0
+		width: 100%
+	.review__text
+		padding: 20px
+		font-size: 11px
+		line-height: 28px
+	.review__author
+		position: relative
+		top: 0
+		right: 0
+		justify-content: space-between
+	.review__author-wrapper
+		width: 100%
+		padding: 0 20px
+	.review__author-name, .review__author-company
+		font-size: 11px
+		line-height: 28px
+	.review__author-photo
+		width: 76px
+		height: 76px
+	.reviews .swiper-slide-active .swiper-button-next, .reviews .swiper-slide-active .swiper-button-prev
+		display: none
+	.reviews .review__btn--mobile
+		display: block
+		top: auto
+		bottom: -40px
+		right: 55%
+	.reviews .swiper-button-next
+		right: 40%
+	
+	.team
+		position: relative
+		padding-bottom: 95px
+		flex-wrap: wrap
+		transform: translateY(0)
+	.team__desc
+		position: static
+		margin: 0 15px		
+		width: auto
+		align-items: flex-start
+	.team__wrapper
+		margin: 0
+	.team__title
+		font-size: 18px
+		line-height: 25px
+	.team__text
+		font-size: 12px
+		line-height: 28px
+	.team__substrate
+		display: none
+	.team__slider
+		margin: 0 15px		
+	.team__slide
+		height: 366px
+	.team__item-desc
+		padding: 10px
+		min-height: 76px
+	.team__item-name
+		margin: 0
+		font-size: 12px
+		line-height: 28px
+	.team__item-post
+		font-size: 11px
+		line-height: 28px
+	.team__background
+		z-index: -1
+		position: absolute
+		bottom: 95px
+		display: block
+		width: 100%
+		height: 76px
+		background: #21B65C
+	.team .swiper-button-next, .team .swiper-button-prev
+		bottom: 60px
+		top: auto
+		right: 55%
+	.team .swiper-button-next
+		right: 40%
+		
+	.plan
+		padding: 60px 0
+		overflow: hidden
+	.block__title--center--mobile
+		text-align: center
+	.plan__wrapper
+		margin-top: 40px
+		display: block
+	.packages
+		width: 100%
+		.swiper-button-next, .swiper-button-prev
+			display: block
+			width: 25px
+			height: 18px
+			background: url("../img/right-arrow--blur.svg") 50% 50% no-repeat
+			visibility: visible
+			top: auto
+			bottom: -40px
+			right: 37%
+	 .swiper-button-prev
+			left: 37%
+			transform: rotate(180deg)
+	.package
+		padding: 20px
+		width: 176px
+		height: 100%
+	.package__title
+		font-size: 14px
+		line-height: 22px
+	.package__price
+		font-size: 32px
+		line-height: 32px
+	.package__price--small
+		font-size: 12px
+	.package__service
+		font-size: 12px
+		line-height: 28px
+	.packages__desc
+		margin: 0
+		width: 100%
+	.packages__title
+		margin-top: 40px
+		font-size: 14px
+		line-height: 22px
+		text-align: center
+	.packages__text
+		margin: 0
+		font-size: 12px
+		line-height: 28px
+		text-align: center
+	
+	.latest-news
+		margin-bottom: 40px
+	.news
+		flex-direction: column
+	.news__item
+		margin-bottom: 40px
+		width: 100%
+	.news__wrapper
+		padding: 20px
+		min-height: 124px
+	.news__title
+		font-size: 12px
+		line-height: 28px
+	.news__more
+		right: 0
+		bottom: -20px
+		padding: 15px 30px
+	.news__info
+		font-size: 11px
+		line-height: 28px
+	
+	.contact
+		margin: 0
+		width: 100%
+	.contact__info
+		padding-top: 60px
+		padding-bottom: 10px
+	.contact__title
+		margin-bottom: 40px
+		font-size: 18px
+		line-height: 25px
+	.contact__blocks
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	.contact__blocks-wrapper
+		width: 50%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	.contact__block
+		margin-bottom: 20px
+	.contact__titles
+		font-size: 12px
+		line-height: 28px
+	.contact__text
+		font-size: 12px
+		line-height: 28px
+	.contact__social
+		margin-right: 15px
+	
+	.contact__form
+		padding: 30px 15px 60px
+	.contact__form-name
+		font-size: 12px
+		line-height: 12px
+	.contact__form-submit
+		width: 100%
+	
+	.footer
+		padding: 60px 0
+	.footer__wrapper
+		flex-direction: column
+		align-items: flex-start
+	.footer__logo
+		margin-bottom: 40px
+	.footer__links
+		flex-direction: column
+		align-items: flex-start
+		li 
+			margin-bottom: 20px
+	.footer__link
+		margin: 0
+	.footer__line
+		margin-bottom: 40px
+	.footer__wrapper--mobile
+		flex-direction: column-reverse
+	.footer__socials
+		margin-bottom: 40px
+	.footer__social:first-child
+		margin-left: 0
 	/**/
 
 

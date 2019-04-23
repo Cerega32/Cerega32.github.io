@@ -39,67 +39,66 @@ section.portfolio
 		.title__wrapper
 			.portfolio__title
 				span.block__subtitle Works we made
-				span.block__title.block__title--white Our Portfolio
+				span.block__title.block__title--white.mb-0 Our Portfolio
 			a(href="#").portfolio__all View all
-	.portfolio__items
+	.portfolio__items.container-fluid
 		.swiper-wrapper
-			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-1.jpg) 50% 50% no-repeat; background-size: cover;")
+			article.swiper-slide.portfolio__item
+				img(src="img/portfolio-1.jpg").portfolio__picture
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
 					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
-			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-2.jpg) 50% 50% no-repeat; background-size: cover;")
+			article.swiper-slide.portfolio__item
+				img(src="img/portfolio-1.jpg").portfolio__picture
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
 					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
-			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-3.jpg) 50% 50% no-repeat; background-size: cover;")
-				.portfolio__item-desc
-					h3.portfolio__item-name Creative artwork Captun Com
-					a(href="#").portfolio__item-link #[span.portfolio__item-arrow] 
-			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-1.jpg) 50% 50% no-repeat; background-size: cover;")
+			article.swiper-slide.portfolio__item
+				img(src="img/portfolio-1.jpg").portfolio__picture
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
 					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
-			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-2.jpg) 50% 50% no-repeat; background-size: cover;")
+			article.swiper-slide.portfolio__item
+				img(src="img/portfolio-1.jpg").portfolio__picture
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
 					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
-			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-3.jpg) 50% 50% no-repeat; background-size: cover;")
+			article.swiper-slide.portfolio__item
+				img(src="img/portfolio-1.jpg").portfolio__picture
 				.portfolio__item-desc
 					h3.portfolio__item-name Creative artwork Captun Com
 					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
-			article.swiper-slide.portfolio__item(style="background: url(img/portfolio-1.jpg) 50% 50% no-repeat; background-size: cover;")
-				.portfolio__item-desc
-					h3.portfolio__item-name Creative artwork Captun Com
-					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
-		.portfolio__pagination
+	.portfolio__pagination
 section.reviews
 	.container
 		span.block__subtitle.block__title--center Clients love us
 		span.block__title.block__title--center.block__title--white What people says
-	.review__slider
-		.swiper-wrapper
-			.swiper-slide
-				.review
-					.review__block
-						p.review__text Semper viverra nam libero justo. Vel eros donec ac odio tempor orci dapibus. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Cras ornare arcu dui vivamus arcu. 
-						.review__author
-							.review__author-wrapper
-								b.review__author-name Anastasiya Novikova 
-								span.review__author-company Creative Group
-							img(src="img/review-1.jpg").review__author-photo
-						.swiper-button-next
-						.swiper-button-prev
-			.swiper-slide
-				.review
-					.review__block
-						p.review__text Semper viverra nam libero justo. Vel eros donec ac odio tempor orci dapibus. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Cras ornare arcu dui vivamus arcu. 
-						.review__author
-							.review__author-wrapper
-								b.review__author-name Anastasiya Novikova 
-								span.review__author-company Creative Group
-							img(src="img/review-1.jpg").review__author-photo
-						.review__btn.swiper-button-next
-						.review__btn.swiper-button-prev
+		.review__slider
+			.swiper-wrapper
+				.swiper-slide
+					.review
+						.review__block
+							p.review__text Semper viverra nam libero justo. Vel eros donec ac odio tempor orci dapibus. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Cras ornare arcu dui vivamus arcu. 
+							.review__author
+								.review__author-wrapper
+									b.review__author-name Anastasiya Novikova 
+									span.review__author-company Creative Group
+								img(src="img/review-1.jpg").review__author-photo
+							.swiper-button-next
+							.swiper-button-prev
+				.swiper-slide
+					.review
+						.review__block
+							p.review__text Semper viverra nam libero justo. Vel eros donec ac odio tempor orci dapibus. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Cras ornare arcu dui vivamus arcu. 
+							.review__author
+								.review__author-wrapper
+									b.review__author-name Anastasiya Novikova 
+									span.review__author-company Creative Group
+								img(src="img/review-1.jpg").review__author-photo
+							.review__btn.swiper-button-next
+							.review__btn.swiper-button-prev
+			.review__btn.review__btn--mobile.swiper-button-next
+			.review__btn.review__btn--mobile.swiper-button-prev
 section.team
 	.team__desc
 		.team__wrapper
@@ -134,37 +133,42 @@ section.team
 						a(href="#").team__item-social #[i.fab.fa-instagram]
 					h3.team__item-name Lollita Dolina
 					span.team__item-post Manager
+	.team__background
 section.plan
 	.container
-		span.block__subtitle.block__title--center Clients love us
-		span.block__title.block__title--center.block__title--dark What people says
-		.packages
-			.package
-				span.package__title Basic
-				p.package__price 49#[span.package__price--small $]#[span.package__price--small.package__price--gray /mo]
-				ul.package__services
-					li.package__service 1 Exclusive Projects
-					li.package__service Unlimited Support
-					li.package__service Marketing Kit
-				a(href="#").package__buy Get Started
-			.package
-				span.package__title Standart
-				p.package__price 99#[span.package__price--small $]#[span.package__price--small.package__price--gray /mo]
-				ul.package__services
-					li.package__service 5 Exclusive Projects
-					li.package__service 10 Themes
-					li.package__service Unlimited Support
-					li.package__service Marketing Kit1
-				a(href="#").package__buy Get Started
-			.package
-				span.package__title Business
-				p.package__price 240#[span.package__price--small $]#[span.package__price--small.package__price--gray /mo]
-				ul.package__services
-					li.package__service 15 Exclusive Projects
-					li.package__service 20 Themes
-					li.package__service Unlimited Support
-					li.package__service Marketing Kit
-				a(href="#").package__buy Get Started
+		span.block__subtitle.block__title--center.block__title--center--mobile pricing
+		span.block__title.block__title--center.block__title--center--mobile.block__title--dark Choose Your Plan
+		.plan__wrapper
+			.packages
+				.swiper-wrapper
+					.package.swiper-slide
+						span.package__title Basic
+						p.package__price 49#[span.package__price--small $]#[span.package__price--small.package__price--gray /mo]
+						ul.package__services
+							li.package__service 1 Exclusive Projects
+							li.package__service Unlimited Support
+							li.package__service Marketing Kit
+						a(href="#").package__buy Get Started
+					.package.swiper-slide
+						span.package__title Standart
+						p.package__price 99#[span.package__price--small $]#[span.package__price--small.package__price--gray /mo]
+						ul.package__services
+							li.package__service 5 Exclusive Projects
+							li.package__service 10 Themes
+							li.package__service Unlimited Support
+							li.package__service Marketing Kit1
+						a(href="#").package__buy Get Started
+					.package.swiper-slide
+						span.package__title Business
+						p.package__price 240#[span.package__price--small $]#[span.package__price--small.package__price--gray /mo]
+						ul.package__services
+							li.package__service 15 Exclusive Projects
+							li.package__service 20 Themes
+							li.package__service Unlimited Support
+							li.package__service Marketing Kit
+						a(href="#").package__buy Get Started
+				.packages__btn.swiper-button-next
+				.packages__btn.swiper-button-prev
 			.packages__desc
 				h3.packages__title The best prices for you from 2014
 				p.packages__text Tempus iaculis urna id volutpat lacus laoreet. Nunc scelerisque viverra mauris in aliquam. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
@@ -173,7 +177,7 @@ section.latest-news
 		.title__wrapper
 			.portfolio__title
 				span.block__subtitle Check our blog
-				span.block__title.block__title--white Latests News
+				span.block__title.block__title--white.mb-0 Latests News
 			a(href="#").portfolio__all View all
 		.news
 			.news__item
@@ -197,17 +201,17 @@ section.latest-news
 section.contact
 	.container.contact__wrapper
 		.row
-			.col-6.contact__info
+			.col-xl-6.col-12.contact__info
 				h3.contact__title Contact Us
-				.row
-					.col-6
+				.row.contact__blocks
+					.col-xl-6.contact__blocks-wrapper
 						.contact__block
 							span.contact__titles Moscow office
 							p.contact__text Red Square., 1, Moscow, 109012
 						.contact__block
 							span.contact__titles Email address
 							p.contact__text tivency@gmail.com
-					.col-6
+					.col-xl-6.contact__blocks-wrapper
 						.contact__block
 							span.contact__titles Phone number
 							p.contact__text 8 (495) 692-40-19
@@ -219,7 +223,7 @@ section.contact
 								a(href="#").contact__social #[i.fab.fa-instagram]
 								a(href="#").contact__social #[i.fab.fa-dribbble]
 								a(href="#").contact__social #[i.fab.fa-vk]
-			form.contact__form.col-6
+			form.contact__form.col-xl-6.col-12
 				label(for="name").contact__form-name Your Name #[br]
 				input(type="text" id="name" placeholder="Alex").contact__form-field
 				label(for="email").contact__form-name Your Email #[br]

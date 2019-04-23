@@ -53,7 +53,7 @@ gulp.task('browser-sync', function() {
 						port: 8003
 				},
         notify: false,
-        tunnel: true,
+        tunnel: false,
         tunnel: "cerega32", //Demonstration page: http://projectmane.localtunnel.me
     });
 });
