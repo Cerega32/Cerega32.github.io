@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host:kvartira-na-sutki.com
+Sitemap:http://kvartira-na-sutki.com/sitemap.xml
