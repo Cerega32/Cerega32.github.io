@@ -19,7 +19,7 @@
 	line-height: 42px
 	font-weight: 700
 
-.block__title--center
+.block--center
 	text-align: center
 
 .block__title--white
@@ -106,32 +106,20 @@
 		width: 100%
 		height: 100%
 		background: rgba(6, 61, 27, 0.7)
-	.portfolio__pagination
-		width: 100%
-		position: absolute
-		display: flex
-		align-items: center
-		justify-content: center
-		bottom: -160px
-	.swiper-pagination-bullet
-		margin-right: 20px
+	.slick-dots
+		bottom: -40px
+	.slick-dots li button:before
+		display: none
+	.slick-dots li button
 		width: 12px
 		height: 12px
 		border-radius: 50%
 		background: inherit
 		border: 1px solid #596365
-	.swiper-pagination-bullet-active
+	.slick-dots li.slick-active button
 		width: 14px
 		height: 14px
 		background: #CEBC19
-	.swiper-slide-next	
-		&:after
-			opacity: 0
-		.portfolio__item-desc
-			opacity: 1
-		.portfolio__picture
-			filter: brightness(100%)
-			filter: grayscale(0%)
 		
 	
 .title__wrapper
@@ -172,15 +160,30 @@
 		width: 18px
 		opacity: 1
 	
-.portfolio__items
-	position: relative
-	z-index: 10
-	margin-top: -110px
-	padding: 0
+.portfolio__wrapper
+	margin: -110px 0 0
+	padding: 0	
 	width: 100%
-	height: 100%
 	transform: translateY(110px)
+	position: relative
+	z-index: 10	
 	overflow: hidden
+	.slick-slider
+		margin-bottom: 45px
+
+.portfolio__items
+	height: 100%
+	margin: 0 -15px
+	.slick-track
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	.slick-slide
+		margin: 0 15px
+//	.slick-active:nth-child(2n+3)
+//		margin: 0 30px
 	
 .portfolio__item
 	position: relative
@@ -264,24 +267,12 @@
 .reviews
 	margin-bottom: 112px
 	padding-top: 300px
-	.swiper-button-next, .swiper-button-prev
-		display: none
-		top: auto
-		bottom: 60px
-		width: 25px
-		height: 18px
-		background: url("../img/right-arrow.svg") 50% 50% no-repeat
-	.swiper-button-next
-		right: 60px
-	.swiper-button-prev
-		left: auto
-		right: 100px
-		transform: rotate(180deg)
-	.swiper-slide-active .swiper-button-next, .swiper-slide-active .swiper-button-prev
-		display: block
-	.review__btn--mobile
-		display: none
-
+	.slick-arrow
+		top: 75%
+		left: 55%
+	.slick-next
+		left: 59%
+	
 .review__slider
 	position: relative
 	margin-top: 70px
@@ -338,21 +329,9 @@
 //	margin-left: auto
 //	width: calc(100vw - ((100vw - 1110px)) / 2)
 .team
+	overflow: hidden
 	display: flex
 	transform: translateY(128px)
-	.swiper-wrapper
-		position: static
-	.swiper-button-next, .swiper-button-prev
-		width: 25px
-		height: 18px
-		background: url("../img/right-arrow.svg") 50% 50% no-repeat
-		visibility: visible
-	.swiper-button-next
-		right: 205px
-	.swiper-button-prev
-		left: auto
-		right: 255px
-		transform: rotate(180deg)
 
 .team__substrate
 	width: 100%
@@ -365,7 +344,7 @@
 	flex-direction: column
 	justify-content: space-between
 	align-items: flex-end
-	width: calc(100vw - ((100vw - 1110px)) / 2 - 835px)
+	width: calc(100vw - ((100vw - 1110px)) / 2 - 825px)
 	flex-shrink: 0
 
 .team__wrapper
@@ -382,9 +361,29 @@
 	line-height: 32px
 	color: #637C83
 
-.team__slider
+.team__slider-wrapper
+	margin: 0 -15px
 	position: relative
-	overflow: hidden
+	width: calc(100vw - ((100vw - 1110px)) / 2 - 270px)
+		
+.slick-arrow
+	z-index: 10
+.slick-arrow:before
+	content: ""
+	display: block
+	width: 25px
+	height: 18px
+	background: url("../img/right-arrow.svg") 50% 50% no-repeat
+.slick-prev:before
+	transform: rotate(180deg)
+
+.team__slider
+	.slick-arrow
+		left: -270px
+	.slick-next
+		left: -230px
+	.slick-slide
+		margin: 0 15px
 
 .team__slide
 	height: 498px
@@ -451,6 +450,10 @@
 	position: relative
 	margin-right: 30px
 	width: 825px
+	.slick-track
+		display: flex
+	.slick-active:nth-child(2)
+		margin: 0 30px
 	.swiper-button-next, .swiper-button-prev
 		display: none
 .package
@@ -635,19 +638,20 @@
 	background: #DFEAF9
 
 .contact__form-name
-	margin-bottom: 15px
+	width: 410px
 	font-size: 14px
 	line-height: 14px
 	color: #7088A5
 	
 .contact__form-field
-	margin-bottom: 30px
+	margin: 15px 0 30px
 	padding: 0 20px
 	width: 100%
 	height: 50px
 	border: none
 	background: #CEDEF1
 	color: #A1B8D5
+	border: 1px solid #C6D4E8
 
 .contact__form-field::placeholder
 	color: #A1B8D5
@@ -666,3 +670,147 @@
 	border: none
 	color: #fff
 	font-weight: 700
+
+.contact--i
+	margin: 0
+	width: 100%
+	display: flex
+	justify-content: center
+	color: #1f3651
+
+.contact__info--i
+	padding: 0
+	width: calc(100vw - ((100vw - 1110px)) / 2 - 475px)
+	
+.contact__form--i
+	padding: 0
+	width: calc(100vw - ((100vw - 1110px)) / 2 - 635px)
+	
+.contact__info-wrapper
+	margin-left: auto
+	padding: 120px 95px 0 0
+	max-width: 635px
+
+.contact__form-wrapper
+	margin-right: auto
+	padding: 120px 0 120px 65px
+	max-width: 475px
+
+.block__text
+	margin-bottom: 80px
+	color: #355882
+	line-height: 32px
+	font-weight: 500
+
+.contact__form-submit--cntr
+	margin: 0 auto
+	display: block
+
+.about__text--i
+	text-align: center
+	margin: 0 auto 60px
+
+.services--i
+	margin-bottom: 0
+
+.service--i
+	margin-bottom: 120px
+	margin-right: 30px
+	padding: 30px 65px 30px 30px
+	background: #fff
+	&:last-child
+		margin-right: 0
+
+.work-process
+	display: flex
+
+.work-process__img
+	width: 50%
+	background: url("../img/work-process.jpg") 50% 50% no-repeat / cover
+
+.work-process__wrapper
+	width: 50%
+	background: #21B65C
+
+.work-process__desc
+	padding: 80px 0 80px 45px
+	width: 555px
+
+.work-process__title
+	margin-bottom: 30px
+	font-size: 30px
+	font-weight: 700
+
+.work-process__text
+	line-height: 32px
+
+.work-process__item
+	margin-bottom: 30px
+	padding: 15px 30px
+	display: flex
+	border: 1px solid #34C96F
+	&:last-child
+		margin-bottom: 0
+
+.work-process__number
+	margin-right: 40px
+	font-size: 30px
+	line-height: 56px
+	font-weight: 700
+
+.work-process__item-text
+	margin-bottom: 0
+	font-size: 12px
+	line-height: 28px
+
+.plan--i
+	padding: 120px 0
+
+.contact__form--big
+	padding: 120px 0
+	width: 100%
+	align-items: center
+	color: #1F3651
+
+.contact__form-wrapper--i
+	margin: 30px auto 0
+	padding: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	max-width: 850px
+
+.contact__form-name--big
+	width: 100%
+
+.team--i
+	padding: 120px 0 160px
+	background: #ECF4FE
+
+.team__grid
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.team__slide--i
+	margin-bottom: 30px
+	margin-right: 30px
+	width: 350px
+	&:nth-child(3n)
+		margin-right: 0
+	
+.count__wrappers--i
+	width: 100%
+	transform: translateY(0)
+
+.count__items--i
+	margin: 0 auto
+	padding: 120px 65px

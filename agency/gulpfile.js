@@ -49,17 +49,17 @@ gulp.task('browser-sync', function() {
         server: {
             baseDir: 'app'
         },
-					ui: {
-						port: 8003
-				},
+//					ui: {
+//						port: 8003
+//				},
         notify: false,
         tunnel: false,
-        tunnel: "cerega32", //Demonstration page: http://projectmane.localtunnel.me
+//        tunnel: "cerega32", //Demonstration page: http://projectmane.localtunnel.me
     });
 });
 
 gulp.task('pug', function() {
-    return gulp.src('app/pug/*.pug')
+    return gulp.src(['app/pug/**/*.pug', '!app/pug/**/_*.pug'])
         .pipe(pug({ pretty: true }).on("error", notify.onError()))
         .pipe(gulp.dest('app'));
 });
