@@ -161,10 +161,10 @@
 		opacity: 1
 	
 .portfolio__wrapper
-	margin: -110px 0 0
+	margin: -155px 0 0
 	padding: 0	
 	width: 100%
-	transform: translateY(110px)
+	transform: translateY(155px)
 	position: relative
 	z-index: 10	
 	overflow: hidden
@@ -814,3 +814,567 @@
 .count__items--i
 	margin: 0 auto
 	padding: 120px 65px
+
+.portfolio-i
+	padding: 120px 0
+	background: #ECF4FE
+
+.portfolio-i__btns
+	margin-bottom: 60px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+
+.portfolio-i__btn
+	padding: 20px 30px
+	display: inline-block
+	border-bottom: 1px solid #C7D9EE
+	border-top: 1px solid #C7D9EE
+	color: #4773A9
+	line-height: 32px
+	&:first-child
+		border-left: 1px solid #C7D9EE
+	&:last-child
+		border-right: 1px solid #C7D9EE
+		
+.portfolio-i__btn--active
+	border: 1px solid #21B65C
+	color: #21B65C
+	font-weight: 700
+
+.portfolio-i__works
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.portfolio__item--i
+	margin-bottom: 30px
+	width: 540px
+	
+
+.portfolio__item--i:first-child
+	&:after
+		opacity: 0
+	.portfolio__item-desc
+		opacity: 1
+	.portfolio__picture
+		filter: brightness(100%)
+		filter: grayscale(0%)
+
+.brands
+	padding: 120px 15px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	
+.statistic
+	padding: 120px 0
+	background: #ECF4FE
+	color: #1F3651
+
+.statistic__graphic-name
+	display: inline-block
+	margin-bottom: 20px
+	color: #355882
+	font-weight: 700
+
+.statistic__graphic-percent
+	position: relative
+	margin-bottom: 40px
+	width: 100%
+	height: 5px
+	background: #E4ECF7
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		height: 5px
+		background: #21B65C
+	&:after
+		position: absolute
+		top: -41px
+		display: block
+		color: #355882
+
+.statistic__graphic-percent--development
+	&:before
+		width: 92%
+	&:after
+		content: "92%"
+		left: calc(92% - 30px)
+	
+.statistic__graphic-percent--ux
+	&:before
+		width: 80%
+	&:after
+		content: "80%"
+		left: calc(80% - 30px)
+	
+.statistic__graphic-percent--marketing
+	&:before
+		width: 75%
+	&:after
+		content: "75%"
+		left: calc(75% - 30px)
+	
+.statistic__graphic-percent--seo
+	&:before
+		width: 69%
+	&:after
+		content: "69%"
+		left: calc(69% - 30px)
+	
+.statistic__items
+	margin-top: 80px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+
+.statistic__item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.statistic__value
+	margin: 40px 0 20px
+	font-size: 42px
+	font-weight: 700
+	line-height: 42px
+	color: #1F3651
+
+.statistic__name
+	font-size: 16px
+	font-weight: 500
+	color: #4773A9
+	
+.blog__wrappper
+	padding: 120px 0
+	background: #ECF4FE
+
+.post-item
+	position: relative
+	margin-bottom: 30px
+	border: 1px solid #E4ECF7
+
+.post-item__wrapper
+	padding: 30px 30px 60px
+	background: #fff
+	color: #1F3651
+
+
+.post-item .fas, .post-item .far
+	margin-right: 10px
+
+.post-item__author, .post-item__calendar, .post-item__comments
+	margin-left: 30px
+
+.post-item__category
+	color: #21B65C
+	font-size: 12px
+	line-height: 12px
+	font-weight: 700
+
+.post-item__title
+	margin-bottom: 30px
+	font-size: 24px
+	line-height: 24px
+	font-weight: 700
+
+.post-item__text, .post p, .post li
+	font-size: 14px
+	line-height: 32px
+	color: #4773A9
+
+.post-item__info, .post .post-item__info
+	margin-bottom: 30px
+	color: #8BA6AD
+
+.post-item__read-more
+	position: absolute
+	bottom: 0
+	right: 0
+	padding: 20px 40px
+	display: inline-block
+	background: #21B65C
+	text-transform: uppercase
+	font-size: 10px
+	line-height: 10px
+	font-weight: 700
+	color: #fff
+
+.post__pages
+	margin-top: 60px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+
+.post__page
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 72px
+	height: 72px
+	border-bottom: 1px solid #C7D9EE
+	border-top: 1px solid #C7D9EE
+	color: #4773A9
+	&:first-child
+		border-left: 1px solid #C7D9EE
+	&:last-child
+		border-right: 1px solid #C7D9EE
+
+.post__pages .fas
+	color: #21B65C
+	
+.post__page--active
+	border: 1px solid #21B65C
+	color: #21B65C
+	font-weight: 700
+
+.sidebar-block
+	margin-bottom: 30px
+	padding: 30px
+	background: #fff
+	border: 1px solid #E4ECF7
+	color: #1F3651
+
+.sidebar__title
+	margin-bottom: 20px
+	font-size: 18px
+	line-height: 25px
+	font-weight: 700
+
+.sidebar__search
+	margin-bottom: 10px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.sidebar__search-field
+	padding: 15px 20px
+	width: 100%
+	border: 1px solid #E7EFF6
+	border-right: none
+	background: #FAFBFC
+	font-size: 14px
+	line-height: 14px
+	color: #A1B8D5
+
+.sidebar__btn
+	flex-shrink: 0
+	width: 50px
+	height: 50px
+	border: none
+	background: #21B65C
+	color: #fff
+
+.sidebar__categories
+	margin-bottom: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	list-style-type: none
+
+.sidebar__category
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border-bottom: 1px solid #E4ECF7
+	&:last-child
+		border-bottom: none
+
+.sidebar__category-item
+	margin: 10px 0
+	color: #4773A9
+	line-height: 32px
+
+.sidebar__number
+	color: #A1B8D5
+
+.sidebar-post__title 
+	margin-bottom: 10px
+	font-size: 14px
+	line-height: 32px
+	font-weight: 700
+	color: #355882
+
+.sidebar-post
+	padding: 20px 0
+	border-bottom: 1px solid #E4ECF7
+	&:first-child
+		padding-top: 0
+	&:last-child
+		border-bottom: none
+	.fas
+		margin-right: 10px
+
+.sidebar-item__calendar
+	font-size: 12px
+	line-height: 12px
+	color: #8BA6AD
+
+.sidebar__tag 
+	margin: 0 10px 10px 0
+	padding: 5px 20px
+	display: inline-block
+	border: 1px solid #E4ECF7
+	color: #4773A9
+
+.post blockquote
+	padding: 30px
+	border-left: 2px solid #21B65C
+	background: #DFEAF9
+	font-style: italic
+	font-size: 14px
+	line-height: 32px
+	color: #4773A9
+
+.post ul
+	margin-left: 16px
+	list-style-type: none
+
+.post ul li
+	position: relative
+
+.post ul li:before
+	content: ""
+	position: absolute
+	top: 50%
+	left: -16px
+	margin-top: -3px
+	margin-right: 10px
+	display: inline-block
+	width: 6px
+	height: 6px
+	background: #CEDEF1
+	border-radius: 50%
+	
+
+.post ol
+	list-style-type: none
+	counter-reset: num
+
+.post ol li:before
+	content: counter(num)
+	counter-increment: num
+	margin-right: 10px
+	color: #CEDEF1
+	font-weight: 700
+	
+.post .post-item__wrapper
+	padding-bottom: 30px
+
+.post-info
+	margin-top: 20px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	color: #4773A9
+
+.post-info__link
+	margin-left: 20px
+	color: #4773A9
+
+.post-info__social
+	color: #87AAD5
+	
+.comments
+	margin-top: 60px
+	margin-bottom: 30px
+	padding: 30px
+	border: 1px solid #E4ECF7
+	background: #fff
+
+.comment__count
+	margin-bottom: 20px
+	font-size: 18px
+	line-height: 25px
+	font-weight: 700
+	color: #1F3651
+
+.comment
+	margin-top: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.comment__wrapper
+	border-bottom: 1px solid #E4ECF7
+
+.comment__picture
+	margin-right: 20px
+	width: 80px
+	height: 80px
+	border-radius: 50%
+
+.comment__text
+	font-size: 14px
+	line-height: 32px
+	color: #4773A9
+
+.comment__info
+	margin-bottom: 10px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.comment__author
+	margin-right: 20px
+	font-size: 14px
+	line-height: 32px
+	font-weight: 700
+	color: #355882
+
+.comment__calendar
+	color: #8BA6AD
+	font-size: 12px
+	.fas
+		margin-right: 10px
+
+.comment__reply
+	margin-left: auto
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 700
+	color: #4773A9
+
+
+.post__comment .post__comment
+	margin-left: 100px
+
+.comments > .post__comment:last-child .comment__wrapper
+	border-bottom: none
+
+.leave-comment
+	padding: 30px
+	background: #fff
+	border: 1px solid #E4ECF7
+
+.leave-comment__field
+	margin-bottom: 20px
+	padding: 15px 40px 15px 20px
+	width: 100%
+	background: #FAFBFC
+	border: 1px solid #E7EFF6
+	color: #536D8D
+	font-size: 14px
+	line-height: 14px
+
+.leave-comment__wrapper
+	position: relative
+	margin: 0
+	width: 100%
+	.fas, .far
+		position: absolute
+		right: 20px	
+		top: 50%
+		margin-top: -17px
+		color: #C5D2E3
+
+.leave-comment__wrapper--text .fas
+	top: 18px
+	margin-top: 0
+
+.leave-comment__field::-webkit-input-placeholder
+	color: #A1B8D5
+.leave-comment__field::-moz-placeholder
+	color: #A1B8D5
+.leave-comment__field::-ms-input-placeholder
+	color: #A1B8D5
+.leave-comment__field::placeholder
+	color: #A1B8D5
+	
+.leave-comment__text
+	height: 144px
+	resize: none
+
+.leave-comment__field:focus
+	outline: none
+	border-bottom: 2px solid #21B65C
+	margin-bottom: 19px
+.leave-comment__field:focus	+ .fas
+	color: #21B65C
+
+.leave-comment__btn
+	padding: 18px 40px
+	background: #21B65C
+	border: none
+	font-size: 14px
+	line-height: 14px
+	font-weight: 700
+	color: #fff
+
+.posts-grid
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.post-grid
+	position: relative
+	margin-bottom: 55px
+	max-width: 350px
+
+.post-grid__wrapper
+	padding: 30px
+
+.post-grid__title
+	margin-bottom: 20px
+	font-size: 16px
+	line-height: 32px
+
+.post-grid__info
+	margin: 0
+	
+.post-grid__calendar
+	margin: 0
+	font-size: 12px
+
+.post-grid__read-more
+	right: -15px
+	bottom: -25px
+
+.post-grid__pages
+	margin-top: 30px

@@ -1,0 +1,44 @@
+section.portfolio-i
+	.container
+		.portfolio-i__btns
+			a(href="#").portfolio-i__btn All items
+			a(href="#").portfolio-i__btn.portfolio-i__btn--active Branding
+			a(href="#").portfolio-i__btn Development
+			a(href="#").portfolio-i__btn Web-Sites
+		.portfolio-i__works
+			article.portfolio__item.portfolio__item--i
+				img(src="../img/portfolio-1.jpg").portfolio__picture
+				.portfolio__item-desc
+					h3.portfolio__item-name Creative artwork Captun Com
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
+			article.portfolio__item.portfolio__item--i
+				img(src="../img/portfolio-2.jpg").portfolio__picture
+				.portfolio__item-desc
+					h3.portfolio__item-name Creative artwork Captun Com
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
+			article.portfolio__item.portfolio__item--i
+				img(src="../img/portfolio-3.jpg").portfolio__picture
+				.portfolio__item-desc
+					h3.portfolio__item-name Creative artwork Captun Com
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
+			article.portfolio__item.portfolio__item--i
+				img(src="../img/portfolio-1.jpg").portfolio__picture
+				.portfolio__item-desc
+					h3.portfolio__item-name Creative artwork Captun Com
+					a(href="#").portfolio__item-link #[span.portfolio__item-arrow]
+.brands.container
+	img(src="../img/brand-1.png")
+	img(src="../img/brand-2.png")
+	img(src="../img/brand-3.png")
+	img(src="../img/brand-4.png")
+form.contact__form.contact__form--i.contact__form--big
+	span.block__subtitle Lets Talk
+	span.block__title We are open to communication
+	.contact__form-wrapper.contact__form-wrapper--i
+		label(for="name").contact__form-name Your Name #[br]
+			input(type="text" id="name" placeholder="Alex").contact__form-field
+		label(for="email").contact__form-name Your Email #[br]
+			input(type="email" id="email" placeholder="Enter your email...").contact__form-field
+		label(for="text").contact__form-name.contact__form-name--big Your Name #[br]
+			textarea(type="text" id="text" placeholder="Enter the message...").contact__form-field.contact__form-text
+		button(type="submit").contact__form-submit.contact__form-submit--cntr Send Message

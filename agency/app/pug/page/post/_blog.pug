@@ -1,0 +1,146 @@
+section.blog__wrappper
+	.container
+		.row
+			.col-8
+				.post-items
+					article.post
+						img.post-item__picture(src="../img/post-1.jpg")
+						.post-item__wrapper
+							p.post-item__info
+								a(href="#").post-item__category Design
+								span.post-item__author #[i.far.fa-user] John Doe
+								span.post-item__calendar #[i.fas.fa-calendar-alt] October 21, 2018
+								span.post-item__comments #[i.far.fa-comment-alt] 5
+							h3.post-item__title Placeholder text commonly used in the graphic
+							p Pellentesque massa placerat duis ultricies lacus sed. Laoreet sit amet cursus sit amet dictum. Venenatis urna cursus eget nunc scelerisque. Sollicitudin tempor id eu nisl. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Pellentesque adipiscing commodo elit at. Eros in cursus turpis massa.
+							blockquote Volutpat est velit egestas dui. Sociis natoque penatibus et magnis dis parturient. Nullam eget felis eget nunc lobortis mattis aliquam.
+							p Vulputate odio ut enim blandit volutpat. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. A pellentesque sit amet porttitor eget dolor. Turpis nunc eget lorem dolor. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Netus et malesuada fames ac turpis egestas maecenas. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Eu feugiat pretium nibh ipsum consequat nisl vel. Purus semper eget duis at tellus at. Scelerisque mauris pellentesque pulvinar pellentesque. Sed sed risus pretium quam vulputate dignissim. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Mi ipsum faucibus vitae aliquet nec ullamcorper. Erat imperdiet sed euismod nisi. Tempor orci dapibus ultrices in iaculis nunc.
+							ul 
+								li Tellus rutrum tellus pellentesque
+								li Mauris augue neque gravida
+								li Nunc mattis enim ut tellus
+								li Luctus venenatis lectus magna fringilla 
+							ol
+								li Tellus rutrum tellus pellentesque
+								li Mauris augue neque gravida
+								li Nunc mattis enim ut tellus
+								li Luctus venenatis lectus magna fringilla  
+					.post-info
+						.post-info__wrapper
+							b Tags:
+							a(href="#").post-info__link Creative
+							a(href="#").post-info__link Corporate
+						.post-info__wrapper
+							b Share:
+							a(href="#").post-info__link.post-info__social #[i.fab.fa-facebook-f]
+							a(href="#").post-info__link.post-info__social #[i.fab.fa-twitter]
+							a(href="#").post-info__link.post-info__social #[i.fab.fa-vk]
+							a(href="#").post-info__link.post-info__social #[i.fab.fa-google-plus-g]
+					.comments
+						p.comment__count 4 Comments
+						.post__comment
+							.comment
+								img(src="../img/author-1.jpg").comment__picture
+								.comment__wrapper
+									.comment__info
+										span.comment__author John Doelimen
+										span.comment__calendar #[i.fas.fa-calendar-alt]October 21, 2018 at 12:42 pm
+										a(href="#").comment__reply Reply
+									p.comment__text Mauris pharetra et ultrices neque ornare aenean. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Lacinia quis vel eros donec ac. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.
+						.post__comment
+							.comment
+								img(src="../img/author-1.jpg").comment__picture
+								.comment__wrapper
+									.comment__info
+										span.comment__author John Doelimen
+										span.comment__calendar #[i.fas.fa-calendar-alt]October 21, 2018 at 12:42 pm
+										a(href="#").comment__reply Reply
+									p.comment__text Mauris pharetra et ultrices neque ornare aenean. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Lacinia quis vel eros donec ac. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.
+							.post__comment
+								.comment
+									img(src="../img/author-1.jpg").comment__picture
+									.comment__wrapper
+										.comment__info
+											span.comment__author John Doelimen
+											span.comment__calendar #[i.fas.fa-calendar-alt]October 21, 2018 at 12:42 pm
+											a(href="#").comment__reply Reply
+										p.comment__text Mauris pharetra et ultrices neque ornare aenean. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Lacinia quis vel eros donec ac. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.
+						.post__comment
+							.comment
+								img(src="../img/author-1.jpg").comment__picture
+								.comment__wrapper
+									.comment__info
+										span.comment__author John Doelimen
+										span.comment__calendar #[i.fas.fa-calendar-alt]October 21, 2018 at 12:42 pm
+										a(href="#").comment__reply Reply
+									p.comment__text Mauris pharetra et ultrices neque ornare aenean. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Lacinia quis vel eros donec ac. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.
+				form.leave-comment
+					p.comment__count Leave a Comment
+					p.leave-comment__wrapper
+						input(type="text" placeholder="Name*").leave-comment__field
+						i.fas.fa-user
+					p.leave-comment__wrapper
+						input(type="email" placeholder="Email*").leave-comment__field
+						i.fas.fa-envelope
+					p.leave-comment__wrapper
+						input(type="text" placeholder="Website").leave-comment__field
+						i.fas.fa-link
+					p.leave-comment__wrapper.leave-comment__wrapper--text
+						textarea(placeholder="Comment*").leave-comment__field.leave-comment__text
+						i.fas.fa-comment
+					button(type="submit").leave-comment__btn Post Comment
+			aside.col-4
+				section.sidebar-block
+					h4.sidebar__title Search
+					form.sidebar__search
+						input(type="search" placeholder="search").sidebar__search-field
+						button(type="submit").sidebar__btn #[i.fas.fa-search]
+				section.sidebar-block
+					h4.sidebar__title Categories
+					ul.sidebar__categories
+						li.sidebar__category
+							a(href="#").sidebar__category-item Studio 
+							span.sidebar__number 12
+						li.sidebar__category
+							a(href="#").sidebar__category-item Design
+							span.sidebar__number 24
+						li.sidebar__category
+							a(href="#").sidebar__category-item Creative
+							span.sidebar__number 38
+						li.sidebar__category
+							a(href="#").sidebar__category-item Corporate
+							span.sidebar__number 5
+						li.sidebar__category
+							a(href="#").sidebar__category-item News
+							span.sidebar__number 17
+				section.sidebar-block
+					h4.sidebar__title Recent Posts
+					.sidebar-posts
+						article.sidebar-post
+							h4.sidebar-post__title 7 Rules About AGENCY Meant To Be Broken
+							span.sidebar-item__calendar #[i.fas.fa-calendar-alt] October 21, 2018
+						article.sidebar-post
+							h4.sidebar-post__title 7 5 Ways Of AGENCY That Can Drive You Bankrupt - Fast!
+							span.sidebar-item__calendar #[i.fas.fa-calendar-alt] October 21, 2018
+						article.sidebar-post
+							h4.sidebar-post__title The Ultimate Deal On AGENCY
+							span.sidebar-item__calendar #[i.fas.fa-calendar-alt] October 21, 2018
+				section.sidebar-block
+					h4.sidebar__title Tags
+					.sidebar__tags
+						a(href="#").sidebar__tag Studio
+						a(href="#").sidebar__tag News
+						a(href="#").sidebar__tag Design
+						a(href="#").sidebar__tag Corporate
+						a(href="#").sidebar__tag Creative
+form.contact__form.contact__form--i.contact__form--big
+	span.block__subtitle Lets Talk
+	span.block__title We are open to communication
+	.contact__form-wrapper.contact__form-wrapper--i
+		label(for="name").contact__form-name Your Name #[br]
+			input(type="text" id="name" placeholder="Alex").contact__form-field
+		label(for="email").contact__form-name Your Email #[br]
+			input(type="email" id="email" placeholder="Enter your email...").contact__form-field
+		label(for="text").contact__form-name.contact__form-name--big Your Name #[br]
+			textarea(type="text" id="text" placeholder="Enter the message...").contact__form-field.contact__form-text
+		button(type="submit").contact__form-submit.contact__form-submit--cntr Send Message
