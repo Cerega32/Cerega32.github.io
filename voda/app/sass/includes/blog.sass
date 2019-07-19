@@ -1,0 +1,202 @@
+.weekend
+	padding: 120px 0
+
+.block__title
+	display: block
+	margin-bottom: 50px	
+	font-size: 36px
+	line-height: 44px
+	font-weight: 700
+	color: #373F42
+
+.block__title--cr
+	text-align: center
+	
+.block__title--white
+	color: #fff
+
+.weekand__photos
+	position: relative
+	min-height: 500px
+
+.weekand__photo--bottom
+	position: absolute
+	top: 0
+	right: 0
+	&:after
+		z-index: 3
+		content: ""
+		position: absolute
+		bottom: -17px
+		right: 0
+		width: calc(100% + 17px)
+		height: calc(50% + 17px)
+		background: #58C4F2
+	&:before
+		z-index: 2
+		content: ""
+		position: absolute
+		top: 30px
+		left: -87px
+		width: 215px
+		height: 320px
+		background: url(../img/weekand--bg.jpg) 50% 50% no-repeat
+	img 
+		position: relative
+		z-index: 4
+
+.weekand__photo--top
+	z-index: 5
+	position: absolute
+	bottom: 0
+	left: 0
+
+.video
+	padding: 50px 0 100px
+	background: url(../img/video--bg.jpg) 50% 50% no-repeat / cover
+	text-align: center
+
+.video__block
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.video__btn
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background: #58C4F2 url(../img/icon-play.png) 55% 50% no-repeat;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	z-index: 5;
+	cursor: pointer;
+
+.pastime
+	padding: 100px 0 0
+
+.pastime__item
+	padding: 100px 0 65px
+	border-bottom: 1px solid #F0F0F0
+	&:first-child
+		padding: 65px 0
+
+.pastime__title
+	font-size: 30px
+	line-height: 44px
+	font-weight: 700
+	margin-bottom: 50px
+	color: #373F42
+
+.pastime p
+	margin-bottom: 30px
+
+.pastime__photo--right, .pastime__photo--left, .pastime__relax-photo
+	position: relative
+	top: 0
+	right: 0
+	&:after
+		z-index: 3
+		content: ""
+		position: absolute
+		bottom: -15px
+		right: 0
+		width: 345px
+		height: 250px
+		background: #58C4F2
+	&:before
+		z-index: 2
+		content: ""
+		position: absolute
+		top: -15px
+		left: 0px
+		width: 215px
+		height: 320px
+		background: url(../img/weekand--bg.jpg) 50% 50% no-repeat
+	img 
+		position: relative
+		z-index: 4
+		height: 100%
+		object-fit: cover
+	
+.pastime__photo--left
+	&:after
+		right: auto
+		left: 0
+	&:before
+		left: auto
+		right: 0
+	
+.pastime__relax-photo
+	margin: 0 15px 40px
+	&:after
+		width: 255px
+		height: 155px
+		right: auto
+		left: -15px
+	&:before
+		height: 140px
+		left: auto
+		right: -15px
+.pastime__relax
+	padding-top: 115px
+	margin-bottom: 100px
+	&:nth-child(2)
+		padding-top: 215px
+	&:nth-child(3)
+		padding-top: 315px
+
+.pastime__relax-title
+	margin-bottom: 30px
+	font-size: 24px
+	line-height: 38px
+
+.news
+	padding: 100px 0 120px
+	border-top: 1px solid #F0F0F0
+	background: #FCFCFC
+
+.news__wrapper
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.news__link
+	margin-bottom: 50px
+	line-height: 44px
+	color: #58C4F2
+
+.news__item
+	margin-bottom: 30px
+	height: 150px
+	border: 1px solid #F0F0F0
+	border-bottom: 4px solid #58C4F2
+	background: #fff
+
+.news__item--b
+	width: 540px
+	height: 510px
+
+.news__info
+	padding: 30px
+	font-size: 12px
+	line-height: 12px
+	color: #909CA0
+
+.news__short-info
+	margin-bottom: 15px
+	.far
+		margin-right: 10px
+
+.news__short-info span 
+	margin-right: 30px
+	
+.news__title
+	font-size: 14px
+	line-height: 30px
+	font-weight: 700
+
+
