@@ -1,0 +1,25 @@
+doctype html
+head
+	title ООО "Порт"
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	meta(charset="UTF-8")
+	link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
+	link(href="https://fonts.googleapis.com/css?family=Raleway:500,600,700&display=swap" rel="stylesheet")
+	link(href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap&subset=cyrillic" rel="stylesheet")
+	link(rel="stylesheet" href="css/animate.css")
+	link(href="css/main.min.css" rel="stylesheet")
+body
+	div.parallax
+		img.thumbnail(src="img/parallax.png" alt="моя картинка")
+	include includes/header.pug
+	include includes/blog.pug
+	div.parallax__bottom
+		img.thumbnail__bottom(src="img/parallax--bottom.png" alt="моя картинка")
+	include includes/services.pug
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+	script(src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js")
+	//script(src="js/parallax.min.js" defer)
+	//script(src="js/jquery.scrolling-parallax.js" defer)
+	script(src="js/wow.min.js" defer)
+	script(src="js/main.js" defer)
+	
