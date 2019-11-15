@@ -1,0 +1,29 @@
+.container
+	section.horizont
+		h3.horizont__title Открываем горизонты
+		p.horizont__desc Горизонты вашего бизнеса. Большое видится на расстоянии. Приглашайте нас к сотрудничеству, и мы расширим горизонты. Сопровождение грузов на всех этапах и их таможенное оформление.
+		.horizont__btns
+			a(href="#" data-toggle="modal" data-target="#myModal").horizont__btn.horizont__contact-us Связаться с нами
+			a(href="#contacts").horizont__btn.horizont__contacts Контакты
+		img(src="img/horizont-min.jpg")
+	section.company.wow.fadeIn(data-wow-duration="3s")#company
+		h2.company__header О компании ООО “Порт”
+		.company__block
+			div ПОТЕНЦИАЛ ЕСТЬ У ВСЕХ. Наша задача выявить максимально возможный вариант оптимизации товарно-транспортной логистики, максимально удовлетворяющий вашим возможностям и потребностям. Цель оптимизации - максимально возможное сокращение временных, трудовых и финансовых операционных затрат вашей компании.
+			div
+				p #[b Порт46] – ваш надёжный партнёр в сопровождении международных контрактов, в оптимизации товарно-логистических схем, таможенном оформлении, ответственном хранении продукции.
+				p Поставки комплектующих, сырья, и оборудования для вашего производства. Мы работаем не только с крупными предприятиями, но и с предприятиями среднего и малого бизнеса. Прорабатывая различные типовые логистические схемы и подбирая индивидуальные варианты решений доставки грузов, мы максимально учитываем пожелания наших партнёров. 
+.modal.fade#myModal(aria-hidden="true" role="dialog")
+	.modal-dialog.modal-dialog-centered(role="document")
+		.modal-content
+			button(type="button" data-dismiss="modal" aria-label="Close").close 
+				i.fas.fa-times
+			span.modal__title Для обращения к нам заполните форму
+			p.modal__desc (укажите ваш телефон, если вам будет удобно, чтобы мы вам позвонили)
+			form.contacts__form.modal__form
+				.contacts__wrapper
+					input(type="text" placeholder="Ваше имя").form__name#myInput
+					input(type="email" placeholder="Ваш email").form__email 
+				textarea(type="text" placeholder="Текст сообщения").form__message
+				button(type="submit").form__btn.form__btn--modal Отправить
+	
