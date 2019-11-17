@@ -23,10 +23,6 @@
 	.contacts__left
 		width: 370px
 		margin-right: 55px
-	.form__name, .form__email
-		width: 177px
-	.contacts__address
-		font-size: 17px
 	.contacts__right
 		margin-left: 55px
 		display: -webkit-flex
@@ -38,6 +34,8 @@
 		justify-content: center
 	.supplies
 		margin-bottom: 150px
+	.modal__form
+		margin: 0
 	/**/
 
 /* Medium Devices, Desktops */
@@ -105,6 +103,8 @@
 		display: none
 	.modal-content
 		height: auto
+	.modal__form
+		margin: 0
 		
 	/**/
 
@@ -171,6 +171,13 @@
 		width: 480px
 		margin-left: -240px
 		height: auto
+		.form__name, .form__email
+			max-width: 100%
+			width: 100%
+	.contacts__wrapper
+		flex-wrap: wrap
+	
+		
 	/**/
 
 /* Custom, iPhone Retina */
