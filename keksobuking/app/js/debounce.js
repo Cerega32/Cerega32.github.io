@@ -1,0 +1,13 @@
+window.debounce = (fun, interval) => {
+  var lastTimeout = null;
+  console.log('!')
+  return function () {
+    var args = arguments;
+    if (lastTimeout) {
+      window.clearTimeout(lastTimeout);
+    }
+    lastTimeout = window.setTimeout(function () {
+      fun.apply(null, args);
+    }, interval);
+  };
+};

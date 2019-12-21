@@ -1,4 +1,4 @@
-@import "fonts"
+@import "../fonts/fontawesome/css/all.css"
 @import "vars"
 
 *
@@ -28,18 +28,11 @@
 	color: #fff
 	opacity: 1
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #000
-body input:required:valid,
-body textarea:required:valid
-	color: #000
-
 html, body
 	height: 100%
 
 body
-	min-width: 360px
+	min-width: 320px
 	font-size: 16px
 	position: relative
 	line-height: 34px
@@ -65,6 +58,9 @@ a:hover
 @import "includes/first-screen" 
 @import "includes/second-screen" 
 @import "includes/third-screen" 
+@import "includes/fourth-screen" 
+@import "includes/fifth-screen" 
 @import "includes/blog" 
+@import "includes/slider" 
 @import "includes/footer" 
 @import "media" // Всегда в конце

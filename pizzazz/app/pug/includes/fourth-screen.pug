@@ -1,0 +1,28 @@
+section.fourth-screen
+	.screen__wrapper
+		.screen__left
+			h2.screen__title Our works
+			p.screen__desc Risus sed vulputate odio ut enim blandit volutpat maecenas. Laoreet sit amet cursus sit amet dictum. Nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi.
+			p
+				span.pricing__license Choose you license:
+				span.pricing__project-link.pricing__project-name Standart
+				a(href="#").pricing__project-link.pricing__project-link--active Start a Project
+		form.screen__right
+			input(type="radio", name="type" id="basic" value="basic").pricing__radio-btn
+			label(for="basic").pricing__block
+				span.pricing__cost 49#[span.pricing__cost--sm $ #[span.pricing__cost--pale /mo]]
+				.pricing__wrapper
+					b.pricing__rate Basic
+					p.pricing__desc Risus sed vulputate odio ut enim blandit volut
+			input(type="radio", name="type" id="standart" value="standart" checked).pricing__radio-btn
+			label(for="standart").pricing__block
+				span.pricing__cost 99#[span.pricing__cost--sm $ #[span.pricing__cost--pale /mo]]
+				.pricing__wrapper
+					b.pricing__rate Standart
+					p.pricing__desc Risus sed vulputate odio ut enim blandit volut
+			input(type="radio", name="type" id="business" value="business").pricing__radio-btn
+			label(for="business").pricing__block
+				span.pricing__cost 150#[span.pricing__cost--sm $ #[span.pricing__cost--pale /mo]]
+				.pricing__wrapper
+					b.pricing__rate Business
+					p.pricing__desc Risus sed vulputate odio ut enim blandit volut

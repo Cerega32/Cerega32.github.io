@@ -1,0 +1,44 @@
+.main-slider,
+.slick-dotted.slick-slider
+  margin-bottom: 0
+  height: 100vh
+  user-select: text
+
+
+.slick-list
+  height: 100vh
+
+.slick-track
+  height: 100vh
+
+
+.main-slide
+  height: 100vh 
+
+
+.slick-dots
+  position: fixed
+  top: 0
+  left: 60px
+  height: 100%
+  width: auto
+  display: flex
+  flex-direction: column
+  justify-content: center
+  li
+    margin-bottom: 30px
+    width: 8px  
+    height: 8px
+    &:last-child
+      margin-bottom: 0
+  li button    
+    width: 8px
+    height: 8px
+    border-radius: 50% 
+    background: rgba(255, 255, 255, 0.7)
+    &::before
+      content: ''
+      display: none
+  .slick-active button
+    background: #FF6363
+    

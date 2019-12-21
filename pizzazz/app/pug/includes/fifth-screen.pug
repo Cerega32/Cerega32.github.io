@@ -1,0 +1,23 @@
+section.fifth-screen
+	.screen__wrapper
+		.screen__left
+			h2.screen__title Contact Us
+			p.screen__desc Risus sed vulputate odio ut enim blandit volutpat maecenas. Laoreet sit amet cursus sit amet dictum. Nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi.
+			p
+				span.contact__follow Follow us:
+				a(href="#").contact__social #[i.fab.fa-facebook-f] Facebook
+				a(href="#").contact__social #[i.fab.fa-twitter] Twitter
+				a(href="#").contact__social #[i.fab.fa-vk] VK
+			a(href="#").mail-us Mail us Pizzazzstudio@gmail.com
+		.screen__right
+			form.contact__form(action="post")
+				fieldset.contact__fields-radio
+					input(type="radio" name="type-pricing" id="basic-pricing" value="basic").contact__field-radio
+					input(type="radio" name="type-pricing" id="standart-pricing" value="standart" checked).contact__field-radio
+					input(type="radio" name="type-pricing" id="business-pricing" value="business").contact__field-radio
+				input(type="name" placeholder="Your name").contact__field.contact__name
+				input(type="email" placeholder="Your email").contact__field
+				textarea(placeholder="Enter your message").contact__field.contact__field-text
+				button(type="submit").contact__btn Send the Message
+				
+			

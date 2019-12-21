@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>ООО "Порт"</title>
+  <title>ООО "Порт46"</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="fonts/font-awesome/css/all.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link href="css/main.min.css" rel="stylesheet">
+  <link href="css/main.min.css?v=3" rel="stylesheet">
 </head>
 <body>
   <div class="parallax"><img class="thumbnail" src="img/parallax.png" alt="моя картинка"></div>
-  <header class="subheader container"><a class="subheader__logo" href="#">Port46.ru - ООО “Порт”</a><a class="subheader__address" href="#"><i class="fas fa-map-marker-alt"></i>305025, Российская Федерация, г. Курск, ул. Магистральная, д.17, оф.48</a>
+  <header class="subheader container"><a class="subheader__logo" href="#">Port46.ru - ООО “Порт46”</a><span class="subheader__address"><i class="fas fa-map-marker-alt"></i>305025, Российская Федерация, г.Курск, ул.Магистральная, д. 17, офис 1 (2-й этаж)</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
     <nav class="collapse navbar-collapse" id="navbarMobile">
       <ul class="navbar__nav" id="menu-mobile">
@@ -39,7 +39,7 @@
         <li class="navbar__item"><a class="navbar__link" href="#supplies">Поставки</a></li>
         <li class="navbar__item"><a class="navbar__link" href="#contacts">Контакты</a></li>
       </ul>
-    </nav><a class="subheader__address subheader__address--mobile" href="#"><i class="fas fa-map-marker-alt"></i>305025, Российская Федерация, г. Курск, ул. Магистральная, д.17, оф.48</a><span class="header__phone"><i class="fas fa-phone"></i>Звоните: <a href="tel:+74712311811">+7 (4712) 311-811</a>, <a href="tel:+79107311811">+7 (910) 731-18-11</a></span>
+    </nav><span class="subheader__address subheader__address--mobile" href="#"><i class="fas fa-map-marker-alt"></i>305025, Российская Федерация, <br class='address--hidden'> г. Курск, <br class="address--tablet"> ул. Магистральная, <br class='address--hidden'> д. 17, офис 1 (2-й этаж)</span><span class="header__phone"><i class="fas fa-phone"></i><a href="tel:+74712311811">+7(4712)311811</a>, &nbsp;<a href="tel:+79207086119">+79207086119</a></span>
   </header>
   <div class="container">
     <section class="horizont">
@@ -48,7 +48,7 @@
       <div class="horizont__btns"><a class="horizont__btn horizont__contact-us" href="#" data-toggle="modal" data-target="#myModal">Связаться с нами</a><a class="horizont__btn horizont__contacts" href="#contacts">Контакты</a></div><img src="img/horizont-min.jpg">
     </section>
     <section class="company wow fadeIn" data-wow-duration="3s" id="company">
-      <h2 class="company__header">О компании ООО “Порт”</h2>
+      <h2 class="company__header"><span>О компании</span> <span> “Порт46”</span></h2>
       <div class="company__block">
         <div>ПОТЕНЦИАЛ ЕСТЬ У ВСЕХ. Наша задача выявить максимально возможный вариант оптимизации товарно-транспортной логистики, максимально удовлетворяющий вашим возможностям и потребностям. Цель оптимизации - максимально возможное сокращение временных, трудовых и финансовых операционных затрат вашей компании.</div>
         <div>
@@ -63,12 +63,12 @@
       <div class="modal-content">
         <button class="close" type="button" data-dismiss="modal" aria-label="Close"> <i class="fas fa-times"></i></button><span class="modal__title">Для обращения к нам заполните форму</span>
         <p class="modal__desc">(укажите ваш телефон, если вам будет удобно, чтобы мы вам позвонили)</p>
-        <form class="contacts__form modal__form">
+        <form class="contacts__form modal__form" id="form-windows" action="mail.php">
           <div class="contacts__wrapper">
-            <input class="form__name" type="text" placeholder="Ваше имя" id="myInput">
-            <input class="form__email" type="email" placeholder="Ваш email">
+            <input class="form__name" type="text" placeholder="Ваше имя" id="myInput" name="name" required="required">
+            <input class="form__email" type="email" placeholder="Ваш email" name="email" required="required">
           </div>
-          <textarea class="form__message" type="text" placeholder="Текст сообщения"></textarea>
+          <textarea class="form__message" type="text" placeholder="Текст сообщения" name="text"></textarea>
           <button class="form__btn form__btn--modal" type="submit">Отправить</button>
         </form>
       </div>
@@ -77,7 +77,7 @@
   <div class="parallax__bottom"><img class="thumbnail__bottom" src="img/parallax--bottom.png" alt="моя картинка"></div>
   <div class="container">
     <section class="services wow fadeIn" data-wow-duration="3s" id="services">
-      <h3 class="services__title">Наши услуги: <span>логистика,  таможенное сопровождение,  оценка эффективности проектов</span></h3>
+      <h3 class="services__title">Наши услуги: <br><span>логистика,  таможенное сопровождение,  оценка эффективности проектов</span></h3>
       <div class="services__wrapper">
         <div class="services__service wow fadeIn" data-wow-duration="3s">
           <p class="services__name">Стратегия</p>
@@ -98,7 +98,7 @@
         <h3 class="supplies__header">Поставки</h3>
         <div class="suppliues__block">
           <p>ООО "Порт46" является официальным партнёром компании Darimex-Treyding OOD, Болгария, на сбытовой территории Российской Федерации. Darimex-Treyding - крупнейший поставщик оберточной бумаги для сувениров и подарков, бумажной ленты для обертки и упаковки, упаковочного картона, оберточной бумаги крепированной и импрегнированной (пропитанной).</p>
-          <p>Заключаем долгосрочные договора на поставку  табачного сырья, ацетатного жгута отведущих мировых производителей.</p>
+          <p>Заключаем долгосрочные договора на поставку  табачного сырья, ацетатного жгута от ведущих мировых производителей.</p>
           <p>Мы предлагаем лучшие условия сотрудничества и оптимальные цены. Мы заинтересованы в стабильности бизнеса наших партнёров. Ваш успех – это наша стабильность.</p>
         </div>
       </div>
@@ -106,15 +106,16 @@
     <section class="contacts wow fadeIn" data-wow-duration="3s" id="contacts">
       <div class="contacts__left">
         <h3 class="contacts__header">Контакты</h3>
-        <p class="contacts__address">305025, Российская Федерация, г. Курск, ул. Магистральная, д.17, оф.48</p>
-        <p class="contacts__address"><b>Звоните</b>: <a href="tel:+74712311811">+7 (4712) 311-811</a>, <a href="tel:+79107311811">+7 (910) 731-18-11</a></p>
-        <p class="contacts__address"><b>Пишите</b>: port46.gendir@gmail.com, www.port46.ru</p>
-        <form class="contacts__form">
+        <p class="contacts__address">305025, Российская Федерация, <br>г.Курск, ул. Магистральная, <br>д. 17, офис 1 (2-й этаж)</p>
+        <p class="contacts__address"><a href="tel:+74712311811">+7(4712)311811</a>, &nbsp;<a href="tel:+79207086119">+79207086119</a></p>
+        <p class="contacts__address"><a href="mailto:port46.gendir@gmail.com">port46.gendir@gmail.com</a></p>
+        <p class="contacts__address contacts__response">Для обращения заполните форму <br> и мы вам обязательно ответим:</p>
+        <form class="contacts__form" id="form" action="mail.php">
           <div class="contacts__wrapper">
-            <input class="form__name" type="text" placeholder="Ваше имя">
-            <input class="form__email" type="email" placeholder="Ваш email">
+            <input class="form__name" type="text" placeholder="Ваше имя" name="name" required="required">
+            <input class="form__email" type="email" placeholder="Ваш email" name="email" required="required">
           </div>
-          <textarea class="form__message" type="text" placeholder="Текст сообщения (укажите ваш телефон, если вам будет удобно, чтобы мы вам позвонили)"></textarea>
+          <textarea class="form__message" type="text" placeholder="Текст сообщения (укажите ваш телефон, если вам будет удобно, чтобы мы вам позвонили)" name="text"></textarea>
           <button class="form__btn" type="submit">Отправить</button>
         </form>
       </div>
@@ -123,6 +124,7 @@
       </div>
     </section>
   </div>
+  <footer class="footer container"><span class="footer__corp">2019 © ООО "Порт46"</span></footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -130,4 +132,5 @@
   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
   <script src="js/wow.min.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/common.js" defer></script>
 </body>

@@ -1,9 +1,82 @@
 .third-screen
 	height: 100vh
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
 	align-items: center
 	background: #267A75
+
+	
+.screen__left--works
+	position: relative
+	
+.work__title
+	position: relative
+	margin-bottom: 40px
+	font-size: 24px
+	line-height: 29px
+	font-weight: 500
+	color: #fff
+	text-transform: uppercase
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: -100px
+		margin-top: -3px
+		display: block
+		width: 60px
+		height: 5px
+		background: #FF6363
+	
+.work__desc
+	max-width: 540px
+
+.screen__works .slick-track
+	height: auto
+
+.screen__works-slider
+	user-select: text
+
+.slider-works__btns
+	position: absolute
+	bottom: 0
+	margin-right: auto
+	display: flex
+	background: #217772
+	border-radius: 60px
+
+.slider-works__btn
+	margin: 0
+	padding: 20px 30px
+	font-size: 14px
+	line-height: 14px
+	font-weight: 700
+	color: #fff
+	text-transform: uppercase
+	background: transparent
+	border: none
+	border-radius: 60px
+
+.slider-works__btn--next
+	background: #136D67
+
+.slider-works__pictures
+	height: 530px
+
+.slider-works__pictures .slick-slide
+	height: auto
+
+.slider-works__picture
+	position: relative
+
+.slider-works__link
+	position: absolute
+	bottom: 0
+	right: 0
+	padding: 20px 30px
+	font-size: 11px
+	line-height: 11px
+	font-weight: 700
+	color: #fff
+	text-transform: uppercase
+	background: rgba(19, 109, 103, 0.8)
+	border-radius: 27px 0px 5px 0px

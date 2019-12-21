@@ -4,6 +4,7 @@
 	left: 0
 	width: 100%
 	background: rgba(25,25,25,.2)
+	z-index: 100
 
 .navbar
 	padding: .5rem 45px
@@ -43,3 +44,34 @@
 
 .navbar__link--active
 	border-bottom: 1px solid #FF6363
+
+.start-project
+	z-index: 100
+	position: fixed
+	bottom: 30px
+	right: 60px
+	font-size: 14px
+	line-height: 14px
+	font-weight: 700
+	color: #fff
+	&:after
+		content: ''
+		position: absolute
+		right: -60px
+		top: 50%
+		display: block
+		width: 45px
+		height: 1px
+		background: #FF6363
+
+.socials
+	z-index: 100
+	position: fixed
+	bottom: 30px
+	left: 60px
+
+.social__link
+	margin-right: 40px
+	font-size: 18px
+	line-height: 18px
+	color: #fff
