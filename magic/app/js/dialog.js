@@ -198,7 +198,7 @@ dialogHandler.addEventListener('mousedown', (evt) => {
     
     if (dragged) {
       const onClickPreventDefault = (clickEvt) => {
-        clickEvt.preventDefault();
+        
         dialogHandler.removeEventListener('click', onClickPreventDefault)
       };
       dialogHandler.addEventListener('click', onClickPreventDefault);
